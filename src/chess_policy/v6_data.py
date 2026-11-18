@@ -179,6 +179,11 @@ def _label_chunk(job):
 
 def label(positions_file, out_dir, engine_path, depth=10, workers=0, chunk=1000, shard=0,
           of=1, splits=("train", "dev", "test"), limit=0, hash_mb=16, stride=1):
+    # Windows: CreateProcess cannot start a relative path written with "/" (e.g. the
+    # tools/stockfish/stockfish.exe in CLAUDE.md), and a pool initializer that fails just
+    # respawns forever. So use an absolute path and start one engine here to fail fast.
+    engine_path = os.path.abspath(engine_path)
+    chess.engine.SimpleEngine.popen_uci(engine_path).quit()
     pos = np.load(positions_file)
     keep = np.isin(pos["split"], [SPLIT_CODES[s] for s in splits])
     index = np.flatnonzero(keep)[::stride]  # stride > 1: an even sample across all games

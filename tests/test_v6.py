@@ -97,6 +97,25 @@ def test_positions_reproduce_v5_splits(tmp_path):
     assert len(np.unique(pos["key"])) == len(pos["key"])  # de-duplicated
 
 
+def test_label_bad_engine_fails_fast(tmp_path):
+    # used to hang forever: the pool initializer failed and was respawned endlessly
+    build_positions([ROOT / "data" / "fishtest_train.pgn.gz"], tmp_path / "p.npz", max_games=2)
+    with pytest.raises(OSError):
+        label(tmp_path / "p.npz", tmp_path / "lab", "no/such/engine.exe", depth=1, workers=1,
+              splits=("train",), limit=5)
+
+
+@pytest.mark.skipif(not STOCKFISH, reason="set STOCKFISH=<path> to run")
+def test_label_forward_slash_relative_engine_path(tmp_path, monkeypatch):
+    # CLAUDE.md's $env:STOCKFISH = "tools/stockfish/stockfish.exe" failed on Windows
+    build_positions([ROOT / "data" / "fishtest_train.pgn.gz"], tmp_path / "p.npz", max_games=2)
+    engine = Path(STOCKFISH).resolve()
+    monkeypatch.chdir(engine.parent.parent)
+    label(tmp_path / "p.npz", tmp_path / "lab", f"{engine.parent.name}/{engine.name}", depth=2,
+          workers=1, chunk=5, splits=("train",), limit=5)
+    assert (tmp_path / "lab" / "chunk_00000.npz").exists()
+
+
 @pytest.mark.skipif(not STOCKFISH, reason="set STOCKFISH=<path> to run")
 def test_label_assemble_train_eval(tmp_path):
     build_positions([ROOT / "data" / "fishtest_train.pgn.gz"], tmp_path / "p.npz", max_games=12)
