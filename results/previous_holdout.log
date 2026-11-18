@@ -1,0 +1,14 @@
+{
+  "positions": 103772,
+  "top1": 0.08971591566125738,
+  "top3": 0.22519562116948696,
+  "nll": 3.184332351072878,
+  "checkpoint_sha256": "e726fd9504660f6c9ddc0fa3de343d682007837fc98b6dd7b6ffabe2bbf95e83",
+  "config": {
+    "width": 64,
+    "layers": 2,
+    "heads": 4
+  },
+  "seconds": 70.05241332299988,
+  "limitations": "Same heldout positions, but architecture and training corpus both differ; not an isolated architecture ablation. Historical training overlap is not established."
+}

@@ -1,0 +1,4364 @@
+{
+  "opponent_id": {
+    "name": "Stockfish 15.1",
+    "author": "the Stockfish developers (see AUTHORS file)"
+  },
+  "nodes_per_query": 20000,
+  "source_arena_sha256": "8bc8610826b7abfb6427820c434409f4076d2b8a8cb122e9544faf2bfe81ee37",
+  "decisions": 181,
+  "regret_at_least_100cp": 26,
+  "regret_at_least_300cp": 10,
+  "viable_decisions": 104,
+  "viable_regret_at_least_300cp": 8,
+  "median_regret_cp_proxy": 17.0,
+  "missed_mate_in_one": 11,
+  "allows_mate_in_one": 4,
+  "rows": [
+    {
+      "game": 0,
+      "ply": 0,
+      "fen": "rnbqkb1r/ppp2ppp/5n2/3pp3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+      "chosen": "c4d5",
+      "best": {
+        "cp": 17,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20006,
+        "move": "c4d5"
+      },
+      "chosen_analysis": {
+        "cp": 17,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20006,
+        "move": "c4d5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 2,
+      "fen": "rnbqkb1r/1pp2ppp/5n2/p2Pp3/8/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
+      "chosen": "e2e4",
+      "best": {
+        "cp": 149,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20006,
+        "move": "g1f3"
+      },
+      "chosen_analysis": {
+        "cp": 67,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20003,
+        "move": "e2e4"
+      },
+      "regret_cp_proxy": 82,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 4,
+      "fen": "rnbqk2r/1pp2ppp/5n2/p1bPp3/4P3/2N3P1/PP1P1P1P/R1BQKBNR w KQkq - 1 6",
+      "chosen": "g1f3",
+      "best": {
+        "cp": 60,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20018,
+        "move": "f1e2"
+      },
+      "chosen_analysis": {
+        "cp": 23,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20013,
+        "move": "g1f3"
+      },
+      "regret_cp_proxy": 37,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 6,
+      "fen": "rnbqk2r/1p3ppp/2p2n2/p1bPp3/4P3/2N2NP1/PP1P1P1P/R1BQKB1R w KQkq - 0 7",
+      "chosen": "f3e5",
+      "best": {
+        "cp": 128,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20004,
+        "move": "f3e5"
+      },
+      "chosen_analysis": {
+        "cp": 128,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20004,
+        "move": "f3e5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 8,
+      "fen": "rnb1k2r/1p3ppp/1qp2n2/p1bPN3/4P3/2N3P1/PP1P1P1P/R1BQKB1R w KQkq - 1 8",
+      "chosen": "d2d4",
+      "best": {
+        "cp": 120,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20003,
+        "move": "e5d3"
+      },
+      "chosen_analysis": {
+        "cp": 1,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20010,
+        "move": "d2d4"
+      },
+      "regret_cp_proxy": 119,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 10,
+      "fen": "rnb1k2r/1p3ppp/1qp2n2/p2PN3/3bP3/2N3P1/PP3P1P/R1BQKB1R w KQkq - 0 9",
+      "chosen": "c1e3",
+      "best": {
+        "cp": 22,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20016,
+        "move": "c1e3"
+      },
+      "chosen_analysis": {
+        "cp": 22,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20016,
+        "move": "c1e3"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 12,
+      "fen": "rnb1k2r/1p3ppp/1qp2n2/p2PN3/4P3/2N1b1P1/PP3P1P/R2QKB1R w KQkq - 0 10",
+      "chosen": "f2e3",
+      "best": {
+        "cp": -3,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20019,
+        "move": "f2e3"
+      },
+      "chosen_analysis": {
+        "cp": -3,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20019,
+        "move": "f2e3"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 14,
+      "fen": "rnb1k2r/1p3ppp/2p2n2/p2PN3/4P3/2N1q1P1/PP5P/R2QKB1R w KQkq - 0 11",
+      "chosen": "d1e2",
+      "best": {
+        "cp": 11,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20039,
+        "move": "d1e2"
+      },
+      "chosen_analysis": {
+        "cp": 11,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20039,
+        "move": "d1e2"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 16,
+      "fen": "rnb1k2r/1p3ppp/2p2n2/p2PN3/3qP3/2N3P1/PP2Q2P/R3KB1R w KQkq - 2 12",
+      "chosen": "d5c6",
+      "best": {
+        "cp": 11,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20017,
+        "move": "e5c4"
+      },
+      "chosen_analysis": {
+        "cp": -359,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20014,
+        "move": "d5c6"
+      },
+      "regret_cp_proxy": 370,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 18,
+      "fen": "rnb1k2r/1p3ppp/2P2n2/p3q3/4P3/2N3P1/PP2Q2P/R3KB1R w KQkq - 0 13",
+      "chosen": "c6b7",
+      "best": {
+        "cp": -332,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20014,
+        "move": "c6b7"
+      },
+      "chosen_analysis": {
+        "cp": -332,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20014,
+        "move": "c6b7"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 20,
+      "fen": "rn2k2r/1b3ppp/5n2/p3q3/4P3/2N3P1/PP2Q2P/R3KB1R w KQkq - 0 14",
+      "chosen": "e1c1",
+      "best": {
+        "cp": -323,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20018,
+        "move": "e2b5"
+      },
+      "chosen_analysis": {
+        "cp": -443,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20020,
+        "move": "e1c1"
+      },
+      "regret_cp_proxy": 120,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 22,
+      "fen": "r3k2r/1b3ppp/2n2n2/p3q3/4P3/2N3P1/PP2Q2P/2KR1B1R w kq - 2 15",
+      "chosen": "c3d5",
+      "best": {
+        "cp": -462,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20027,
+        "move": "e2b5"
+      },
+      "chosen_analysis": {
+        "cp": -475,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20023,
+        "move": "c3d5"
+      },
+      "regret_cp_proxy": 13,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 24,
+      "fen": "r4rk1/1b3ppp/2n2n2/p2Nq3/4P3/6P1/PP2Q2P/2KR1B1R w - - 4 16",
+      "chosen": "d5f6",
+      "best": {
+        "cp": -489,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20002,
+        "move": "c1b1"
+      },
+      "chosen_analysis": {
+        "cp": -545,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20010,
+        "move": "d5f6"
+      },
+      "regret_cp_proxy": 56,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 0,
+      "ply": 26,
+      "fen": "r4rk1/1b3ppp/2n2q2/p7/4P3/6P1/PP2Q2P/2KR1B1R w - - 0 17",
+      "chosen": "c1b1",
+      "best": {
+        "cp": -546,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20021,
+        "move": "f1g2"
+      },
+      "chosen_analysis": {
+        "cp": -570,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20029,
+        "move": "c1b1"
+      },
+      "regret_cp_proxy": 24,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 0,
+      "ply": 28,
+      "fen": "r4rk1/1b3ppp/5q2/p3n3/4P3/6P1/PP2Q2P/1K1R1B1R w - - 2 18",
+      "chosen": "h1g1",
+      "best": {
+        "cp": -582,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20002,
+        "move": "f1g2"
+      },
+      "chosen_analysis": {
+        "cp": -591,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20003,
+        "move": "h1g1"
+      },
+      "regret_cp_proxy": 9,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 0,
+      "ply": 30,
+      "fen": "r4rk1/1b3ppp/1q6/p3n3/4P3/6P1/PP2Q2P/1K1R1BR1 w - - 4 19",
+      "chosen": "g1g2",
+      "best": {
+        "cp": -621,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20020,
+        "move": "b1a1"
+      },
+      "chosen_analysis": {
+        "cp": -626,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20012,
+        "move": "g1g2"
+      },
+      "regret_cp_proxy": 5,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 0,
+      "ply": 32,
+      "fen": "r4rk1/1b3ppp/1q6/4n3/p3P3/6P1/PP2Q1RP/1K1R1B2 w - - 0 20",
+      "chosen": "g2f2",
+      "best": {
+        "cp": -599,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20046,
+        "move": "a2a3"
+      },
+      "chosen_analysis": {
+        "cp": -630,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20017,
+        "move": "g2f2"
+      },
+      "regret_cp_proxy": 31,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 0,
+      "ply": 34,
+      "fen": "3r1rk1/1b3ppp/1q6/4n3/p3P3/6P1/PP2QR1P/1K1R1B2 w - - 2 21",
+      "chosen": "d1d8",
+      "best": {
+        "cp": -545,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20021,
+        "move": "d1d8"
+      },
+      "chosen_analysis": {
+        "cp": -545,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20021,
+        "move": "d1d8"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 0,
+      "ply": 36,
+      "fen": "3q1rk1/1b3ppp/8/4n3/p3P3/6P1/PP2QR1P/1K3B2 w - - 0 22",
+      "chosen": "f2f5",
+      "best": {
+        "cp": -540,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20005,
+        "move": "a2a3"
+      },
+      "chosen_analysis": {
+        "cp": -802,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20000,
+        "move": "f2f5"
+      },
+      "regret_cp_proxy": 262,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 0,
+      "ply": 38,
+      "fen": "3q1rk1/5ppp/8/4nR2/p3b3/6P1/PP2Q2P/1K3B2 w - - 0 23",
+      "chosen": "e2e4",
+      "best": {
+        "cp": -927,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20016,
+        "move": "b1a1"
+      },
+      "chosen_analysis": {
+        "cp": -99999,
+        "mate": -1,
+        "depth": 245,
+        "nodes": 488,
+        "move": "e2e4"
+      },
+      "regret_cp_proxy": 99072,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": true,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 1,
+      "ply": 1,
+      "fen": "rnbqkb1r/ppp2ppp/5n2/3pp3/2P5/2N3P1/PP1PPPBP/R1BQK1NR b KQkq - 1 4",
+      "chosen": "b8c6",
+      "best": {
+        "cp": 65,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20015,
+        "move": "d5d4"
+      },
+      "chosen_analysis": {
+        "cp": -162,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20013,
+        "move": "b8c6"
+      },
+      "regret_cp_proxy": 227,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 3,
+      "fen": "r1bqkb1r/ppp2ppp/2n2n2/3Pp3/8/2N3P1/PP1PPPBP/R1BQK1NR b KQkq - 0 5",
+      "chosen": "c6d4",
+      "best": {
+        "cp": -173,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20002,
+        "move": "c6b4"
+      },
+      "chosen_analysis": {
+        "cp": -199,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20026,
+        "move": "c6d4"
+      },
+      "regret_cp_proxy": 26,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 5,
+      "fen": "r1bqkb1r/ppp2ppp/5n2/3Pp3/3n4/2N1P1P1/PP1P1PBP/R1BQK1NR b KQkq - 0 6",
+      "chosen": "d4f5",
+      "best": {
+        "cp": -207,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20005,
+        "move": "d4f5"
+      },
+      "chosen_analysis": {
+        "cp": -207,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20005,
+        "move": "d4f5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 7,
+      "fen": "r1bqkb1r/ppp2ppp/5n2/3Ppn2/8/2N1PNP1/PP1P1PBP/R1BQK2R b KQkq - 2 7",
+      "chosen": "f6d5",
+      "best": {
+        "cp": -181,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20018,
+        "move": "f8d6"
+      },
+      "chosen_analysis": {
+        "cp": -202,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20013,
+        "move": "f6d5"
+      },
+      "regret_cp_proxy": 21,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 9,
+      "fen": "r1bqkb1r/ppp2ppp/8/3npn2/4P3/2N2NP1/PP1P1PBP/R1BQK2R b KQkq - 0 8",
+      "chosen": "d5c3",
+      "best": {
+        "cp": -214,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20030,
+        "move": "d5b4"
+      },
+      "chosen_analysis": {
+        "cp": -227,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20019,
+        "move": "d5c3"
+      },
+      "regret_cp_proxy": 13,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 11,
+      "fen": "r1bqkb1r/ppp2ppp/8/4pn2/4P3/2n2NP1/PPQP1PBP/R1B1K2R b KQkq - 1 9",
+      "chosen": "f5d4",
+      "best": {
+        "cp": 105,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20015,
+        "move": "c3e4"
+      },
+      "chosen_analysis": {
+        "cp": 74,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20037,
+        "move": "f5d4"
+      },
+      "regret_cp_proxy": 31,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 13,
+      "fen": "r1bqkb1r/ppp2ppp/8/4p3/3nP3/2Q2NP1/PP1P1PBP/R1B1K2R b KQkq - 0 10",
+      "chosen": "f8d6",
+      "best": {
+        "cp": 124,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20016,
+        "move": "f8b4"
+      },
+      "chosen_analysis": {
+        "cp": -82,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20017,
+        "move": "f8d6"
+      },
+      "regret_cp_proxy": 206,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 15,
+      "fen": "r1bqk2r/ppp2ppp/3b4/4p3/3nP3/P1Q2NP1/1P1P1PBP/R1B1K2R b KQkq - 0 11",
+      "chosen": "e8g8",
+      "best": {
+        "cp": 109,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20009,
+        "move": "c7c5"
+      },
+      "chosen_analysis": {
+        "cp": -37,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20006,
+        "move": "e8g8"
+      },
+      "regret_cp_proxy": 146,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 17,
+      "fen": "r1bq1rk1/ppp2ppp/3b4/4p3/1P1nP3/P1Q2NP1/3P1PBP/R1B1K2R b KQ - 0 12",
+      "chosen": "d4f3",
+      "best": {
+        "cp": 68,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20010,
+        "move": "d4f3"
+      },
+      "chosen_analysis": {
+        "cp": 68,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20010,
+        "move": "d4f3"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 19,
+      "fen": "r1bq1rk1/ppp2ppp/3b4/4p3/1P2P3/P1Q2BP1/3P1P1P/R1B1K2R b KQ - 0 13",
+      "chosen": "c8e6",
+      "best": {
+        "cp": 46,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20014,
+        "move": "a7a5"
+      },
+      "chosen_analysis": {
+        "cp": 55,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20009,
+        "move": "c8e6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 21,
+      "fen": "r2q1rk1/ppp2ppp/3bb3/4p3/1P2P3/P1QP1BP1/5P1P/R1B1K2R b KQ - 0 14",
+      "chosen": "d8f6",
+      "best": {
+        "cp": 62,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20004,
+        "move": "a7a5"
+      },
+      "chosen_analysis": {
+        "cp": 62,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20019,
+        "move": "d8f6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 23,
+      "fen": "r4rk1/ppp2ppp/3bbq2/4p3/1P2P3/P1QP2P1/4BP1P/R1B1K2R b KQ - 2 15",
+      "chosen": "f8d8",
+      "best": {
+        "cp": 70,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20009,
+        "move": "a7a5"
+      },
+      "chosen_analysis": {
+        "cp": 28,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20014,
+        "move": "f8d8"
+      },
+      "regret_cp_proxy": 42,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 25,
+      "fen": "r2r2k1/ppp2ppp/3bbq2/4p3/1P2P3/P1QP2P1/1B2BP1P/R3K2R b KQ - 4 16",
+      "chosen": "c7c6",
+      "best": {
+        "cp": 78,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20016,
+        "move": "f6g6"
+      },
+      "chosen_analysis": {
+        "cp": 20,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20014,
+        "move": "c7c6"
+      },
+      "regret_cp_proxy": 58,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 27,
+      "fen": "r2r2k1/pp3ppp/2pbbq2/4p3/1P2P3/P1QP2P1/1B2BP1P/R4RK1 b - - 1 17",
+      "chosen": "a8c8",
+      "best": {
+        "cp": 74,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20000,
+        "move": "e6h3"
+      },
+      "chosen_analysis": {
+        "cp": -14,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20025,
+        "move": "a8c8"
+      },
+      "regret_cp_proxy": 88,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 29,
+      "fen": "2rr2k1/pp3ppp/2pbbq2/4p3/1P2P3/P1QP2P1/1B2BP1P/1R3RK1 b - - 3 18",
+      "chosen": "f6g5",
+      "best": {
+        "cp": 60,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20002,
+        "move": "c6c5"
+      },
+      "chosen_analysis": {
+        "cp": 47,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20031,
+        "move": "f6g5"
+      },
+      "regret_cp_proxy": 13,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 31,
+      "fen": "2rr2k1/pp3ppp/2pbb3/4p1q1/1P2P2P/P1QP2P1/1B2BP2/1R3RK1 b - - 0 19",
+      "chosen": "g5f6",
+      "best": {
+        "cp": 33,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20016,
+        "move": "g5f6"
+      },
+      "chosen_analysis": {
+        "cp": 33,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20016,
+        "move": "g5f6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 33,
+      "fen": "2rr2k1/pp3ppp/2pbbq2/4p3/PP2P2P/2QP2P1/1B2BP2/1R3RK1 b - - 0 20",
+      "chosen": "d6e7",
+      "best": {
+        "cp": 55,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20001,
+        "move": "b7b6"
+      },
+      "chosen_analysis": {
+        "cp": -101,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20029,
+        "move": "d6e7"
+      },
+      "regret_cp_proxy": 156,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 35,
+      "fen": "2rr2k1/pp2bppp/2p1bq2/4Q3/PP2P2P/3P2P1/1B2BP2/1R3RK1 b - - 0 21",
+      "chosen": "f6e5",
+      "best": {
+        "cp": -89,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20008,
+        "move": "f6e5"
+      },
+      "chosen_analysis": {
+        "cp": -89,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20008,
+        "move": "f6e5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 37,
+      "fen": "2rr2k1/pp2bppp/2p1b3/4q3/PP2P2P/3P2P1/1B2BP2/1RR3K1 b - - 1 22",
+      "chosen": "e5f6",
+      "best": {
+        "cp": 597,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20013,
+        "move": "e5d6"
+      },
+      "chosen_analysis": {
+        "cp": 487,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20015,
+        "move": "e5f6"
+      },
+      "regret_cp_proxy": 110,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 39,
+      "fen": "2rr2k1/pp2bppp/2p1bq2/1P6/P3P2P/3P2P1/1B2BP2/1RR3K1 b - - 0 23",
+      "chosen": "f6g6",
+      "best": {
+        "cp": 577,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20008,
+        "move": "f6h6"
+      },
+      "chosen_analysis": {
+        "cp": 587,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20011,
+        "move": "f6g6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 41,
+      "fen": "2rr2k1/pp2bppp/2p1b1q1/1P2B3/P3P2P/3P2P1/4BP2/1RR3K1 b - - 2 24",
+      "chosen": "c6b5",
+      "best": {
+        "cp": 605,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20013,
+        "move": "e7h4"
+      },
+      "chosen_analysis": {
+        "cp": 569,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20004,
+        "move": "c6b5"
+      },
+      "regret_cp_proxy": 36,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 43,
+      "fen": "2Rr2k1/pp2bppp/4b1q1/1p2B3/P3P2P/3P2P1/4BP2/1R4K1 b - - 0 25",
+      "chosen": "d8c8",
+      "best": {
+        "cp": 570,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20012,
+        "move": "d8c8"
+      },
+      "chosen_analysis": {
+        "cp": 570,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20012,
+        "move": "d8c8"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 45,
+      "fen": "2r3k1/pp2bppp/4b1q1/1p2B2P/P3P3/3P2P1/4BP2/1R4K1 b - - 0 26",
+      "chosen": "g6g5",
+      "best": {
+        "cp": 579,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20002,
+        "move": "g6g5"
+      },
+      "chosen_analysis": {
+        "cp": 579,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20002,
+        "move": "g6g5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 47,
+      "fen": "2r3k1/pp2bppp/3Bb3/1p4qP/P3P3/3P2P1/4BP2/1R4K1 b - - 2 27",
+      "chosen": "e7d6",
+      "best": {
+        "cp": 749,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20011,
+        "move": "e7d6"
+      },
+      "chosen_analysis": {
+        "cp": 749,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20011,
+        "move": "e7d6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 49,
+      "fen": "2r3k1/pp3ppp/3bb3/1p4qP/P3P3/3P1BP1/5P2/1R4K1 b - - 1 28",
+      "chosen": "b5a4",
+      "best": {
+        "cp": 880,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20030,
+        "move": "d6g3"
+      },
+      "chosen_analysis": {
+        "cp": 790,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20006,
+        "move": "b5a4"
+      },
+      "regret_cp_proxy": 90,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 51,
+      "fen": "2r3k1/pp3ppp/3bb3/6qP/p3P3/3P1BP1/5P2/3R2K1 b - - 1 29",
+      "chosen": "a4a3",
+      "best": {
+        "cp": 884,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20050,
+        "move": "d6g3"
+      },
+      "chosen_analysis": {
+        "cp": 765,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20022,
+        "move": "a4a3"
+      },
+      "regret_cp_proxy": 119,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 53,
+      "fen": "2r3k1/pp3ppp/3bb3/6qP/4P3/p2P1BP1/5P2/5RK1 b - - 1 30",
+      "chosen": "a3a2",
+      "best": {
+        "cp": 1478,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20001,
+        "move": "c8c1"
+      },
+      "chosen_analysis": {
+        "cp": 887,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20088,
+        "move": "a3a2"
+      },
+      "regret_cp_proxy": 591,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 55,
+      "fen": "2r3k1/pp3ppp/3bb3/4P1qP/8/3P1BP1/p4P2/5RK1 b - - 0 31",
+      "chosen": "d6e5",
+      "best": {
+        "cp": 1686,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20007,
+        "move": "c8c1"
+      },
+      "chosen_analysis": {
+        "cp": 881,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20047,
+        "move": "d6e5"
+      },
+      "regret_cp_proxy": 805,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 57,
+      "fen": "2r3k1/pp3ppp/4b3/4b1qP/8/3P1BP1/p4P2/4R1K1 b - - 1 32",
+      "chosen": "b7b6",
+      "best": {
+        "cp": 2006,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20070,
+        "move": "c8c1"
+      },
+      "chosen_analysis": {
+        "cp": 917,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20018,
+        "move": "b7b6"
+      },
+      "regret_cp_proxy": 1089,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 59,
+      "fen": "2r3k1/p4ppp/1p2b3/4b1qP/3P4/5BP1/p4P2/4R1K1 b - - 0 33",
+      "chosen": "e5d4",
+      "best": {
+        "cp": 1765,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20024,
+        "move": "c8c1"
+      },
+      "chosen_analysis": {
+        "cp": 1007,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20053,
+        "move": "e5d4"
+      },
+      "regret_cp_proxy": 758,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 61,
+      "fen": "2r3k1/p4ppp/1p2b3/6qP/3b4/5BP1/p4P2/4R2K b - - 1 34",
+      "chosen": "d4f2",
+      "best": {
+        "cp": 4659,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20008,
+        "move": "c8c1"
+      },
+      "chosen_analysis": {
+        "cp": 2109,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20000,
+        "move": "d4f2"
+      },
+      "regret_cp_proxy": 2550,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 63,
+      "fen": "2r3k1/p4ppp/1p2b3/6qP/6B1/6P1/p4b2/4R2K b - - 1 35",
+      "chosen": "e6g4",
+      "best": {
+        "cp": 99991,
+        "mate": 9,
+        "depth": 15,
+        "nodes": 20029,
+        "move": "f2e1"
+      },
+      "chosen_analysis": {
+        "cp": 99995,
+        "mate": 5,
+        "depth": 25,
+        "nodes": 20007,
+        "move": "e6g4"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 65,
+      "fen": "2r3k1/p4ppp/1p6/6qP/6b1/6P1/p4bK1/4R3 b - - 1 36",
+      "chosen": "f2e1",
+      "best": {
+        "cp": 99996,
+        "mate": 4,
+        "depth": 26,
+        "nodes": 20006,
+        "move": "f2e1"
+      },
+      "chosen_analysis": {
+        "cp": 99996,
+        "mate": 4,
+        "depth": 26,
+        "nodes": 20006,
+        "move": "f2e1"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 67,
+      "fen": "2r3k1/p4ppp/1p6/6qP/6b1/6P1/p7/4b2K b - - 1 37",
+      "chosen": "g5h5",
+      "best": {
+        "cp": 99997,
+        "mate": 3,
+        "depth": 25,
+        "nodes": 20010,
+        "move": "g4f3"
+      },
+      "chosen_analysis": {
+        "cp": 99997,
+        "mate": 3,
+        "depth": 174,
+        "nodes": 20003,
+        "move": "g5h5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 69,
+      "fen": "2r3k1/p4ppp/1p6/7q/6b1/6P1/p5K1/4b3 b - - 1 38",
+      "chosen": "h5g5",
+      "best": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 192,
+        "nodes": 20002,
+        "move": "g4f3"
+      },
+      "chosen_analysis": {
+        "cp": 99996,
+        "mate": 4,
+        "depth": 29,
+        "nodes": 20009,
+        "move": "h5g5"
+      },
+      "regret_cp_proxy": 2,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 71,
+      "fen": "2r3k1/p4ppp/1p6/6q1/6b1/6P1/p7/4bK2 b - - 3 39",
+      "chosen": "e1g3",
+      "best": {
+        "cp": 99997,
+        "mate": 3,
+        "depth": 26,
+        "nodes": 20007,
+        "move": "a2a1q"
+      },
+      "chosen_analysis": {
+        "cp": 99997,
+        "mate": 3,
+        "depth": 168,
+        "nodes": 20004,
+        "move": "e1g3"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 73,
+      "fen": "2r3k1/p4ppp/1p6/6q1/6b1/6b1/p5K1/8 b - - 1 40",
+      "chosen": "g3f4",
+      "best": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 170,
+        "nodes": 20010,
+        "move": "a2a1q"
+      },
+      "chosen_analysis": {
+        "cp": 99997,
+        "mate": 3,
+        "depth": 175,
+        "nodes": 20015,
+        "move": "g3f4"
+      },
+      "regret_cp_proxy": 1,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 75,
+      "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/p7/7K b - - 3 41",
+      "chosen": "a2a1q",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 13728,
+        "move": "g4f3"
+      },
+      "chosen_analysis": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 245,
+        "nodes": 732,
+        "move": "a2a1q"
+      },
+      "regret_cp_proxy": 1,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 77,
+      "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/6K1/q7 b - - 1 42",
+      "chosen": "a1e5",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 16919,
+        "move": "c8c2"
+      },
+      "chosen_analysis": {
+        "cp": 99997,
+        "mate": 3,
+        "depth": 159,
+        "nodes": 20004,
+        "move": "a1e5"
+      },
+      "regret_cp_proxy": 2,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 79,
+      "fen": "2r3k1/p4ppp/1p6/4q1q1/5bb1/8/8/6K1 b - - 3 43",
+      "chosen": "c8c1",
+      "best": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 157,
+        "nodes": 20011,
+        "move": "g4d1"
+      },
+      "chosen_analysis": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 245,
+        "nodes": 1288,
+        "move": "c8c1"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 81,
+      "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/6K1/2r5 b - - 5 44",
+      "chosen": "c1c2",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 15938,
+        "move": "e5b2"
+      },
+      "chosen_analysis": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 245,
+        "nodes": 1646,
+        "move": "c1c2"
+      },
+      "regret_cp_proxy": 1,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 83,
+      "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/2r5/7K b - - 7 45",
+      "chosen": "c2h2",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 16177,
+        "move": "g4f3"
+      },
+      "chosen_analysis": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 245,
+        "nodes": 733,
+        "move": "c2h2"
+      },
+      "regret_cp_proxy": 1,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 85,
+      "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/7r/6K1 b - - 9 46",
+      "chosen": "h2e2",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 15448,
+        "move": "e5a1"
+      },
+      "chosen_analysis": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 245,
+        "nodes": 1208,
+        "move": "h2e2"
+      },
+      "regret_cp_proxy": 1,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 87,
+      "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/4r3/5K2 b - - 11 47",
+      "chosen": "e5f6",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 14212,
+        "move": "g4h3"
+      },
+      "chosen_analysis": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 245,
+        "nodes": 740,
+        "move": "e5f6"
+      },
+      "regret_cp_proxy": 1,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 89,
+      "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/6K1 b - - 13 48",
+      "chosen": "e2e1",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 14958,
+        "move": "f6a1"
+      },
+      "chosen_analysis": {
+        "cp": 99997,
+        "mate": 3,
+        "depth": 161,
+        "nodes": 20004,
+        "move": "e2e1"
+      },
+      "regret_cp_proxy": 2,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 91,
+      "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 15 49",
+      "chosen": "e1e2",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 15448,
+        "move": "f6b2"
+      },
+      "chosen_analysis": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 245,
+        "nodes": 1651,
+        "move": "e1e2"
+      },
+      "regret_cp_proxy": 1,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 93,
+      "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 17 50",
+      "chosen": "e2e1",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 14953,
+        "move": "g4f3"
+      },
+      "chosen_analysis": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 245,
+        "nodes": 775,
+        "move": "e2e1"
+      },
+      "regret_cp_proxy": 1,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 95,
+      "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 19 51",
+      "chosen": "e1e2",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 15448,
+        "move": "f6b2"
+      },
+      "chosen_analysis": {
+        "cp": 99998,
+        "mate": 2,
+        "depth": 245,
+        "nodes": 1652,
+        "move": "e1e2"
+      },
+      "regret_cp_proxy": 1,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 1,
+      "ply": 97,
+      "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 21 52",
+      "chosen": "e2e1",
+      "best": {
+        "cp": 99999,
+        "mate": 1,
+        "depth": 245,
+        "nodes": 14952,
+        "move": "g4f3"
+      },
+      "chosen_analysis": {
+        "cp": 0,
+        "mate": null,
+        "depth": 245,
+        "nodes": 490,
+        "move": "e2e1"
+      },
+      "regret_cp_proxy": 99999,
+      "missed_mate_in_one": true,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 0,
+      "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/8/5NP1/PPPPPPBP/RNBQK2R w KQkq - 0 4",
+      "chosen": "d2d4",
+      "best": {
+        "cp": 49,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20024,
+        "move": "d2d4"
+      },
+      "chosen_analysis": {
+        "cp": 49,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20024,
+        "move": "d2d4"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 2,
+      "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/3P4/5NP1/PPP1PPBP/RNBQK2R w KQkq - 1 5",
+      "chosen": "b1c3",
+      "best": {
+        "cp": 49,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20008,
+        "move": "c2c4"
+      },
+      "chosen_analysis": {
+        "cp": -5,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20004,
+        "move": "b1c3"
+      },
+      "regret_cp_proxy": 54,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 4,
+      "fen": "rnbqk2r/1pp1bppp/4pn2/p2p4/3P4/2N2NP1/PPP1PPBP/R1BQK2R w KQkq - 0 6",
+      "chosen": "e1g1",
+      "best": {
+        "cp": 38,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20022,
+        "move": "e1g1"
+      },
+      "chosen_analysis": {
+        "cp": 38,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20022,
+        "move": "e1g1"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 6,
+      "fen": "rnbqk2r/2p1bppp/1p2pn2/p2p4/3P4/2N2NP1/PPP1PPBP/R1BQ1RK1 w kq - 0 7",
+      "chosen": "e2e3",
+      "best": {
+        "cp": 36,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20001,
+        "move": "e2e4"
+      },
+      "chosen_analysis": {
+        "cp": -19,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20026,
+        "move": "e2e3"
+      },
+      "regret_cp_proxy": 55,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 8,
+      "fen": "rn1qk2r/2p1bppp/bp2pn2/p2p4/3P4/2N1PNP1/PPP2PBP/R1BQ1RK1 w kq - 1 8",
+      "chosen": "f1e1",
+      "best": {
+        "cp": 12,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20019,
+        "move": "f1e1"
+      },
+      "chosen_analysis": {
+        "cp": 12,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20019,
+        "move": "f1e1"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 10,
+      "fen": "r2qk2r/2pnbppp/bp2pn2/p2p4/3P4/2N1PNP1/PPP2PBP/R1BQR1K1 w kq - 3 9",
+      "chosen": "c1d2",
+      "best": {
+        "cp": 31,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20016,
+        "move": "e3e4"
+      },
+      "chosen_analysis": {
+        "cp": -32,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20027,
+        "move": "c1d2"
+      },
+      "regret_cp_proxy": 63,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 12,
+      "fen": "r2qk2r/1bpnbppp/1p2pn2/p2p4/3P4/2N1PNP1/PPPB1PBP/R2QR1K1 w kq - 5 10",
+      "chosen": "a2a4",
+      "best": {
+        "cp": -22,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20010,
+        "move": "f3e5"
+      },
+      "chosen_analysis": {
+        "cp": -41,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20013,
+        "move": "a2a4"
+      },
+      "regret_cp_proxy": 19,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 14,
+      "fen": "r2qk2r/1bpnbpp1/1p2pn1p/p2p4/P2P4/2N1PNP1/1PPB1PBP/R2QR1K1 w kq - 0 11",
+      "chosen": "e3e4",
+      "best": {
+        "cp": -39,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20008,
+        "move": "f3e5"
+      },
+      "chosen_analysis": {
+        "cp": -78,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20019,
+        "move": "e3e4"
+      },
+      "regret_cp_proxy": 39,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 16,
+      "fen": "r2qk2r/1bpnbpp1/1p2pn1p/p7/P2Pp3/2N2NP1/1PPB1PBP/R2QR1K1 w kq - 0 12",
+      "chosen": "f3h4",
+      "best": {
+        "cp": -7,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20008,
+        "move": "f3e5"
+      },
+      "chosen_analysis": {
+        "cp": -277,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20008,
+        "move": "f3h4"
+      },
+      "regret_cp_proxy": 270,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 18,
+      "fen": "r2qk2r/1bpnbp2/1p2pn1p/p5p1/P2Pp2N/2N3P1/1PPB1PBP/R2QR1K1 w kq - 0 13",
+      "chosen": "h4g6",
+      "best": {
+        "cp": -273,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20015,
+        "move": "h4g6"
+      },
+      "chosen_analysis": {
+        "cp": -273,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20015,
+        "move": "h4g6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 20,
+      "fen": "r2qk2r/1bpnb3/1p2pnpp/p5p1/P2Pp3/2N3P1/1PPB1PBP/R2QR1K1 w kq - 0 14",
+      "chosen": "c3e4",
+      "best": {
+        "cp": -273,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20007,
+        "move": "c3e4"
+      },
+      "chosen_analysis": {
+        "cp": -273,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20007,
+        "move": "c3e4"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 22,
+      "fen": "r2qk2r/2pnb3/1p2pnpp/p2b2p1/P2PN3/6P1/1PPB1PBP/R2QR1K1 w kq - 1 15",
+      "chosen": "e4f6",
+      "best": {
+        "cp": -236,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20021,
+        "move": "c2c4"
+      },
+      "chosen_analysis": {
+        "cp": -311,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20036,
+        "move": "e4f6"
+      },
+      "regret_cp_proxy": 75,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 24,
+      "fen": "r2qk2r/2p1b3/1p2pnpp/p2b2p1/P2P4/6P1/1PPB1PBP/R2QR1K1 w kq - 0 16",
+      "chosen": "g2d5",
+      "best": {
+        "cp": -312,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20009,
+        "move": "d1e2"
+      },
+      "chosen_analysis": {
+        "cp": -381,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20024,
+        "move": "g2d5"
+      },
+      "regret_cp_proxy": 69,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 26,
+      "fen": "r2qk2r/2p1b3/1p3npp/p2p2p1/P2P4/6P1/1PPB1P1P/R2QR1K1 w kq - 0 17",
+      "chosen": "e1e6",
+      "best": {
+        "cp": -355,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20014,
+        "move": "h2h4"
+      },
+      "chosen_analysis": {
+        "cp": -367,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20039,
+        "move": "e1e6"
+      },
+      "regret_cp_proxy": 12,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 28,
+      "fen": "r2q3r/2p1bk2/1p2Rnpp/p2p2p1/P2P4/6P1/1PPB1P1P/R2Q2K1 w - - 2 18",
+      "chosen": "e6e5",
+      "best": {
+        "cp": -409,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20022,
+        "move": "d1e2"
+      },
+      "chosen_analysis": {
+        "cp": -466,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20020,
+        "move": "e6e5"
+      },
+      "regret_cp_proxy": 57,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 30,
+      "fen": "r2q3r/2p2k2/1p1b1npp/p2pR1p1/P2P4/6P1/1PPB1P1P/R2Q2K1 w - - 4 19",
+      "chosen": "e5e2",
+      "best": {
+        "cp": -465,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20000,
+        "move": "e5d5"
+      },
+      "chosen_analysis": {
+        "cp": -532,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20008,
+        "move": "e5e2"
+      },
+      "regret_cp_proxy": 67,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 32,
+      "fen": "r2q1r2/2p2k2/1p1b1npp/p2p2p1/P2P4/6P1/1PPBRP1P/R2Q2K1 w - - 6 20",
+      "chosen": "d2e3",
+      "best": {
+        "cp": -460,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20013,
+        "move": "h2h4"
+      },
+      "chosen_analysis": {
+        "cp": -527,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20018,
+        "move": "d2e3"
+      },
+      "regret_cp_proxy": 67,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 34,
+      "fen": "r2qr3/2p2k2/1p1b1npp/p2p2p1/P2P4/4B1P1/1PP1RP1P/R2Q2K1 w - - 8 21",
+      "chosen": "d1d3",
+      "best": {
+        "cp": -506,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20000,
+        "move": "h2h4"
+      },
+      "chosen_analysis": {
+        "cp": -552,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20002,
+        "move": "d1d3"
+      },
+      "regret_cp_proxy": 46,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 36,
+      "fen": "2rqr3/2p2k2/1p1b1npp/p2p2p1/P2P4/3QB1P1/1PP1RP1P/R5K1 w - - 10 22",
+      "chosen": "a1f1",
+      "best": {
+        "cp": -513,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20017,
+        "move": "a1e1"
+      },
+      "chosen_analysis": {
+        "cp": -517,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20021,
+        "move": "a1f1"
+      },
+      "regret_cp_proxy": 4,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 38,
+      "fen": "r2qr3/2p2k2/1p1b1npp/p2p2p1/P2P4/3QB1P1/1PP1RP1P/5RK1 w - - 12 23",
+      "chosen": "f2f4",
+      "best": {
+        "cp": -506,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20006,
+        "move": "h2h4"
+      },
+      "chosen_analysis": {
+        "cp": -509,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20027,
+        "move": "f2f4"
+      },
+      "regret_cp_proxy": 3,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 40,
+      "fen": "r2qr3/2p2k2/1p1b1npp/p2p4/P2P1Pp1/3QB1P1/1PP1R2P/5RK1 w - - 0 24",
+      "chosen": "c2c4",
+      "best": {
+        "cp": -468,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20010,
+        "move": "c2c4"
+      },
+      "chosen_analysis": {
+        "cp": -468,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20010,
+        "move": "c2c4"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 42,
+      "fen": "r3r3/2pq1k2/1p1b1npp/p2p4/P1PP1Pp1/3QB1P1/1P2R2P/5RK1 w - - 1 25",
+      "chosen": "c4d5",
+      "best": {
+        "cp": -440,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20003,
+        "move": "f4f5"
+      },
+      "chosen_analysis": {
+        "cp": -562,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20017,
+        "move": "c4d5"
+      },
+      "regret_cp_proxy": 122,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 44,
+      "fen": "r3r3/2p2k2/1p1b1npp/p2P1q2/P2P1Pp1/3QB1P1/1P2R2P/5RK1 w - - 1 26",
+      "chosen": "d3f5",
+      "best": {
+        "cp": -559,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20002,
+        "move": "d3d1"
+      },
+      "chosen_analysis": {
+        "cp": -558,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20000,
+        "move": "d3f5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 46,
+      "fen": "r3r3/2p2k2/1p1b1n1p/p2P1p2/P2P1Pp1/4B1P1/1P2R2P/5RK1 w - - 0 27",
+      "chosen": "f1e1",
+      "best": {
+        "cp": -567,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20005,
+        "move": "f1c1"
+      },
+      "chosen_analysis": {
+        "cp": -574,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20014,
+        "move": "f1e1"
+      },
+      "regret_cp_proxy": 7,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 48,
+      "fen": "3rr3/2p2k2/1p1b1n1p/p2P1p2/P2P1Pp1/4B1P1/1P2R2P/4R1K1 w - - 2 28",
+      "chosen": "g1g2",
+      "best": {
+        "cp": -506,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20017,
+        "move": "e3d2"
+      },
+      "chosen_analysis": {
+        "cp": -563,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20025,
+        "move": "g1g2"
+      },
+      "regret_cp_proxy": 57,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 50,
+      "fen": "3rr3/2p2k2/1p1b3p/p2n1p2/P2P1Pp1/4B1P1/1P2R1KP/4R3 w - - 0 29",
+      "chosen": "e3f2",
+      "best": {
+        "cp": -542,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20036,
+        "move": "g2f1"
+      },
+      "chosen_analysis": {
+        "cp": -559,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20027,
+        "move": "e3f2"
+      },
+      "regret_cp_proxy": 17,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 52,
+      "fen": "3r2r1/2p2k2/1p1b3p/p2n1p2/P2P1Pp1/6P1/1P2RBKP/4R3 w - - 2 30",
+      "chosen": "e1f1",
+      "best": {
+        "cp": -544,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20009,
+        "move": "b2b3"
+      },
+      "chosen_analysis": {
+        "cp": -556,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20027,
+        "move": "e1f1"
+      },
+      "regret_cp_proxy": 12,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 54,
+      "fen": "3r1r2/2p2k2/1p1b3p/p2n1p2/P2P1Pp1/6P1/1P2RBKP/5R2 w - - 4 31",
+      "chosen": "h2h4",
+      "best": {
+        "cp": -570,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20002,
+        "move": "f1d1"
+      },
+      "chosen_analysis": {
+        "cp": -553,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20029,
+        "move": "h2h4"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 56,
+      "fen": "3r1r2/2p2k2/1p1b4/p2n1p1p/P2P1PpP/6P1/1P2RBK1/5R2 w - - 0 32",
+      "chosen": "b2b3",
+      "best": {
+        "cp": -517,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20004,
+        "move": "f1e1"
+      },
+      "chosen_analysis": {
+        "cp": -525,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20003,
+        "move": "b2b3"
+      },
+      "regret_cp_proxy": 8,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 58,
+      "fen": "3r1rk1/2p5/1p1b4/p2n1p1p/P2P1PpP/1P4P1/4RBK1/5R2 w - - 1 33",
+      "chosen": "e2e6",
+      "best": {
+        "cp": -507,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20012,
+        "move": "e2e6"
+      },
+      "chosen_analysis": {
+        "cp": -507,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20012,
+        "move": "e2e6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 60,
+      "fen": "3r1r2/2p4k/1p1bR3/p2n1p1p/P2P1PpP/1P4P1/5BK1/5R2 w - - 3 34",
+      "chosen": "f1e1",
+      "best": {
+        "cp": -507,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20004,
+        "move": "f1e1"
+      },
+      "chosen_analysis": {
+        "cp": -507,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20004,
+        "move": "f1e1"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 62,
+      "fen": "3r3r/2p4k/1p1bR3/p2n1p1p/P2P1PpP/1P4P1/5BK1/4R3 w - - 5 35",
+      "chosen": "e1e2",
+      "best": {
+        "cp": -480,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20001,
+        "move": "e1e5"
+      },
+      "chosen_analysis": {
+        "cp": -502,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20012,
+        "move": "e1e2"
+      },
+      "regret_cp_proxy": 22,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 64,
+      "fen": "3r1r2/2p4k/1p1bR3/p2n1p1p/P2P1PpP/1P4P1/4RBK1/8 w - - 7 36",
+      "chosen": "e2d2",
+      "best": {
+        "cp": -489,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20010,
+        "move": "e2e5"
+      },
+      "chosen_analysis": {
+        "cp": -578,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20014,
+        "move": "e2d2"
+      },
+      "regret_cp_proxy": 89,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 66,
+      "fen": "5r2/2pr3k/1p1bR3/p2n1p1p/P2P1PpP/1P4P1/3R1BK1/8 w - - 9 37",
+      "chosen": "d2d3",
+      "best": {
+        "cp": -503,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20005,
+        "move": "d2e2"
+      },
+      "chosen_analysis": {
+        "cp": -506,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20010,
+        "move": "d2d3"
+      },
+      "regret_cp_proxy": 3,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 68,
+      "fen": "5r2/2p2r1k/1p1bR3/p2n1p1p/P2P1PpP/1P1R2P1/5BK1/8 w - - 11 38",
+      "chosen": "d3d2",
+      "best": {
+        "cp": -485,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20000,
+        "move": "d3d1"
+      },
+      "chosen_analysis": {
+        "cp": -526,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20007,
+        "move": "d3d2"
+      },
+      "regret_cp_proxy": 41,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 70,
+      "fen": "5r2/2p4k/1p1bRr2/p2n1p1p/P2P1PpP/1P4P1/3R1BK1/8 w - - 13 39",
+      "chosen": "e6f6",
+      "best": {
+        "cp": -463,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20018,
+        "move": "e6e5"
+      },
+      "chosen_analysis": {
+        "cp": -525,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20007,
+        "move": "e6f6"
+      },
+      "regret_cp_proxy": 62,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 72,
+      "fen": "5r2/2p4k/1p1b1n2/p4p1p/P2P1PpP/1P4P1/3R1BK1/8 w - - 0 40",
+      "chosen": "f2e3",
+      "best": {
+        "cp": -529,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20011,
+        "move": "d2e2"
+      },
+      "chosen_analysis": {
+        "cp": -538,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20011,
+        "move": "f2e3"
+      },
+      "regret_cp_proxy": 9,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 74,
+      "fen": "1r6/2p4k/1p1b1n2/p4p1p/P2P1PpP/1P2B1P1/3R2K1/8 w - - 2 41",
+      "chosen": "d2e2",
+      "best": {
+        "cp": -543,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20016,
+        "move": "d4d5"
+      },
+      "chosen_analysis": {
+        "cp": -535,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20029,
+        "move": "d2e2"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 76,
+      "fen": "1r6/2p4k/3b1n2/pp3p1p/P2P1PpP/1P2B1P1/4R1K1/8 w - - 0 42",
+      "chosen": "a4b5",
+      "best": {
+        "cp": -528,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20000,
+        "move": "e3d2"
+      },
+      "chosen_analysis": {
+        "cp": -553,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20030,
+        "move": "a4b5"
+      },
+      "regret_cp_proxy": 25,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 78,
+      "fen": "4r3/2p4k/3b1n2/pP3p1p/3P1PpP/1P2B1P1/4R1K1/8 w - - 1 43",
+      "chosen": "e3f2",
+      "best": {
+        "cp": -532,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20036,
+        "move": "e2e1"
+      },
+      "chosen_analysis": {
+        "cp": -814,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20049,
+        "move": "e3f2"
+      },
+      "regret_cp_proxy": 282,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 80,
+      "fen": "1r6/2p4k/3b1n2/pP3p1p/3P1PpP/1P4P1/4RBK1/8 w - - 3 44",
+      "chosen": "e2e6",
+      "best": {
+        "cp": -485,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20013,
+        "move": "b5b6"
+      },
+      "chosen_analysis": {
+        "cp": -540,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20003,
+        "move": "e2e6"
+      },
+      "regret_cp_proxy": 55,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 82,
+      "fen": "1r6/2p4k/3bR3/pP1n1p1p/3P1PpP/1P4P1/5BK1/8 w - - 5 45",
+      "chosen": "f2e1",
+      "best": {
+        "cp": -533,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20014,
+        "move": "f2e1"
+      },
+      "chosen_analysis": {
+        "cp": -533,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20014,
+        "move": "f2e1"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 84,
+      "fen": "1r6/2p1n2k/3bR3/pP3p1p/3P1PpP/1P4P1/6K1/4B3 w - - 7 46",
+      "chosen": "e1a5",
+      "best": {
+        "cp": -404,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20017,
+        "move": "b5b6"
+      },
+      "chosen_analysis": {
+        "cp": -457,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20001,
+        "move": "e1a5"
+      },
+      "regret_cp_proxy": 53,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 86,
+      "fen": "8/2p1n2k/3bR3/Br3p1p/3P1PpP/1P4P1/6K1/8 w - - 0 47",
+      "chosen": "a5c3",
+      "best": {
+        "cp": -274,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20007,
+        "move": "a5c7"
+      },
+      "chosen_analysis": {
+        "cp": -520,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20043,
+        "move": "a5c3"
+      },
+      "regret_cp_proxy": 246,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 2,
+      "ply": 88,
+      "fen": "8/2p1n2k/3bR3/5p1p/3P1PpP/1rB3P1/6K1/8 w - - 0 48",
+      "chosen": "c3d2",
+      "best": {
+        "cp": -516,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20007,
+        "move": "c3a5"
+      },
+      "chosen_analysis": {
+        "cp": -530,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20011,
+        "move": "c3d2"
+      },
+      "regret_cp_proxy": 14,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 90,
+      "fen": "8/2p1n2k/3bR3/5p1p/3P1PpP/r5P1/3B2K1/8 w - - 2 49",
+      "chosen": "d2e3",
+      "best": {
+        "cp": -532,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20004,
+        "move": "d2e1"
+      },
+      "chosen_analysis": {
+        "cp": -523,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20008,
+        "move": "d2e3"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 92,
+      "fen": "8/2p1n2k/3bR3/5p1p/3P1PpP/4B1P1/r5K1/8 w - - 4 50",
+      "chosen": "e3f2",
+      "best": {
+        "cp": -506,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20017,
+        "move": "g2f1"
+      },
+      "chosen_analysis": {
+        "cp": -527,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20023,
+        "move": "e3f2"
+      },
+      "regret_cp_proxy": 21,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 94,
+      "fen": "8/2p4k/3bR3/3n1p1p/3P1PpP/6P1/r4BK1/8 w - - 6 51",
+      "chosen": "e6e8",
+      "best": {
+        "cp": -541,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20003,
+        "move": "g2f1"
+      },
+      "chosen_analysis": {
+        "cp": -571,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20028,
+        "move": "e6e8"
+      },
+      "regret_cp_proxy": 30,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 96,
+      "fen": "4R3/2p4k/3b1n2/5p1p/3P1PpP/6P1/r4BK1/8 w - - 8 52",
+      "chosen": "e8e6",
+      "best": {
+        "cp": -551,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20009,
+        "move": "e8d8"
+      },
+      "chosen_analysis": {
+        "cp": -610,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20008,
+        "move": "e8e6"
+      },
+      "regret_cp_proxy": 59,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 98,
+      "fen": "8/2p4k/3bR3/5p1p/3PnPpP/6P1/r4BK1/8 w - - 10 53",
+      "chosen": "d4d5",
+      "best": {
+        "cp": -609,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20008,
+        "move": "e6e4"
+      },
+      "chosen_analysis": {
+        "cp": -729,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20001,
+        "move": "d4d5"
+      },
+      "regret_cp_proxy": 120,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 100,
+      "fen": "8/2p4k/3bR3/3P1p1p/4nPpP/6P1/5rK1/8 w - - 0 54",
+      "chosen": "g2g1",
+      "best": {
+        "cp": -709,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20039,
+        "move": "g2g1"
+      },
+      "chosen_analysis": {
+        "cp": -709,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20039,
+        "move": "g2g1"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 102,
+      "fen": "8/2p4k/4R3/2bP1p1p/4nPpP/6P1/5r2/6K1 w - - 2 55",
+      "chosen": "e6c6",
+      "best": {
+        "cp": -850,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20027,
+        "move": "e6c6"
+      },
+      "chosen_analysis": {
+        "cp": -850,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20027,
+        "move": "e6c6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 2,
+      "ply": 104,
+      "fen": "8/2p4k/2R5/2bP1p1p/4nPpP/6P1/4r3/6K1 w - - 4 56",
+      "chosen": "g1f1",
+      "best": {
+        "cp": -3307,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20017,
+        "move": "c6c5"
+      },
+      "chosen_analysis": {
+        "cp": -99999,
+        "mate": -1,
+        "depth": 245,
+        "nodes": 490,
+        "move": "g1f1"
+      },
+      "regret_cp_proxy": 96692,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": true,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 1,
+      "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/3P4/5NP1/PPP1PPBP/RNBQK2R b KQkq - 0 4",
+      "chosen": "b8c6",
+      "best": {
+        "cp": -47,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20012,
+        "move": "c7c5"
+      },
+      "chosen_analysis": {
+        "cp": -47,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20008,
+        "move": "b8c6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 3,
+      "fen": "r1bqkb1r/ppp2ppp/2n1pn2/3p4/3P4/5NP1/PPP1PPBP/RNBQ1RK1 b kq - 2 5",
+      "chosen": "f8d6",
+      "best": {
+        "cp": -46,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20008,
+        "move": "f8e7"
+      },
+      "chosen_analysis": {
+        "cp": -52,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20017,
+        "move": "f8d6"
+      },
+      "regret_cp_proxy": 6,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 5,
+      "fen": "r1bqk2r/ppp2ppp/2nbpn2/3p4/3P4/P4NP1/1PP1PPBP/RNBQ1RK1 b kq - 0 6",
+      "chosen": "e8g8",
+      "best": {
+        "cp": -42,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20008,
+        "move": "e8g8"
+      },
+      "chosen_analysis": {
+        "cp": -42,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20008,
+        "move": "e8g8"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 7,
+      "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/P3BNP1/1PP1PPBP/RN1Q1RK1 b - - 2 7",
+      "chosen": "f6e4",
+      "best": {
+        "cp": 28,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20013,
+        "move": "e6e5"
+      },
+      "chosen_analysis": {
+        "cp": -49,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20019,
+        "move": "f6e4"
+      },
+      "regret_cp_proxy": 77,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 9,
+      "fen": "r1bq1rk1/ppp2ppp/2nbp3/3p4/3Pn3/PP2BNP1/2P1PPBP/RN1Q1RK1 b - - 0 8",
+      "chosen": "c8d7",
+      "best": {
+        "cp": 0,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20027,
+        "move": "c6e7"
+      },
+      "chosen_analysis": {
+        "cp": -34,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20027,
+        "move": "c8d7"
+      },
+      "regret_cp_proxy": 34,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 11,
+      "fen": "r2q1rk1/pppb1ppp/2nbp3/3p4/3Pn3/PP1QBNP1/2P1PPBP/RN3RK1 b - - 2 9",
+      "chosen": "a7a6",
+      "best": {
+        "cp": -5,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20002,
+        "move": "f7f5"
+      },
+      "chosen_analysis": {
+        "cp": -47,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20016,
+        "move": "a7a6"
+      },
+      "regret_cp_proxy": 42,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 13,
+      "fen": "r2q1rk1/1ppb1ppp/p1nbp3/3p4/1P1Pn3/P2QBNP1/2P1PPBP/RN3RK1 b - - 0 10",
+      "chosen": "d8f6",
+      "best": {
+        "cp": 51,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20015,
+        "move": "b7b5"
+      },
+      "chosen_analysis": {
+        "cp": -75,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20002,
+        "move": "d8f6"
+      },
+      "regret_cp_proxy": 126,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 15,
+      "fen": "r4rk1/1ppb1ppp/p1nbpq2/3p4/1PPPn3/P2QBNP1/4PPBP/RN3RK1 b - - 0 11",
+      "chosen": "d5c4",
+      "best": {
+        "cp": -77,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20007,
+        "move": "f6d8"
+      },
+      "chosen_analysis": {
+        "cp": -401,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20020,
+        "move": "d5c4"
+      },
+      "regret_cp_proxy": 324,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 17,
+      "fen": "r4rk1/1ppb1ppp/p1nbpq2/8/1PpPQ3/P3BNP1/4PPBP/RN3RK1 b - - 0 12",
+      "chosen": "f8e8",
+      "best": {
+        "cp": -408,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20002,
+        "move": "e6e5"
+      },
+      "chosen_analysis": {
+        "cp": -441,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20005,
+        "move": "f8e8"
+      },
+      "regret_cp_proxy": 33,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 19,
+      "fen": "r3r1k1/1ppb1ppp/p1nbpq2/6N1/1PpPQ3/P3B1P1/4PPBP/RN3RK1 b - - 2 13",
+      "chosen": "h7h6",
+      "best": {
+        "cp": -479,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20008,
+        "move": "f6f5"
+      },
+      "chosen_analysis": {
+        "cp": -540,
+        "mate": null,
+        "depth": 14,
+        "nodes": 20013,
+        "move": "h7h6"
+      },
+      "regret_cp_proxy": 61,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 21,
+      "fen": "r3r1k1/1ppb1ppQ/p1nbpq1p/6N1/1PpP4/P3B1P1/4PPBP/RN3RK1 b - - 1 14",
+      "chosen": "g8f8",
+      "best": {
+        "cp": -550,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20010,
+        "move": "g8f8"
+      },
+      "chosen_analysis": {
+        "cp": -550,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20010,
+        "move": "g8f8"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 23,
+      "fen": "r3rk2/1ppb1ppQ/p1nbpq1p/8/1PpPN3/P3B1P1/4PPBP/RN3RK1 b - - 3 15",
+      "chosen": "f6g6",
+      "best": {
+        "cp": -517,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20000,
+        "move": "f6f5"
+      },
+      "chosen_analysis": {
+        "cp": -585,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20010,
+        "move": "f6g6"
+      },
+      "regret_cp_proxy": 68,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 25,
+      "fen": "r3rk2/1ppb1pp1/p1nbp1Qp/8/1PpPN3/P3B1P1/4PPBP/RN3RK1 b - - 0 16",
+      "chosen": "f7g6",
+      "best": {
+        "cp": -566,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20005,
+        "move": "f7g6"
+      },
+      "chosen_analysis": {
+        "cp": -566,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20005,
+        "move": "f7g6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 27,
+      "fen": "r3rk2/1ppb2p1/p1nbp1pp/2N5/1PpP4/P3B1P1/4PPBP/RN3RK1 b - - 1 17",
+      "chosen": "d7c8",
+      "best": {
+        "cp": -541,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20023,
+        "move": "d6c5"
+      },
+      "chosen_analysis": {
+        "cp": -529,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20008,
+        "move": "d7c8"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 29,
+      "fen": "r1b1rk2/1pp3p1/p1nbp1pp/8/1PpPN3/P3B1P1/4PPBP/RN3RK1 b - - 3 18",
+      "chosen": "d6e7",
+      "best": {
+        "cp": -562,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20003,
+        "move": "e6e5"
+      },
+      "chosen_analysis": {
+        "cp": -590,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20021,
+        "move": "d6e7"
+      },
+      "regret_cp_proxy": 28,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 31,
+      "fen": "r1b1rk2/1pp1b1p1/p1n1p1pp/8/1PpPN3/P3B1P1/R3PPBP/1N3RK1 b - - 5 19",
+      "chosen": "c8d7",
+      "best": {
+        "cp": -522,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20019,
+        "move": "e8d8"
+      },
+      "chosen_analysis": {
+        "cp": -615,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20014,
+        "move": "c8d7"
+      },
+      "regret_cp_proxy": 93,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 33,
+      "fen": "r3rk2/1ppbb1p1/p1n1p1pp/8/1PpPN2P/P3B1P1/R3PPB1/1N3RK1 b - - 0 20",
+      "chosen": "f8g8",
+      "best": {
+        "cp": -556,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20004,
+        "move": "e6e5"
+      },
+      "chosen_analysis": {
+        "cp": -575,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20010,
+        "move": "f8g8"
+      },
+      "regret_cp_proxy": 19,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 35,
+      "fen": "r3r1k1/1ppbb1p1/p1n1p1pp/8/1PpP3P/P1N1B1P1/R3PPB1/1N3RK1 b - - 2 21",
+      "chosen": "e7f6",
+      "best": {
+        "cp": -499,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20008,
+        "move": "b7b5"
+      },
+      "chosen_analysis": {
+        "cp": -539,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20003,
+        "move": "e7f6"
+      },
+      "regret_cp_proxy": 40,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 37,
+      "fen": "r3r1k1/1ppb2p1/p1n1pbpp/8/1PpP3P/P1N1B1P1/R3PPB1/1N1R2K1 b - - 4 22",
+      "chosen": "e6e5",
+      "best": {
+        "cp": -540,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20011,
+        "move": "e6e5"
+      },
+      "chosen_analysis": {
+        "cp": -540,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20011,
+        "move": "e6e5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 39,
+      "fen": "r3r1k1/1ppb2p1/p1n2bpp/4P3/1Pp4P/P1N1B1P1/R3PPB1/1N1R2K1 b - - 0 23",
+      "chosen": "f6e5",
+      "best": {
+        "cp": -536,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20018,
+        "move": "e8e5"
+      },
+      "chosen_analysis": {
+        "cp": -626,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20002,
+        "move": "f6e5"
+      },
+      "regret_cp_proxy": 90,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 41,
+      "fen": "r3r1k1/1ppb2p1/p1n3pp/3Nb3/1Pp4P/P3B1P1/R3PPB1/1N1R2K1 b - - 1 24",
+      "chosen": "a8d8",
+      "best": {
+        "cp": -491,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20002,
+        "move": "d7e6"
+      },
+      "chosen_analysis": {
+        "cp": -496,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20016,
+        "move": "a8d8"
+      },
+      "regret_cp_proxy": 5,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 43,
+      "fen": "3rr1k1/1ppb2p1/p1n3pp/3Nb3/1Pp4P/P3B1P1/R3PPB1/1NR3K1 b - - 3 25",
+      "chosen": "d7f5",
+      "best": {
+        "cp": -434,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20013,
+        "move": "d7e6"
+      },
+      "chosen_analysis": {
+        "cp": -410,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20014,
+        "move": "d7f5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 45,
+      "fen": "3rr1k1/1pp3p1/p1n3pp/3Nbb2/1Pp4P/P3B1P1/R3PPB1/1NR2K2 b - - 5 26",
+      "chosen": "f5b1",
+      "best": {
+        "cp": -390,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20008,
+        "move": "c6d4"
+      },
+      "chosen_analysis": {
+        "cp": -426,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20010,
+        "move": "f5b1"
+      },
+      "regret_cp_proxy": 36,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 47,
+      "fen": "3rr1k1/1pp3p1/p1n3pp/3Nb3/1Pp4P/P3B1P1/R3PPB1/1R3K2 b - - 0 27",
+      "chosen": "c4c3",
+      "best": {
+        "cp": -442,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20007,
+        "move": "c6d4"
+      },
+      "chosen_analysis": {
+        "cp": -455,
+        "mate": null,
+        "depth": 13,
+        "nodes": 20006,
+        "move": "c4c3"
+      },
+      "regret_cp_proxy": 13,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 49,
+      "fen": "3rr1k1/1pp3p1/p1n3pp/3Nb3/1P5P/P1p1B1P1/R3PPB1/2R2K2 b - - 1 28",
+      "chosen": "c3c2",
+      "best": {
+        "cp": -462,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20016,
+        "move": "a6a5"
+      },
+      "chosen_analysis": {
+        "cp": -533,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20028,
+        "move": "c3c2"
+      },
+      "regret_cp_proxy": 71,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": false
+    },
+    {
+      "game": 3,
+      "ply": 51,
+      "fen": "3rr1k1/1pp3p1/p1n3pp/3Nb3/1P5P/P3B1P1/2R1PPB1/2R2K2 b - - 0 29",
+      "chosen": "e5d4",
+      "best": {
+        "cp": -552,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20008,
+        "move": "c6d4"
+      },
+      "chosen_analysis": {
+        "cp": -549,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20042,
+        "move": "e5d4"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 53,
+      "fen": "3rr1k1/1pp3p1/p1n3pp/3N4/1P1b3P/P3B1P1/2R1PPB1/2R1K3 b - - 2 30",
+      "chosen": "d4e3",
+      "best": {
+        "cp": -553,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20003,
+        "move": "g6g5"
+      },
+      "chosen_analysis": {
+        "cp": -581,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20008,
+        "move": "d4e3"
+      },
+      "regret_cp_proxy": 28,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 55,
+      "fen": "3rr1k1/1pp3p1/p1n3pp/3N4/1P5P/P3P1P1/2R1P1B1/2R1K3 b - - 0 31",
+      "chosen": "e8e5",
+      "best": {
+        "cp": -562,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20023,
+        "move": "g6g5"
+      },
+      "chosen_analysis": {
+        "cp": -606,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20018,
+        "move": "e8e5"
+      },
+      "regret_cp_proxy": 44,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 57,
+      "fen": "3r2k1/1pp3p1/p1n3pp/3Nr3/1P5P/P3P1P1/2R1P1B1/3RK3 b - - 2 32",
+      "chosen": "g8f7",
+      "best": {
+        "cp": -537,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20004,
+        "move": "g6g5"
+      },
+      "chosen_analysis": {
+        "cp": -594,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20002,
+        "move": "g8f7"
+      },
+      "regret_cp_proxy": 57,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 59,
+      "fen": "3r4/1pp2kp1/p1n3pp/3Nr3/1P5P/P3P1P1/3RP1B1/3RK3 b - - 4 33",
+      "chosen": "d8d7",
+      "best": {
+        "cp": -530,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20018,
+        "move": "g6g5"
+      },
+      "chosen_analysis": {
+        "cp": -575,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20009,
+        "move": "d8d7"
+      },
+      "regret_cp_proxy": 45,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 61,
+      "fen": "8/1ppr1kp1/p1n3pp/3Nr3/1P5P/P3P1PB/3RP3/3RK3 b - - 6 34",
+      "chosen": "d7d5",
+      "best": {
+        "cp": -547,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20006,
+        "move": "d7d8"
+      },
+      "chosen_analysis": {
+        "cp": -572,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20028,
+        "move": "d7d5"
+      },
+      "regret_cp_proxy": 25,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 63,
+      "fen": "8/1pp2kp1/p1n3pp/3Rr3/1P5P/P3P1PB/4P3/3RK3 b - - 0 35",
+      "chosen": "e5d5",
+      "best": {
+        "cp": -545,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20037,
+        "move": "e5e3"
+      },
+      "chosen_analysis": {
+        "cp": -606,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20027,
+        "move": "e5d5"
+      },
+      "regret_cp_proxy": 61,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 65,
+      "fen": "8/1pp2kp1/p1n3pp/3R4/1P5P/P3P1PB/4P3/4K3 b - - 0 36",
+      "chosen": "f7f6",
+      "best": {
+        "cp": -597,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20016,
+        "move": "f7f6"
+      },
+      "chosen_analysis": {
+        "cp": -597,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20016,
+        "move": "f7f6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 67,
+      "fen": "8/1pp3p1/p1n2kpp/3R4/1P2P2P/P5PB/4P3/4K3 b - - 0 37",
+      "chosen": "c6e5",
+      "best": {
+        "cp": -611,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20015,
+        "move": "a6a5"
+      },
+      "chosen_analysis": {
+        "cp": -610,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20021,
+        "move": "c6e5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 69,
+      "fen": "2B5/1pp3p1/p4kpp/3Rn3/1P2P2P/P5P1/4P3/4K3 b - - 2 38",
+      "chosen": "e5c6",
+      "best": {
+        "cp": -614,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20021,
+        "move": "c7c6"
+      },
+      "chosen_analysis": {
+        "cp": -647,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20019,
+        "move": "e5c6"
+      },
+      "regret_cp_proxy": 33,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 71,
+      "fen": "2B5/1pp3p1/p1n2kpp/2R5/1P2P2P/P5P1/4P3/4K3 b - - 4 39",
+      "chosen": "b7b5",
+      "best": {
+        "cp": -648,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20019,
+        "move": "c6d4"
+      },
+      "chosen_analysis": {
+        "cp": -836,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20018,
+        "move": "b7b5"
+      },
+      "regret_cp_proxy": 188,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 73,
+      "fen": "2B5/2p3p1/p1n2kpp/1p6/1P2P2P/P1R3P1/4P3/4K3 b - - 1 40",
+      "chosen": "c6d4",
+      "best": {
+        "cp": -640,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20003,
+        "move": "c6e5"
+      },
+      "chosen_analysis": {
+        "cp": -642,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20004,
+        "move": "c6d4"
+      },
+      "regret_cp_proxy": 2,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 75,
+      "fen": "2B5/2p3p1/p4kpp/1p2P3/1P1n3P/P1R3P1/4P3/4K3 b - - 0 41",
+      "chosen": "f6e5",
+      "best": {
+        "cp": -622,
+        "mate": null,
+        "depth": 9,
+        "nodes": 20012,
+        "move": "f6e5"
+      },
+      "chosen_analysis": {
+        "cp": -622,
+        "mate": null,
+        "depth": 9,
+        "nodes": 20012,
+        "move": "f6e5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 77,
+      "fen": "2B5/2R3p1/p5pp/1p2k3/1P1n3P/P5P1/4P3/4K3 b - - 0 42",
+      "chosen": "e5f6",
+      "best": {
+        "cp": -636,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20017,
+        "move": "g6g5"
+      },
+      "chosen_analysis": {
+        "cp": -654,
+        "mate": null,
+        "depth": 9,
+        "nodes": 20008,
+        "move": "e5f6"
+      },
+      "regret_cp_proxy": 18,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 79,
+      "fen": "8/2R3p1/B4kpp/1p6/1P1n3P/P5P1/4P3/4K3 b - - 0 43",
+      "chosen": "d4f5",
+      "best": {
+        "cp": -645,
+        "mate": null,
+        "depth": 9,
+        "nodes": 20006,
+        "move": "g6g5"
+      },
+      "chosen_analysis": {
+        "cp": -644,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20010,
+        "move": "d4f5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 81,
+      "fen": "8/6p1/B4kpp/1p3n2/1P5P/P5P1/4P3/2R1K3 b - - 2 44",
+      "chosen": "f5g3",
+      "best": {
+        "cp": -593,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20033,
+        "move": "f5g3"
+      },
+      "chosen_analysis": {
+        "cp": -593,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20033,
+        "move": "f5g3"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 83,
+      "fen": "8/6p1/5kpp/1B6/1P5P/P5n1/4P3/2R1K3 b - - 0 45",
+      "chosen": "g3f5",
+      "best": {
+        "cp": -602,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20006,
+        "move": "g6g5"
+      },
+      "chosen_analysis": {
+        "cp": -609,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20030,
+        "move": "g3f5"
+      },
+      "regret_cp_proxy": 7,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 85,
+      "fen": "8/6p1/5kpp/1BR2n2/1P5P/P7/4P3/4K3 b - - 2 46",
+      "chosen": "f5h4",
+      "best": {
+        "cp": -593,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20027,
+        "move": "f5e7"
+      },
+      "chosen_analysis": {
+        "cp": -611,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20003,
+        "move": "f5h4"
+      },
+      "regret_cp_proxy": 18,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 87,
+      "fen": "8/6p1/5kpp/1BR5/PP5n/8/4P3/4K3 b - - 0 47",
+      "chosen": "h4f5",
+      "best": {
+        "cp": -589,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20019,
+        "move": "h4g2"
+      },
+      "chosen_analysis": {
+        "cp": -609,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20010,
+        "move": "h4f5"
+      },
+      "regret_cp_proxy": 20,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 89,
+      "fen": "8/6p1/5kpp/2R2n2/PP6/3B4/4P3/4K3 b - - 2 48",
+      "chosen": "f5d4",
+      "best": {
+        "cp": -637,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20009,
+        "move": "f5d4"
+      },
+      "chosen_analysis": {
+        "cp": -637,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20009,
+        "move": "f5d4"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 91,
+      "fen": "8/6p1/5kpp/1PR5/P2n4/3B4/4P3/4K3 b - - 0 49",
+      "chosen": "g6g5",
+      "best": {
+        "cp": -614,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20038,
+        "move": "d4b5"
+      },
+      "chosen_analysis": {
+        "cp": -713,
+        "mate": null,
+        "depth": 12,
+        "nodes": 20041,
+        "move": "g6g5"
+      },
+      "regret_cp_proxy": 99,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 93,
+      "fen": "8/6p1/5k1p/1PR3p1/P2n4/3B4/4P3/5K2 b - - 1 50",
+      "chosen": "d4e6",
+      "best": {
+        "cp": -624,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20003,
+        "move": "d4b5"
+      },
+      "chosen_analysis": {
+        "cp": -629,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20014,
+        "move": "d4e6"
+      },
+      "regret_cp_proxy": 5,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 95,
+      "fen": "8/6p1/2R1nk1p/1P4p1/P7/3B4/4P3/5K2 b - - 3 51",
+      "chosen": "g5g4",
+      "best": {
+        "cp": -674,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20018,
+        "move": "f6e7"
+      },
+      "chosen_analysis": {
+        "cp": -745,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20025,
+        "move": "g5g4"
+      },
+      "regret_cp_proxy": 71,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 97,
+      "fen": "8/6p1/2R1nk1p/1P6/P1B3p1/8/4P3/5K2 b - - 1 52",
+      "chosen": "g4g3",
+      "best": {
+        "cp": -811,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20026,
+        "move": "f6e5"
+      },
+      "chosen_analysis": {
+        "cp": -880,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20021,
+        "move": "g4g3"
+      },
+      "regret_cp_proxy": 69,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 99,
+      "fen": "8/6p1/2R1Bk1p/1P6/P7/6p1/4P3/5K2 b - - 0 53",
+      "chosen": "g7g6",
+      "best": {
+        "cp": -958,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20013,
+        "move": "g7g6"
+      },
+      "chosen_analysis": {
+        "cp": -958,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20013,
+        "move": "g7g6"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 101,
+      "fen": "8/8/1PR1Bkpp/8/P7/6p1/4P3/5K2 b - - 0 54",
+      "chosen": "g6g5",
+      "best": {
+        "cp": -1044,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20019,
+        "move": "f6e5"
+      },
+      "chosen_analysis": {
+        "cp": -1122,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20027,
+        "move": "g6g5"
+      },
+      "regret_cp_proxy": 78,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 103,
+      "fen": "8/8/1PR1Bk1p/P5p1/8/6p1/4P3/5K2 b - - 0 55",
+      "chosen": "f6e5",
+      "best": {
+        "cp": -1117,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20009,
+        "move": "f6e5"
+      },
+      "chosen_analysis": {
+        "cp": -1117,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20009,
+        "move": "f6e5"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 105,
+      "fen": "8/1P6/2R1B2p/P3k1p1/8/6p1/4P3/5K2 b - - 0 56",
+      "chosen": "g3g2",
+      "best": {
+        "cp": -1101,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20026,
+        "move": "h6h5"
+      },
+      "chosen_analysis": {
+        "cp": -1177,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20034,
+        "move": "g3g2"
+      },
+      "regret_cp_proxy": 76,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 107,
+      "fen": "8/1P6/2R1B2p/P3k1p1/8/8/4P1p1/6K1 b - - 1 57",
+      "chosen": "h6h5",
+      "best": {
+        "cp": -1189,
+        "mate": null,
+        "depth": 10,
+        "nodes": 20028,
+        "move": "e5f4"
+      },
+      "chosen_analysis": {
+        "cp": -1208,
+        "mate": null,
+        "depth": 11,
+        "nodes": 20005,
+        "move": "h6h5"
+      },
+      "regret_cp_proxy": 19,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 109,
+      "fen": "1Q6/8/2R1B3/P3k1pp/8/8/4P1p1/6K1 b - - 0 58",
+      "chosen": "e5e4",
+      "best": {
+        "cp": -99998,
+        "mate": -2,
+        "depth": 20,
+        "nodes": 20042,
+        "move": "e5e4"
+      },
+      "chosen_analysis": {
+        "cp": -99998,
+        "mate": -2,
+        "depth": 20,
+        "nodes": 20042,
+        "move": "e5e4"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 111,
+      "fen": "1Q6/8/4B3/P5pp/2R1k3/8/4P1p1/6K1 b - - 2 59",
+      "chosen": "e4e3",
+      "best": {
+        "cp": -99997,
+        "mate": -3,
+        "depth": 29,
+        "nodes": 20001,
+        "move": "e4e3"
+      },
+      "chosen_analysis": {
+        "cp": -99997,
+        "mate": -3,
+        "depth": 29,
+        "nodes": 20001,
+        "move": "e4e3"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 113,
+      "fen": "3Q4/8/4B3/P5pp/2R5/4k3/4P1p1/6K1 b - - 4 60",
+      "chosen": "e3e2",
+      "best": {
+        "cp": -99998,
+        "mate": -2,
+        "depth": 210,
+        "nodes": 20004,
+        "move": "e3e2"
+      },
+      "chosen_analysis": {
+        "cp": -99998,
+        "mate": -2,
+        "depth": 210,
+        "nodes": 20004,
+        "move": "e3e2"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": false,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 115,
+      "fen": "3Q4/8/4B3/P5pp/4R3/8/4k1p1/6K1 b - - 1 61",
+      "chosen": "e2f3",
+      "best": {
+        "cp": -99999,
+        "mate": -1,
+        "depth": 245,
+        "nodes": 499,
+        "move": "e2f3"
+      },
+      "chosen_analysis": {
+        "cp": -99999,
+        "mate": -1,
+        "depth": 245,
+        "nodes": 499,
+        "move": "e2f3"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": true,
+      "already_lost_proxy": true
+    },
+    {
+      "game": 3,
+      "ply": 117,
+      "fen": "8/8/4B3/P2Q2pp/4R3/5k2/6p1/6K1 b - - 3 62",
+      "chosen": "g5g4",
+      "best": {
+        "cp": -99999,
+        "mate": -1,
+        "depth": 245,
+        "nodes": 1570,
+        "move": "g5g4"
+      },
+      "chosen_analysis": {
+        "cp": -99999,
+        "mate": -1,
+        "depth": 245,
+        "nodes": 1570,
+        "move": "g5g4"
+      },
+      "regret_cp_proxy": 0,
+      "missed_mate_in_one": false,
+      "allows_mate_in_one": true,
+      "already_lost_proxy": true
+    }
+  ],
+  "seconds": 12.741677366999994,
+  "limitations": "Independent finite-node teacher searches are noisy proxies. Negative score differences are clipped to zero. Scores involving mate use a finite sentinel. This diagnostic does not prove causal blame or optimal play."
+}

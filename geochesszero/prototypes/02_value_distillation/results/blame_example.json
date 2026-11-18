@@ -1,0 +1,229 @@
+{
+ "game": 0,
+ "player": "ray_s0:policy",
+ "side_white": true,
+ "result": "0-1",
+ "narrative": "White (0-1): 6.g3 carries 40% of the blame (it left White at -311 cp; 6.Kd2 kept -20); 8.Nc3 carries 17% of the blame (it left White at -586 cp; 8.Nf3 kept -434); 9.Bb2 carries 13% of the blame (it left White at -720 cp; 9.Qd3 kept -592).",
+ "moves": [
+  {
+   "ply": 0,
+   "move_no": 5,
+   "san": "d4",
+   "best_san": "Nf3",
+   "score_best": -34,
+   "score_played": -41,
+   "regret": 7,
+   "blame": 0.0
+  },
+  {
+   "ply": 2,
+   "move_no": 6,
+   "san": "g3",
+   "best_san": "Kd2",
+   "score_best": -20,
+   "score_played": -311,
+   "regret": 291,
+   "blame": 0.40301003344481606
+  },
+  {
+   "ply": 4,
+   "move_no": 7,
+   "san": "hxg3",
+   "best_san": "Nf3",
+   "score_best": -388,
+   "score_played": -457,
+   "regret": 69,
+   "blame": 0.03177257525083612
+  },
+  {
+   "ply": 6,
+   "move_no": 8,
+   "san": "Nc3",
+   "best_san": "Nf3",
+   "score_best": -434,
+   "score_played": -586,
+   "regret": 152,
+   "blame": 0.1705685618729097
+  },
+  {
+   "ply": 8,
+   "move_no": 9,
+   "san": "Bb2",
+   "best_san": "Qd3",
+   "score_best": -592,
+   "score_played": -720,
+   "regret": 128,
+   "blame": 0.13043478260869565
+  },
+  {
+   "ply": 10,
+   "move_no": 10,
+   "san": "Kd2",
+   "best_san": "Kd2",
+   "score_best": -712,
+   "score_played": -716,
+   "regret": 4,
+   "blame": 0.0
+  },
+  {
+   "ply": 12,
+   "move_no": 11,
+   "san": "e3",
+   "best_san": "Kc2",
+   "score_best": -681,
+   "score_played": -692,
+   "regret": 11,
+   "blame": 0.0
+  },
+  {
+   "ply": 14,
+   "move_no": 12,
+   "san": "Qe2",
+   "best_san": "Qe2",
+   "score_best": -700,
+   "score_played": -713,
+   "regret": 13,
+   "blame": 0.0
+  },
+  {
+   "ply": 16,
+   "move_no": 13,
+   "san": "Nb5",
+   "best_san": "Bg2",
+   "score_best": -704,
+   "score_played": -745,
+   "regret": 41,
+   "blame": 0.0
+  },
+  {
+   "ply": 18,
+   "move_no": 14,
+   "san": "d5",
+   "best_san": "Bg2",
+   "score_best": -734,
+   "score_played": -766,
+   "regret": 32,
+   "blame": 0.0
+  },
+  {
+   "ply": 20,
+   "move_no": 15,
+   "san": "Bxf6",
+   "best_san": "Nxc7+",
+   "score_best": -701,
+   "score_played": -732,
+   "regret": 31,
+   "blame": 0.0
+  },
+  {
+   "ply": 22,
+   "move_no": 16,
+   "san": "Nd4",
+   "best_san": "Nxc7+",
+   "score_best": -672,
+   "score_played": -732,
+   "regret": 60,
+   "blame": 0.016722408026755852
+  },
+  {
+   "ply": 24,
+   "move_no": 17,
+   "san": "Rd1",
+   "best_san": "Kc2",
+   "score_best": -741,
+   "score_played": -765,
+   "regret": 24,
+   "blame": 0.0
+  },
+  {
+   "ply": 26,
+   "move_no": 18,
+   "san": "Nf3",
+   "best_san": "Qe1",
+   "score_best": -778,
+   "score_played": -839,
+   "regret": 61,
+   "blame": 0.01839464882943144
+  },
+  {
+   "ply": 28,
+   "move_no": 19,
+   "san": "Nd4",
+   "best_san": "Kc2",
+   "score_best": -818,
+   "score_played": -887,
+   "regret": 69,
+   "blame": 0.03177257525083612
+  },
+  {
+   "ply": 30,
+   "move_no": 20,
+   "san": "Bg2",
+   "best_san": "Kc2",
+   "score_best": -834,
+   "score_played": -929,
+   "regret": 95,
+   "blame": 0.07525083612040134
+  },
+  {
+   "ply": 32,
+   "move_no": 21,
+   "san": "Bxe4",
+   "best_san": "Kc2",
+   "score_best": -839,
+   "score_played": -896,
+   "regret": 57,
+   "blame": 0.011705685618729096
+  },
+  {
+   "ply": 34,
+   "move_no": 22,
+   "san": "Rg1",
+   "best_san": "Nc2",
+   "score_best": -884,
+   "score_played": -1000,
+   "regret": 116,
+   "blame": 0.11036789297658862
+  },
+  {
+   "ply": 36,
+   "move_no": 23,
+   "san": "Kc2",
+   "best_san": "Nc2",
+   "score_best": -1000,
+   "score_played": -1000,
+   "regret": 0,
+   "blame": 0.0
+  },
+  {
+   "ply": 38,
+   "move_no": 24,
+   "san": "Qxe3",
+   "best_san": "Qd2",
+   "score_best": -1000,
+   "score_played": -1000,
+   "regret": 0,
+   "blame": 0.0
+  },
+  {
+   "ply": 40,
+   "move_no": 25,
+   "san": "Kd1",
+   "best_san": "Nf3",
+   "score_best": -1000,
+   "score_played": -1000,
+   "regret": 0,
+   "blame": 0.0
+  },
+  {
+   "ply": 42,
+   "move_no": 26,
+   "san": "Ne6",
+   "best_san": "Nf3",
+   "score_best": -1000,
+   "score_played": -1000,
+   "regret": 0,
+   "blame": 0.0
+  }
+ ]
+}

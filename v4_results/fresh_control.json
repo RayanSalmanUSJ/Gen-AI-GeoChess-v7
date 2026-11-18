@@ -1,0 +1,63 @@
+{
+  "checkpoint_sha256": "87761ddc305e86203511888a353440c624e64ad38ec14572f36ee96b9867c823",
+  "checkpoint_metadata": {
+    "mode": "control",
+    "config": {
+      "steps": 1800,
+      "batch": 64,
+      "pool_rows": 64000,
+      "original_dev_rows": 12000,
+      "evaluate_every": 300,
+      "learning_rate": 0.0002,
+      "seed": 8327,
+      "threads": 2,
+      "original_nll_tolerance": 0.05
+    },
+    "parent_sha256": "03b53f7a6524473df3b6cee50ad050d98487ef5452042d7dd2b16f31a469b01c",
+    "base_manifest_sha256": "4b54a0a9576a62639dc6e5af6905386f42f579e0dd7edd34991ed72ca285e3e2",
+    "correction_manifest_sha256": "069da7908c880fe848dd1c4a9cc6ef0b50ad0f14e6b637b53bf1b2ab05875add",
+    "mate_manifest_sha256": "8d4aaa31fab9d6fc37160592f5645156aacaf14631ee85bc3fe0c3cdf7c096cd",
+    "step": 1200,
+    "dev": {
+      "partitions": {
+        "original": {
+          "rows": 12000,
+          "nll": 2.2845142161051433,
+          "top1": 0.29025,
+          "top3": 0.5506666666666666
+        },
+        "correction": {
+          "rows": 2795,
+          "nll": 2.2957503508156654,
+          "top1": 0.3105545617173524,
+          "top3": 0.5635062611806798
+        },
+        "mate": {
+          "rows": 500,
+          "nll": 2.130017333984375,
+          "top1": 0.41,
+          "top3": 0.734
+        }
+      },
+      "weighted_objective": 2.269415656356493
+    }
+  },
+  "data_manifest_sha256": "74da5533f2b0061c6a5d8b05ce185a9703a2dc72dbf5ec1a36c35fb52dbe7949",
+  "split": "test",
+  "positions": 51611,
+  "opening_groups": 200,
+  "nll": 2.293769370628498,
+  "top1": 0.2921857743504292,
+  "top3": 0.5468020383251633,
+  "uniform_top1": 0.06512911068464863,
+  "uniform_nll": 3.126842871480693,
+  "multiclass_brier": 0.8206697154739421,
+  "teacher_token_ece": 0.015192058974829108,
+  "top1_opening_bootstrap_95": [
+    0.28736298191844356,
+    0.29730376053546953
+  ],
+  "median_forward_batch_ms": 68.87782099988726,
+  "seconds": 65.89752583399991,
+  "limitations": "Recorded-move agreement is not optimal-move accuracy. Positions are correlated; bootstrap clusters opening groups within one Fishtest run. No Elo is inferred."
+}

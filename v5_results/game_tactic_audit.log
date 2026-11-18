@@ -1,0 +1,16 @@
+{
+  "baseline": {
+    "decisions": 642,
+    "mate_in_one_opportunities": 0,
+    "missed_mate_in_one": 0,
+    "allows_mate_in_one": 23,
+    "avoidable_immediate_mate_blunders": 9
+  },
+  "candidate": {
+    "decisions": 509,
+    "mate_in_one_opportunities": 0,
+    "missed_mate_in_one": 0,
+    "allows_mate_in_one": 24,
+    "avoidable_immediate_mate_blunders": 11
+  }
+}

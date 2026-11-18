@@ -1,0 +1,12 @@
+[
+ {"name": "Random moves", "spec": "random"},
+ {"name": "GPT-style move model", "spec": "gpt:runs/gpt_s0/best.pt"},
+ {"name": "GPT-style, +1,200 games", "spec": "gpt:runs/gptscale_s0/best.pt"},
+ {"name": "Standard transformer", "spec": "board:../02_value_distillation/runs/standard_s0/best.pt:policy"},
+ {"name": "Geometry masks, static (P1)", "spec": "board:../02_value_distillation/runs/static_s0/best.pt:policy"},
+ {"name": "Geometry masks, ray (P2)", "spec": "board:../02_value_distillation/runs/ray_s0/best.pt:policy"},
+ {"name": "Ray + self-play (wins/losses)", "spec": "board:runs/selfplay_pg_ray_s0/iter8.pt:policy"},
+ {"name": "Ray + 2-ply search", "spec": "board:../02_value_distillation/runs/ray_s0/best.pt:search"},
+ {"name": "Team C++ engine, depth 4", "spec": "uci:engines/november_adapter/november_uci:depth=4"},
+ {"name": "Stockfish, depth 1", "spec": "uci:stockfish:depth=1"}
+]

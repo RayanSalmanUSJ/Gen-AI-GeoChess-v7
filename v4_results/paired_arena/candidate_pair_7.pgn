@@ -1,0 +1,20 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "GeometricPolicy"]
+[Black "Stockfish 15.1"]
+[Result "0-1"]
+
+1. e4 e5 2. Nc3 Nf6 3. Bc4 Nc6 4. Nf3 Bc5 5. O-O O-O 6. d3 h6 7. Be3 d6 8. Bxc5 dxc5 9. Re1 Bg4 10. h3 Bxf3 11. Qxf3 a5 12. Rad1 Qd6 13. Nb5 Qd7 14. Nc3 Qd6 15. Nb5 Nd4 16. Nxd6 Nxf3+ 17. gxf3 cxd6 18. Kg2 Rad8 19. Bb5 Kh7 20. h4 g6 21. Rh1 Nh5 22. Bc4 f5 23. exf5 Rxf5 24. Be6 Nf4+ 25. Kg3 Nxe6 26. h5 gxh5 27. Rh4 Nd4 28. f4 Rg8+ 29. Kh2 Nf3+ 30. Kh1 Nd4 31. fxe5 dxe5 32. Rg1 Rxg1+ 33. Kxg1 b5 34. c3 Nf3+ 35. Kg2 Nxh4+ 36. Kg3 Rf7 37. Kxh4 Rf3 38. Kxh5 Rf5+ 39. Kg4 Rf8 40. f3 Rg8+ 41. Kf5 Rg7 42. Kxe5 h5 43. Kd5 b4 44. Kxc5 Kg8 45. cxb4 axb4 46. Kxb4 Rg6 47. Kc4 Rg7 48. d4 h4 49. d5 Kf8 50. d6 h3 51. Kd5 Ke8 52. d7+ Rxd7+ 53. Ke6 h2 54. f4 h1=Q 55. f5 Qd5+ 56. Kf6 Qd6+ 57. Kg5 Rg7+ 58. Kh5 Qh2# 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 15.1"]
+[Black "GeometricPolicy"]
+[Result "1-0"]
+
+1. e4 e5 2. Nc3 Nf6 3. Bc4 Nc6 4. d3 d6 5. Nf3 Be7 6. Bb3 O-O 7. h3 a5 8. Be3 Nb4 9. a3 Nc6 10. O-O a4 11. Nxa4 d5 12. exd5 Nxd5 13. Nc3 Nxe3 14. fxe3 Bf5 15. Nxe5 Nxe5 16. Rxf5 Ng6 17. Qg4 Bf6 18. Qh5 Bxc3 19. bxc3 Qf6 20. Rxf6 gxf6 21. Qg4 Kg7 22. d4 Rfe8 23. Qf5 Rxe3 24. Rf1 Rxa3 25. Qf2 Rxc3 26. Qe1 Rcxb3 27. cxb3 Rxb3 28. Qf2 Rc3 29. h4 Rc4 30. Qxf6+ Kg8 31. Qxf7+ Kh8 32. Qe8+ Kg7 33. Rf7+ Kh6 34. Qe3+ Kh5 35. Qg5# 1-0
+

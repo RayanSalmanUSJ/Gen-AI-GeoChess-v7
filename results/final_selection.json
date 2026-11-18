@@ -1,0 +1,41 @@
+{
+  "criterion": "minimum development NLL; heldout results not used",
+  "checkpoint_sha256": "03b53f7a6524473df3b6cee50ad050d98487ef5452042d7dd2b16f31a469b01c",
+  "metadata": {
+    "epoch": 3,
+    "dev": {
+      "positions": 12000,
+      "nll": 2.282153487523397,
+      "top1": 0.28641666666666665,
+      "top3": 0.5468333333333333,
+      "uniform_top1": 0.07333793223897617,
+      "expert_assignment_fractions": [
+        [
+          0.24242376708984376,
+          0.24233217366536458,
+          0.2550704142252604,
+          0.26017376708984374
+        ]
+      ]
+    },
+    "manifest_sha256": "4b54a0a9576a62639dc6e5af6905386f42f579e0dd7edd34991ed72ca285e3e2",
+    "selection": "minimum development NLL only"
+  },
+  "training_coverage": [
+    {
+      "epoch": 1,
+      "presentations": 160000,
+      "cumulative_unique_positions": 160000
+    },
+    {
+      "epoch": 2,
+      "presentations": 160000,
+      "cumulative_unique_positions": 234309
+    },
+    {
+      "epoch": 3,
+      "presentations": 160000,
+      "cumulative_unique_positions": 254789
+    }
+  ]
+}

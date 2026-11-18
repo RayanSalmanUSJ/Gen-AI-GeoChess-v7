@@ -1,0 +1,11 @@
+{
+  "rows": {
+    "train": 9000,
+    "dev": 1600
+  },
+  "exact_position_overlap": 0,
+  "seed_family_overlap": 0,
+  "protected_position_overlap": 0,
+  "all_targets_legal": true,
+  "note": "Full target-set proofs are generated offline and recomputed on dataset access; this audit checks partitions and legal targets."
+}

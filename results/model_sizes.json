@@ -1,0 +1,54 @@
+{
+  "large": {
+    "parameters": 284427328,
+    "config": {
+      "width": 512,
+      "layers": 24,
+      "heads": 8,
+      "experts": 8,
+      "top_k": 2,
+      "expansion": 3,
+      "moe_every": 2,
+      "dropout": 0.0
+    }
+  },
+  "medium": {
+    "parameters": 11558416,
+    "config": {
+      "width": 256,
+      "layers": 6,
+      "heads": 8,
+      "experts": 4,
+      "top_k": 2,
+      "expansion": 3,
+      "moe_every": 2,
+      "dropout": 0.0
+    }
+  },
+  "pilot": {
+    "parameters": 303064,
+    "config": {
+      "width": 64,
+      "layers": 2,
+      "heads": 4,
+      "experts": 4,
+      "top_k": 2,
+      "expansion": 3,
+      "moe_every": 2,
+      "dropout": 0.0
+    }
+  },
+  "rtx3050": {
+    "parameters": 2040752,
+    "config": {
+      "width": 128,
+      "layers": 4,
+      "heads": 4,
+      "experts": 4,
+      "top_k": 2,
+      "expansion": 3,
+      "moe_every": 2,
+      "dropout": 0.0
+    }
+  }
+}

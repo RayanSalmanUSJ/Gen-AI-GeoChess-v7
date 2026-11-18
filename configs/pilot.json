@@ -1,0 +1,29 @@
+{
+  "model": {
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "experts": 4,
+    "top_k": 2,
+    "expansion": 3,
+    "moe_every": 2,
+    "dropout": 0.0
+  },
+  "train": {
+    "epochs": 3,
+    "batch_size": 64,
+    "accumulation": 1,
+    "learning_rate": 0.0008,
+    "weight_decay": 0.01,
+    "warmup_steps": 100,
+    "max_train_rows": 160000,
+    "max_dev_rows": 12000,
+    "balance_weight": 0.01,
+    "z_weight": 0.001,
+    "seed": 20261116,
+    "threads": 4,
+    "workers": 0,
+    "device": "cpu",
+    "precision": "fp32"
+  }
+}

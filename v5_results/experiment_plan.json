@@ -1,0 +1,52 @@
+{
+  "parent": "v4",
+  "steps_per_arm": 1800,
+  "batch": 64,
+  "control_eighths": {
+    "original": 4,
+    "correction": 3,
+    "sparse_mate": 1
+  },
+  "targeted_eighths": {
+    "original": 4,
+    "correction": 2,
+    "crowded_mate": 1,
+    "defense": 1
+  },
+  "selection_weights": {
+    "original": 0.5,
+    "correction": 0.25,
+    "crowded_mate": 0.125,
+    "defense": 0.125
+  },
+  "retention": "original dev NLL <= v4 + 0.02",
+  "final_game_test": "source games 3701-4100, excluding all earlier corpora and curricula",
+  "final_tactic_test": "new sparse archetypes never used for v3/v4/v5 training or development, expanded to pawnful contexts",
+  "arena_openings": [
+    "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5",
+    "d2d4 g8f6 c2c4 e7e6 b1c3 f8b4",
+    "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4",
+    "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6",
+    "d2d4 g8f6 c2c4 e7e6 g1f3 b7b6",
+    "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6",
+    "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5",
+    "d2d4 g8f6 c2c4 c7c5 d4d5 e7e6"
+  ],
+  "arena_games_per_model": 16,
+  "arena_opponent": "Stockfish 15.1 UCI_Elo1600, 100ms, one thread, Hash32",
+  "model_selection_uses_final_tests": false,
+  "dev_only_adaptation": {
+    "trigger": "first 900 updates improved tactical dev but exceeded fixed original-NLL tolerance",
+    "method": "parameter interpolation between parent and final targeted model",
+    "alpha_grid": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "retention_tolerance_unchanged": true,
+    "final_test_metrics_seen": false,
+    "arena_metrics_seen": false
+  }
+}

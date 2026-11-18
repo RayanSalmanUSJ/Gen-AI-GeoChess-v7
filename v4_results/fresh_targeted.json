@@ -1,0 +1,63 @@
+{
+  "checkpoint_sha256": "63fce2e23ca31d739392a6bcf8068bfc32393f930409e87cb1d13e3c02571ce6",
+  "checkpoint_metadata": {
+    "mode": "targeted",
+    "config": {
+      "steps": 1800,
+      "batch": 64,
+      "pool_rows": 64000,
+      "original_dev_rows": 12000,
+      "evaluate_every": 300,
+      "learning_rate": 0.0002,
+      "seed": 8327,
+      "threads": 2,
+      "original_nll_tolerance": 0.05
+    },
+    "parent_sha256": "03b53f7a6524473df3b6cee50ad050d98487ef5452042d7dd2b16f31a469b01c",
+    "base_manifest_sha256": "4b54a0a9576a62639dc6e5af6905386f42f579e0dd7edd34991ed72ca285e3e2",
+    "correction_manifest_sha256": "069da7908c880fe848dd1c4a9cc6ef0b50ad0f14e6b637b53bf1b2ab05875add",
+    "mate_manifest_sha256": "8d4aaa31fab9d6fc37160592f5645156aacaf14631ee85bc3fe0c3cdf7c096cd",
+    "step": 1800,
+    "dev": {
+      "partitions": {
+        "original": {
+          "rows": 12000,
+          "nll": 2.302731989542643,
+          "top1": 0.2843333333333333,
+          "top3": 0.5478333333333333
+        },
+        "correction": {
+          "rows": 2795,
+          "nll": 2.2195645245328572,
+          "top1": 0.3270125223613596,
+          "top3": 0.5774597495527728
+        },
+        "mate": {
+          "rows": 500,
+          "nll": 0.27781449127197266,
+          "top1": 0.912,
+          "top3": 0.98
+        }
+      },
+      "weighted_objective": 2.0184295028801396
+    }
+  },
+  "data_manifest_sha256": "74da5533f2b0061c6a5d8b05ce185a9703a2dc72dbf5ec1a36c35fb52dbe7949",
+  "split": "test",
+  "positions": 51611,
+  "opening_groups": 200,
+  "nll": 2.3093159127620924,
+  "top1": 0.2866249442948209,
+  "top3": 0.5451163511654492,
+  "uniform_top1": 0.06512911068464863,
+  "uniform_nll": 3.126842871480693,
+  "multiclass_brier": 0.8243765341531317,
+  "teacher_token_ece": 0.023298816919515606,
+  "top1_opening_bootstrap_95": [
+    0.28176064981121646,
+    0.2917963377323459
+  ],
+  "median_forward_batch_ms": 62.54404300011629,
+  "seconds": 58.65629904000002,
+  "limitations": "Recorded-move agreement is not optimal-move accuracy. Positions are correlated; bootstrap clusters opening groups within one Fishtest run. No Elo is inferred."
+}

@@ -1,0 +1,9 @@
+[
+ {"name": "Random moves", "spec": "random"},
+ {"name": "Team v3 pilot", "spec": "v5:/home/claude/src_zips/v5/chess_policy_v5:pilot.pt"},
+ {"name": "Team v5", "spec": "v5:/home/claude/src_zips/v5/chess_policy_v5:policy_v5.pt"},
+ {"name": "Geometry masks, ray (P2)", "spec": "board:../02_value_distillation/runs/ray_s0/best.pt:policy"},
+ {"name": "Ray + 2-ply search", "spec": "board:../02_value_distillation/runs/ray_s0/best.pt:search"},
+ {"name": "Team C++ engine, depth 4", "spec": "uci:engines/november_adapter/november_uci:depth=4"},
+ {"name": "Stockfish, depth 1", "spec": "uci:/home/claude/sf151/src/stockfish:depth=1"}
+]

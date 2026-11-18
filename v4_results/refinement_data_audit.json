@@ -1,0 +1,22 @@
+{
+  "train_dev_exact_overlap": 0,
+  "train_protected_test_overlap": 0,
+  "dev_protected_test_overlap": 0,
+  "mate_orbit_train_dev_overlap": 0,
+  "removed": {
+    "correction_train_removed_diagnostic": 0,
+    "correction_dev_removed_diagnostic": 0,
+    "mate_train_removed_overlap": 0,
+    "mate_dev_removed_overlap": 0
+  },
+  "corrections": {
+    "train": 14714,
+    "dev": 2795
+  },
+  "mates": {
+    "train": 2500,
+    "dev": 500
+  },
+  "all_labels_legal": true,
+  "all_mate_sets_exhaustively_verified": true
+}

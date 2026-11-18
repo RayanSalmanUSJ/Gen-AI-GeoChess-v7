@@ -1,0 +1,43 @@
+Collecting python-chess==1.999
+  Downloading python_chess-1.999-py3-none-any.whl.metadata (776 bytes)
+Collecting pytest
+  Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+Collecting ruff
+  Downloading ruff-0.17.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Requirement already satisfied: httpx in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (0.28.1)
+Requirement already satisfied: uvicorn in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (0.52.1)
+Collecting chess<2,>=1 (from python-chess==1.999)
+  Downloading chess-1.11.2.tar.gz (6.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.1/6.1 MB 37.5 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting iniconfig>=2 (from pytest)
+  Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=24 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.6 (from pytest)
+  Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Requirement already satisfied: pygments>=2.15 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from pytest) (2.21.0)
+Requirement already satisfied: anyio in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from httpx) (4.14.2)
+Requirement already satisfied: certifi in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from httpx) (2026.10.19)
+Requirement already satisfied: httpcore==1.* in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from httpx) (1.0.9)
+Requirement already satisfied: idna in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from httpx) (3.18)
+Requirement already satisfied: h11>=0.16 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from httpcore==1.*->httpx) (0.16.0)
+Requirement already satisfied: click>=7.0 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from uvicorn) (8.4.2)
+Requirement already satisfied: typing_extensions>=4.5 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from anyio->httpx) (4.16.0)
+Downloading python_chess-1.999-py3-none-any.whl (1.4 kB)
+Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+Downloading ruff-0.17.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 37.6 MB/s eta 0:00:00
+Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+Building wheels for collected packages: chess
+  Building wheel for chess (setup.py): started
+  Building wheel for chess (setup.py): finished with status 'done'
+  Created wheel for chess: filename=chess-1.11.2-py3-none-any.whl size=147878 sha256=84262c539941b52919d8978df957c9873d698ecd8b8cb4ad1a323bbf25534343
+  Stored in directory: /home/agent/.cache/pip/wheels/83/1f/4e/8f4300f7dd554eb8de70ddfed96e94d3d030ace10c5b53d447
+Successfully built chess
+Installing collected packages: ruff, pluggy, iniconfig, chess, python-chess, pytest
+Successfully installed chess-1.11.2 iniconfig-2.3.1 pluggy-1.7.0 pytest-9.2.0 python-chess-1.999 ruff-0.17.5
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip

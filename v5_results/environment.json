@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "cuda_available": false,
+  "packages": {
+    "torch": "2.5.1+cpu",
+    "numpy": "2.3.5",
+    "python-chess": "1.999",
+    "chess": "1.11.2",
+    "pytest": "9.2.0",
+    "ruff": "0.17.5",
+    "fastapi": "0.141.1",
+    "uvicorn": "0.52.1",
+    "httpx": "0.28.1"
+  }
+}

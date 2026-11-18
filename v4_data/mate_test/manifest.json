@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "seed": 9941,
+  "partitions": {
+    "test": {
+      "rows": 1000,
+      "sha256": "bf4873c12834d520bd823b5ea2932903dec6bf3cbda4fbee2bb01dce3b24eeef"
+    }
+  },
+  "attempts": 94269,
+  "excluded_orbits": 3000,
+  "seconds": 26.685044668000046,
+  "label": "all legal moves delivering immediate checkmate",
+  "split": "whole color-normalized D4 orbits, with no pawns or castling",
+  "limitations": "Synthetic sparse-board stress curriculum; success is not full-game tactical strength."
+}

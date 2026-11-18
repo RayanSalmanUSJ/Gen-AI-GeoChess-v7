@@ -1,0 +1,64 @@
+{"game": 1, "status": "draw", "plies": 105}
+{"game": 2, "status": "loss", "plies": 81}
+{"game": 1, "status": "loss", "plies": 46}
+{"game": 2, "status": "loss", "plies": 61}
+{"game": 1, "status": "loss", "plies": 18}
+{"game": 2, "status": "loss", "plies": 155}
+{"game": 1, "status": "loss", "plies": 56}
+{"game": 2, "status": "loss", "plies": 33}
+{"game": 1, "status": "loss", "plies": 66}
+{"game": 2, "status": "loss", "plies": 123}
+{"game": 1, "status": "loss", "plies": 78}
+{"game": 2, "status": "loss", "plies": 35}
+{"game": 1, "status": "draw", "plies": 171}
+{"game": 2, "status": "loss", "plies": 57}
+{"game": 1, "status": "loss", "plies": 64}
+{"game": 2, "status": "loss", "plies": 85}
+{"game": 1, "status": "win", "plies": 89}
+{"game": 2, "status": "loss", "plies": 87}
+{"game": 1, "status": "loss", "plies": 88}
+{"game": 2, "status": "loss", "plies": 75}
+{"game": 1, "status": "loss", "plies": 96}
+{"game": 2, "status": "loss", "plies": 69}
+{"game": 1, "status": "loss", "plies": 58}
+{"game": 2, "status": "loss", "plies": 53}
+{"game": 1, "status": "loss", "plies": 108}
+{"game": 2, "status": "loss", "plies": 37}
+{"game": 1, "status": "draw", "plies": 141}
+{"game": 2, "status": "loss", "plies": 55}
+{"game": 1, "status": "loss", "plies": 110}
+{"game": 2, "status": "loss", "plies": 63}
+{"game": 1, "status": "loss", "plies": 156}
+{"game": 2, "status": "loss", "plies": 69}
+{
+  "models": {
+    "baseline": {
+      "counts": {
+        "win": 1,
+        "draw": 1,
+        "loss": 14,
+        "unfinished": 0
+      },
+      "completed_score": 0.09375,
+      "checkpoint_sha256": "03b53f7a6524473df3b6cee50ad050d98487ef5452042d7dd2b16f31a469b01c"
+    },
+    "candidate": {
+      "counts": {
+        "win": 0,
+        "draw": 2,
+        "loss": 14,
+        "unfinished": 0
+      },
+      "completed_score": 0.0625,
+      "checkpoint_sha256": "63fce2e23ca31d739392a6bcf8068bfc32393f930409e87cb1d13e3c02571ce6"
+    }
+  },
+  "opening_pairs": 8,
+  "games_per_model": 16,
+  "paired_score_difference": -0.03125,
+  "pair_bootstrap_95": [
+    -0.21875,
+    0.125
+  ],
+  "limitations": "One small paired sample; Stockfish strength limiting is stochastic. Unequal inference budgets. No calibrated Elo claim. Unfinished games, if present, are excluded from completed_score and pessimistically scored zero in pair differences."
+}

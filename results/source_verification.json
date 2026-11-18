@@ -1,0 +1,18 @@
+{
+  "source_sha256": "bef40277bf1996beb8a025258922761ad4c52a47a294b2b8869ed65b78189e09",
+  "excerpts": [
+    {
+      "file": "fishtest_train.pgn.gz",
+      "games": 2500,
+      "verified_moves": 348386,
+      "sha256": "2fce68dfb5456f73e43feb6445320dfdaf5bddce2f89f7b628c394c59bb41ea7"
+    },
+    {
+      "file": "fishtest_holdout.pgn.gz",
+      "games": 800,
+      "verified_moves": 110696,
+      "sha256": "96005f9d7ff611216caa80e638e442dcdb82e5d0f29d72e9cade5e0009d9f8e7"
+    }
+  ],
+  "verified": true
+}

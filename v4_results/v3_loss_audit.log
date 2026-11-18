@@ -1,0 +1,22 @@
+{"audited_games": 1, "decisions": 20}
+{"audited_games": 2, "decisions": 69}
+{"audited_games": 3, "decisions": 122}
+{"audited_games": 4, "decisions": 181}
+{
+  "opponent_id": {
+    "name": "Stockfish 15.1",
+    "author": "the Stockfish developers (see AUTHORS file)"
+  },
+  "nodes_per_query": 20000,
+  "source_arena_sha256": "8bc8610826b7abfb6427820c434409f4076d2b8a8cb122e9544faf2bfe81ee37",
+  "decisions": 181,
+  "regret_at_least_100cp": 26,
+  "regret_at_least_300cp": 10,
+  "viable_decisions": 104,
+  "viable_regret_at_least_300cp": 8,
+  "median_regret_cp_proxy": 17.0,
+  "missed_mate_in_one": 11,
+  "allows_mate_in_one": 4,
+  "seconds": 12.741677366999994,
+  "limitations": "Independent finite-node teacher searches are noisy proxies. Negative score differences are clipped to zero. Scores involving mate use a finite sentinel. This diagnostic does not prove causal blame or optimal play."
+}

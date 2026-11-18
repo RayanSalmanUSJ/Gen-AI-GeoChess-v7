@@ -1,0 +1,3 @@
+{"model": "v3", "top1": 0.2910038557671814, "nll": 2.297075804421531, "diagnostic_mates_correct": 0}
+{"model": "control", "top1": 0.2921857743504292, "nll": 2.293769370628498, "diagnostic_mates_correct": 0}
+{"model": "targeted", "top1": 0.2866249442948209, "nll": 2.3093159127620924, "diagnostic_mates_correct": 2}

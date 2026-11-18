@@ -1,0 +1,314 @@
+{
+  "models": {
+    "v3": {
+      "correct": 0,
+      "opportunities": 11,
+      "rows": [
+        {
+          "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/p7/7K b - - 3 41",
+          "prediction": "a2a1q",
+          "mates": [
+            "g4f3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/6K1/q7 b - - 1 42",
+          "prediction": "a1e5",
+          "mates": [
+            "c8c2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/6K1/2r5 b - - 5 44",
+          "prediction": "c1c2",
+          "mates": [
+            "e5b2",
+            "e5e2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/2r5/7K b - - 7 45",
+          "prediction": "c2h2",
+          "mates": [
+            "e5a1",
+            "e5e1",
+            "g4f3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/7r/6K1 b - - 9 46",
+          "prediction": "h2e2",
+          "mates": [
+            "e5a1",
+            "e5e1",
+            "g4e2",
+            "g4h3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/4r3/5K2 b - - 11 47",
+          "prediction": "e5f6",
+          "mates": [
+            "e5a1",
+            "g4h3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/6K1 b - - 13 48",
+          "prediction": "e2e1",
+          "mates": [
+            "f6a1"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 15 49",
+          "prediction": "e1e2",
+          "mates": [
+            "f6b2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 17 50",
+          "prediction": "e2e1",
+          "mates": [
+            "f6a1",
+            "g4f3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 19 51",
+          "prediction": "e1e2",
+          "mates": [
+            "f6b2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 21 52",
+          "prediction": "e2e1",
+          "mates": [
+            "f6a1",
+            "g4f3"
+          ],
+          "correct": false
+        }
+      ]
+    },
+    "control": {
+      "correct": 0,
+      "opportunities": 11,
+      "rows": [
+        {
+          "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/p7/7K b - - 3 41",
+          "prediction": "g5d5",
+          "mates": [
+            "g4f3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/6K1/q7 b - - 1 42",
+          "prediction": "a1e5",
+          "mates": [
+            "c8c2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/6K1/2r5 b - - 5 44",
+          "prediction": "c1c2",
+          "mates": [
+            "e5b2",
+            "e5e2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/2r5/7K b - - 7 45",
+          "prediction": "c2h2",
+          "mates": [
+            "e5a1",
+            "e5e1",
+            "g4f3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/7r/6K1 b - - 9 46",
+          "prediction": "h2e2",
+          "mates": [
+            "e5a1",
+            "e5e1",
+            "g4e2",
+            "g4h3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/4r3/5K2 b - - 11 47",
+          "prediction": "e2e1",
+          "mates": [
+            "e5a1",
+            "g4h3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/6K1 b - - 13 48",
+          "prediction": "e2e1",
+          "mates": [
+            "f6a1"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 15 49",
+          "prediction": "e1e2",
+          "mates": [
+            "f6b2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 17 50",
+          "prediction": "e2h2",
+          "mates": [
+            "f6a1",
+            "g4f3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 19 51",
+          "prediction": "e1e2",
+          "mates": [
+            "f6b2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 21 52",
+          "prediction": "e2h2",
+          "mates": [
+            "f6a1",
+            "g4f3"
+          ],
+          "correct": false
+        }
+      ]
+    },
+    "targeted": {
+      "correct": 2,
+      "opportunities": 11,
+      "rows": [
+        {
+          "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/p7/7K b - - 3 41",
+          "prediction": "c8c1",
+          "mates": [
+            "g4f3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/6K1/q7 b - - 1 42",
+          "prediction": "c8c2",
+          "mates": [
+            "c8c2"
+          ],
+          "correct": true
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/6K1/2r5 b - - 5 44",
+          "prediction": "c1g1",
+          "mates": [
+            "e5b2",
+            "e5e2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/2r5/7K b - - 7 45",
+          "prediction": "c2h2",
+          "mates": [
+            "e5a1",
+            "e5e1",
+            "g4f3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/7r/6K1 b - - 9 46",
+          "prediction": "e5e1",
+          "mates": [
+            "e5a1",
+            "e5e1",
+            "g4e2",
+            "g4h3"
+          ],
+          "correct": true
+        },
+        {
+          "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/4r3/5K2 b - - 11 47",
+          "prediction": "e2e1",
+          "mates": [
+            "e5a1",
+            "g4h3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/6K1 b - - 13 48",
+          "prediction": "e2g2",
+          "mates": [
+            "f6a1"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 15 49",
+          "prediction": "e1e2",
+          "mates": [
+            "f6b2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 17 50",
+          "prediction": "e2h2",
+          "mates": [
+            "f6a1",
+            "g4f3"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 19 51",
+          "prediction": "e1e2",
+          "mates": [
+            "f6b2"
+          ],
+          "correct": false
+        },
+        {
+          "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 21 52",
+          "prediction": "e2h2",
+          "mates": [
+            "f6a1",
+            "g4f3"
+          ],
+          "correct": false
+        }
+      ]
+    }
+  },
+  "limitation": "Repeated opportunities from previously inspected games; excluded from training, but this is a diagnostic, not an independent strength test."
+}

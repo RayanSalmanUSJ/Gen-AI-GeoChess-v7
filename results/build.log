@@ -1,0 +1,35 @@
+{"games": 100, "counts": {"train": 11803, "dev": 1263, "test": 585}, "seconds": 3.3}
+{"games": 200, "counts": {"train": 22232, "dev": 2341, "test": 1909}, "seconds": 6.6}
+{"games": 300, "counts": {"train": 33770, "dev": 2628, "test": 2690}, "seconds": 9.8}
+{"games": 400, "counts": {"train": 44338, "dev": 3998, "test": 4023}, "seconds": 13.1}
+{"games": 500, "counts": {"train": 55248, "dev": 4430, "test": 5226}, "seconds": 16.3}
+{"games": 600, "counts": {"train": 66268, "dev": 5213, "test": 6462}, "seconds": 19.9}
+{"games": 700, "counts": {"train": 77923, "dev": 6106, "test": 7405}, "seconds": 23.8}
+{"games": 800, "counts": {"train": 87956, "dev": 7466, "test": 8995}, "seconds": 27.3}
+{"games": 900, "counts": {"train": 98602, "dev": 8586, "test": 10527}, "seconds": 30.9}
+{"games": 1000, "counts": {"train": 110727, "dev": 9103, "test": 10871}, "seconds": 34.4}
+{"games": 1100, "counts": {"train": 121926, "dev": 9325, "test": 11978}, "seconds": 37.7}
+{"games": 1200, "counts": {"train": 131966, "dev": 10663, "test": 13489}, "seconds": 41.2}
+{"games": 1300, "counts": {"train": 142085, "dev": 12496, "test": 14955}, "seconds": 45.0}
+{"games": 1400, "counts": {"train": 151870, "dev": 14532, "test": 15761}, "seconds": 48.5}
+{"games": 1500, "counts": {"train": 163836, "dev": 14763, "test": 16527}, "seconds": 52.1}
+{"games": 1600, "counts": {"train": 174950, "dev": 15874, "test": 17507}, "seconds": 55.7}
+{"games": 1700, "counts": {"train": 187005, "dev": 16752, "test": 18333}, "seconds": 59.4}
+{"games": 1800, "counts": {"train": 199508, "dev": 17238, "test": 18333}, "seconds": 63.0}
+{"games": 1900, "counts": {"train": 210941, "dev": 18567, "test": 18866}, "seconds": 66.8}
+{"games": 2000, "counts": {"train": 223293, "dev": 19616, "test": 19684}, "seconds": 70.6}
+{"games": 2100, "counts": {"train": 234298, "dev": 20498, "test": 21349}, "seconds": 74.0}
+{"games": 2200, "counts": {"train": 245779, "dev": 20498, "test": 22313}, "seconds": 77.5}
+{"games": 2300, "counts": {"train": 257950, "dev": 20971, "test": 22949}, "seconds": 81.2}
+{"games": 2400, "counts": {"train": 268381, "dev": 21757, "test": 24239}, "seconds": 84.5}
+{"games": 2500, "counts": {"train": 279365, "dev": 22341, "test": 25319}, "seconds": 87.8}
+{'training_counts': {'train': 279365, 'dev': 22341, 'test': 25319}}
+{"games": 100, "counts": {"train": 0, "dev": 0, "test": 12793}, "seconds": 3.3}
+{"games": 200, "counts": {"train": 0, "dev": 0, "test": 25408}, "seconds": 7.0}
+{"games": 300, "counts": {"train": 0, "dev": 0, "test": 38767}, "seconds": 10.5}
+{"games": 400, "counts": {"train": 0, "dev": 0, "test": 52023}, "seconds": 14.4}
+{"games": 500, "counts": {"train": 0, "dev": 0, "test": 65065}, "seconds": 17.8}
+{"games": 600, "counts": {"train": 0, "dev": 0, "test": 78345}, "seconds": 21.6}
+{"games": 700, "counts": {"train": 0, "dev": 0, "test": 91138}, "seconds": 25.2}
+{"games": 800, "counts": {"train": 0, "dev": 0, "test": 103772}, "seconds": 28.6}
+{'heldout_counts': {'train': 0, 'dev': 0, 'test': 103772}}

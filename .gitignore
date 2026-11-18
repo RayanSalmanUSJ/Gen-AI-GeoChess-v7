@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+corpus/
+holdout/
+runs/
+data/source.pgn.gz
+*.egg-info/
+data/v6/
+tools/
+data/fishtest_extra.pgn.gz
+*.stdout.txt

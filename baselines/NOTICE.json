@@ -1,0 +1,5 @@
+{
+  "source": "Chess_Move_GPT_Prototype.zip",
+  "checkpoint_sha256": "e726fd9504660f6c9ddc0fa3de343d682007837fc98b6dd7b6ffabe2bbf95e83",
+  "purpose": "Frozen previous prototype for paired prediction comparison; training data and architecture differ."
+}

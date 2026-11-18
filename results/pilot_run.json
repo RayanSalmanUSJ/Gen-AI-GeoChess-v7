@@ -1,0 +1,48 @@
+{
+  "model": {
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "experts": 4,
+    "top_k": 2,
+    "expansion": 3,
+    "moe_every": 2,
+    "dropout": 0.0
+  },
+  "train": {
+    "epochs": 3,
+    "batch_size": 64,
+    "accumulation": 1,
+    "learning_rate": 0.0008,
+    "weight_decay": 0.01,
+    "warmup_steps": 100,
+    "max_train_rows": 160000,
+    "max_dev_rows": 12000,
+    "balance_weight": 0.01,
+    "z_weight": 0.001,
+    "seed": 20261116,
+    "threads": 4,
+    "workers": 0,
+    "device": "cpu",
+    "precision": "fp32"
+  },
+  "parameters": 303064,
+  "manifest_sha256": "4b54a0a9576a62639dc6e5af6905386f42f579e0dd7edd34991ed72ca285e3e2",
+  "torch": "2.5.1+cpu",
+  "device": "cpu",
+  "initial_development": {
+    "positions": 12000,
+    "nll": 3.0714679368336997,
+    "top1": 0.07633333333333334,
+    "top3": 0.18958333333333333,
+    "uniform_top1": 0.07333793223897617,
+    "expert_assignment_fractions": [
+      [
+        0.4370318603515625,
+        0.14449680582682292,
+        0.347183349609375,
+        0.07128779602050782
+      ]
+    ]
+  }
+}

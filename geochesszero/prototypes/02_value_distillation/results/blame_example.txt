@@ -1,0 +1,22 @@
+game 0: ray_s0:policy as White, result 0-1
+White (0-1): 6.g3 carries 40% of the blame (it left White at -311 cp; 6.Kd2 kept -20); 8.Nc3 carries 17% of the blame (it left White at -586 cp; 8.Nf3 kept -434); 9.Bb2 carries 13% of the blame (it left White at -720 cp; 9.Qd3 kept -592).
+
+    move   played     best  regret  blame
+       5       d4      Nf3       7     0%
+       6       g3      Kd2     291    40%
+       7     hxg3      Nf3      69     3%
+       8      Nc3      Nf3     152    17%
+       9      Bb2      Qd3     128    13%
+      10      Kd2      Kd2       4     0%
+      11       e3      Kc2      11     0%
+      12      Qe2      Qe2      13     0%
+      13      Nb5      Bg2      41     0%
+      14       d5      Bg2      32     0%
+      15     Bxf6    Nxc7+      31     0%
+      16      Nd4    Nxc7+      60     2%
+      17      Rd1      Kc2      24     0%
+      18      Nf3      Qe1      61     2%
+      19      Nd4      Kc2      69     3%
+      20      Bg2      Kc2      95     8%
+      21     Bxe4      Kc2      57     1%
+      22      Rg1      Nc2     116    11%

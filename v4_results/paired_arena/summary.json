@@ -1,0 +1,32 @@
+{
+  "models": {
+    "baseline": {
+      "counts": {
+        "win": 1,
+        "draw": 1,
+        "loss": 14,
+        "unfinished": 0
+      },
+      "completed_score": 0.09375,
+      "checkpoint_sha256": "03b53f7a6524473df3b6cee50ad050d98487ef5452042d7dd2b16f31a469b01c"
+    },
+    "candidate": {
+      "counts": {
+        "win": 0,
+        "draw": 2,
+        "loss": 14,
+        "unfinished": 0
+      },
+      "completed_score": 0.0625,
+      "checkpoint_sha256": "63fce2e23ca31d739392a6bcf8068bfc32393f930409e87cb1d13e3c02571ce6"
+    }
+  },
+  "opening_pairs": 8,
+  "games_per_model": 16,
+  "paired_score_difference": -0.03125,
+  "pair_bootstrap_95": [
+    -0.21875,
+    0.125
+  ],
+  "limitations": "One small paired sample; Stockfish strength limiting is stochastic. Unequal inference budgets. No calibrated Elo claim. Unfinished games, if present, are excluded from completed_score and pessimistically scored zero in pair differences."
+}

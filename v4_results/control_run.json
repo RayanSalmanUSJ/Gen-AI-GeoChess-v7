@@ -1,0 +1,42 @@
+{
+  "mode": "control",
+  "config": {
+    "steps": 1800,
+    "batch": 64,
+    "pool_rows": 64000,
+    "original_dev_rows": 12000,
+    "evaluate_every": 300,
+    "learning_rate": 0.0002,
+    "seed": 8327,
+    "threads": 2,
+    "original_nll_tolerance": 0.05
+  },
+  "parent_sha256": "03b53f7a6524473df3b6cee50ad050d98487ef5452042d7dd2b16f31a469b01c",
+  "base_manifest_sha256": "4b54a0a9576a62639dc6e5af6905386f42f579e0dd7edd34991ed72ca285e3e2",
+  "correction_manifest_sha256": "069da7908c880fe848dd1c4a9cc6ef0b50ad0f14e6b637b53bf1b2ab05875add",
+  "mate_manifest_sha256": "8d4aaa31fab9d6fc37160592f5645156aacaf14631ee85bc3fe0c3cdf7c096cd",
+  "initial": {
+    "partitions": {
+      "original": {
+        "rows": 12000,
+        "nll": 2.282153481801351,
+        "top1": 0.28641666666666665,
+        "top3": 0.5468333333333333
+      },
+      "correction": {
+        "rows": 2795,
+        "nll": 2.2837820472785526,
+        "top1": 0.3177101967799642,
+        "top3": 0.5642218246869409
+      },
+      "mate": {
+        "rows": 500,
+        "nll": 2.326830291748047,
+        "top1": 0.32,
+        "top3": 0.638
+      }
+    },
+    "weighted_objective": 2.2883487950986385
+  },
+  "selection": "minimum weighted dev NLL subject to original dev NLL <= initial + tolerance"
+}

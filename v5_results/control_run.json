@@ -1,0 +1,62 @@
+{
+  "mode": "control",
+  "config": {
+    "steps": 1800,
+    "batch": 64,
+    "pool_rows": 64000,
+    "original_dev_rows": 12000,
+    "evaluate_every": 300,
+    "learning_rate": 0.00015,
+    "seed": 28327,
+    "threads": 2,
+    "original_nll_tolerance": 0.02
+  },
+  "parent_sha256": "63fce2e23ca31d739392a6bcf8068bfc32393f930409e87cb1d13e3c02571ce6",
+  "selection_weights": {
+    "original": 0.5,
+    "correction": 0.25,
+    "mate": 0.125,
+    "defense": 0.125
+  },
+  "mixture_eighths": {
+    "original": 4,
+    "correction": 3,
+    "sparse": 1
+  },
+  "dataset_manifests": {
+    "original": "4b54a0a9576a62639dc6e5af6905386f42f579e0dd7edd34991ed72ca285e3e2",
+    "correction": "069da7908c880fe848dd1c4a9cc6ef0b50ad0f14e6b637b53bf1b2ab05875add",
+    "sparse": "8d4aaa31fab9d6fc37160592f5645156aacaf14631ee85bc3fe0c3cdf7c096cd",
+    "tactics": "a8bfe71488d9b08a0be0928409c79b4f4f1c2de8493cfac7e19a07b81a4a9472"
+  },
+  "initial": {
+    "partitions": {
+      "original": {
+        "rows": 12000,
+        "nll": 2.302732000350952,
+        "top1": 0.2843333333333333,
+        "top3": 0.5478333333333333
+      },
+      "correction": {
+        "rows": 2795,
+        "nll": 2.2195645136142246,
+        "top1": 0.3270125223613596,
+        "top3": 0.5774597495527728
+      },
+      "mate": {
+        "rows": 1000,
+        "nll": 2.2194112014770506,
+        "top1": 0.329,
+        "top3": 0.589
+      },
+      "defense": {
+        "rows": 600,
+        "nll": 1.70803466796875,
+        "top1": 0.475,
+        "top3": 0.7066666666666667
+      }
+    },
+    "weighted_objective": 2.1971878622597574
+  },
+  "selection": "lowest weighted dev NLL subject to original <= parent + tolerance"
+}

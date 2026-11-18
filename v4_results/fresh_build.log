@@ -1,0 +1,8 @@
+{"games": 100, "counts": {"train": 0, "dev": 0, "test": 12830}, "seconds": 4.8}
+{"games": 200, "counts": {"train": 0, "dev": 0, "test": 25974}, "seconds": 9.8}
+{"games": 300, "counts": {"train": 0, "dev": 0, "test": 39291}, "seconds": 14.7}
+{"games": 400, "counts": {"train": 0, "dev": 0, "test": 51627}, "seconds": 19.5}
+{
+  "fresh_positions": 51611,
+  "additional_exclusions": 16
+}

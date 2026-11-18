@@ -1,0 +1,24 @@
+{
+  "corpora": [
+    {
+      "root": "corpus",
+      "counts": {
+        "train": 279365,
+        "test": 25319,
+        "dev": 22341
+      }
+    },
+    {
+      "root": "holdout",
+      "counts": {
+        "test": 103772
+      }
+    }
+  ],
+  "unique_positions": 430797,
+  "opening_groups": 1650,
+  "duplicate_positions": 0,
+  "illegal_targets": 0,
+  "group_partition_overlap": 0,
+  "all_shard_checksums_verified": true
+}

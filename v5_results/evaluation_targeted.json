@@ -1,0 +1,166 @@
+{
+  "checkpoint_sha256": "f63b794a58ac4bdc2a42ca828d2689b8e4e6d8995ca2421279471140989eb54a",
+  "tactics": {
+    "mate": {
+      "positions": 1000,
+      "acceptable_top1": 0.797,
+      "acceptable_top3": 0.923,
+      "set_nll": 0.7097339935302734,
+      "uniform_acceptable_probability": 0.04713603901863098,
+      "seed_families": 408
+    },
+    "defense": {
+      "positions": 600,
+      "acceptable_top1": 0.5833333333333334,
+      "acceptable_top3": 0.8366666666666667,
+      "set_nll": 1.085486831665039,
+      "uniform_acceptable_probability": 0.2546553150812785,
+      "seed_families": 335
+    }
+  },
+  "games": {
+    "checkpoint_sha256": "f63b794a58ac4bdc2a42ca828d2689b8e4e6d8995ca2421279471140989eb54a",
+    "checkpoint_metadata": {
+      "mode": "targeted",
+      "config": {
+        "steps": 1800,
+        "batch": 64,
+        "pool_rows": 64000,
+        "original_dev_rows": 12000,
+        "evaluate_every": 300,
+        "learning_rate": 0.00015,
+        "seed": 28327,
+        "threads": 2,
+        "original_nll_tolerance": 0.02
+      },
+      "parent_sha256": "63fce2e23ca31d739392a6bcf8068bfc32393f930409e87cb1d13e3c02571ce6",
+      "selection_weights": {
+        "original": 0.5,
+        "correction": 0.25,
+        "mate": 0.125,
+        "defense": 0.125
+      },
+      "mixture_eighths": {
+        "original": 4,
+        "correction": 2,
+        "mate": 1,
+        "defense": 1
+      },
+      "dataset_manifests": {
+        "original": "4b54a0a9576a62639dc6e5af6905386f42f579e0dd7edd34991ed72ca285e3e2",
+        "correction": "069da7908c880fe848dd1c4a9cc6ef0b50ad0f14e6b637b53bf1b2ab05875add",
+        "sparse": "8d4aaa31fab9d6fc37160592f5645156aacaf14631ee85bc3fe0c3cdf7c096cd",
+        "tactics": "a8bfe71488d9b08a0be0928409c79b4f4f1c2de8493cfac7e19a07b81a4a9472"
+      },
+      "step": 1800,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.3192140007019044,
+            "top1": 0.2775,
+            "top3": 0.5383333333333333
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2065496045489645,
+            "top1": 0.3413237924865832,
+            "top3": 0.5838998211091234
+          },
+          "mate": {
+            "rows": 1000,
+            "nll": 0.6599733238220215,
+            "top1": 0.795,
+            "top3": 0.933
+          },
+          "defense": {
+            "rows": 600,
+            "nll": 1.0525315284729004,
+            "top1": 0.605,
+            "top3": 0.85
+          }
+        },
+        "weighted_objective": 1.9253075080250586
+      }
+    },
+    "data_manifest_sha256": "535a0196f8c234ca5a26c49ecaa46edeceb477c6d19bea1c726195521b01ebb6",
+    "split": "test",
+    "positions": 52830,
+    "opening_groups": 200,
+    "nll": 2.3233462802070837,
+    "top1": 0.28139314783267083,
+    "top3": 0.538936210486466,
+    "uniform_top1": 0.0641815310125152,
+    "uniform_nll": 3.1279846684896153,
+    "multiclass_brier": 0.8293015469819697,
+    "teacher_token_ece": 0.022862887095653626,
+    "top1_opening_bootstrap_95": [
+      0.27602769987674247,
+      0.2870186609349981
+    ],
+    "median_forward_batch_ms": 45.51599899991743,
+    "seconds": 42.49081925600012,
+    "limitations": "Recorded-move agreement is not optimal-move accuracy. Positions are correlated; bootstrap clusters opening groups within one Fishtest run. No Elo is inferred."
+  },
+  "old_diagnostic": {
+    "correct": 5,
+    "opportunities": 11,
+    "rows": [
+      {
+        "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/p7/7K b - - 3 41",
+        "move": "a2a1q",
+        "correct": false
+      },
+      {
+        "fen": "2r3k1/p4ppp/1p6/6q1/5bb1/8/6K1/q7 b - - 1 42",
+        "move": "c8c2",
+        "correct": true
+      },
+      {
+        "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/6K1/2r5 b - - 5 44",
+        "move": "e5e2",
+        "correct": true
+      },
+      {
+        "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/2r5/7K b - - 7 45",
+        "move": "e5e1",
+        "correct": true
+      },
+      {
+        "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/7r/6K1 b - - 9 46",
+        "move": "e5e1",
+        "correct": true
+      },
+      {
+        "fen": "6k1/p4ppp/1p6/4q1q1/5bb1/8/4r3/5K2 b - - 11 47",
+        "move": "e5a1",
+        "correct": true
+      },
+      {
+        "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/6K1 b - - 13 48",
+        "move": "e2g2",
+        "correct": false
+      },
+      {
+        "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 15 49",
+        "move": "e1e2",
+        "correct": false
+      },
+      {
+        "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 17 50",
+        "move": "e2h2",
+        "correct": false
+      },
+      {
+        "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/6K1/4r3 b - - 19 51",
+        "move": "e1e2",
+        "correct": false
+      },
+      {
+        "fen": "6k1/p4ppp/1p3q2/6q1/5bb1/8/4r3/7K b - - 21 52",
+        "move": "e2h2",
+        "correct": false
+      }
+    ]
+  }
+}

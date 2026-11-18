@@ -1,0 +1,25 @@
+{"train": 411, "dev": 89, "attempts": 36095, "seconds": 9.870748806000051}
+{"train": 839, "dev": 161, "attempts": 74027, "seconds": 20.090036837000014}
+{"train": 1266, "dev": 234, "attempts": 113089, "seconds": 30.782672836000017}
+{"train": 1689, "dev": 311, "attempts": 153398, "seconds": 41.93216381999997}
+{"train": 2113, "dev": 387, "attempts": 195322, "seconds": 53.30457930100005}
+{"train": 2500, "dev": 500, "attempts": 253518, "seconds": 70.95881727300008}
+{
+  "schema_version": 1,
+  "seed": 5221,
+  "partitions": {
+    "train": {
+      "rows": 2500,
+      "sha256": "0e1a2049eabeb108ac375171a4410f4a7ede8e98b72648b6cf972aa411f602c3"
+    },
+    "dev": {
+      "rows": 500,
+      "sha256": "6a7bc92e847dd4e3dff7dcfd99a7c0f537ed1a211f85debea06edf24f80773c1"
+    }
+  },
+  "attempts": 253518,
+  "seconds": 70.97966806800008,
+  "label": "all legal moves delivering immediate checkmate",
+  "split": "whole color-normalized D4 orbits, with no pawns or castling",
+  "limitations": "Synthetic sparse-board stress curriculum; success is not full-game tactical strength."
+}

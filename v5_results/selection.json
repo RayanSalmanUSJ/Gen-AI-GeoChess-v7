@@ -1,0 +1,227 @@
+{
+  "selected": "targeted",
+  "alpha": 1.0,
+  "step": 1800,
+  "selected_sha256": "f63b794a58ac4bdc2a42ca828d2689b8e4e6d8995ca2421279471140989eb54a",
+  "original_nll_ceiling": 2.322732000350952,
+  "alternatives": [
+    {
+      "name": "v4",
+      "path": "checkpoints/policy_v4.pt",
+      "alpha": 0.0,
+      "step": 0,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.302732000350952,
+            "top1": 0.2843333333333333,
+            "top3": 0.5478333333333333
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2195645136142246,
+            "top1": 0.3270125223613596,
+            "top3": 0.5774597495527728
+          },
+          "mate": {
+            "rows": 1000,
+            "nll": 2.2194112014770506,
+            "top1": 0.329,
+            "top3": 0.589
+          },
+          "defense": {
+            "rows": 600,
+            "nll": 1.70803466796875,
+            "top1": 0.475,
+            "top3": 0.7066666666666667
+          }
+        },
+        "weighted_objective": 2.1971878622597574
+      },
+      "qualifies": true
+    },
+    {
+      "name": "control",
+      "path": "v5_runs/control/best.pt",
+      "step": 1800,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.300377595265706,
+            "top1": 0.28458333333333335,
+            "top3": 0.5459166666666667
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2022233393196555,
+            "top1": 0.3373881932021467,
+            "top3": 0.58783542039356
+          },
+          "mate": {
+            "rows": 1000,
+            "nll": 2.142495376586914,
+            "top1": 0.36,
+            "top3": 0.635
+          },
+          "defense": {
+            "rows": 600,
+            "nll": 1.6508631896972656,
+            "top1": 0.48,
+            "top3": 0.7266666666666667
+          }
+        },
+        "weighted_objective": 2.1749144532482894
+      },
+      "qualifies": true
+    },
+    {
+      "name": "targeted",
+      "path": "v5_runs/interpolation/alpha_025.pt",
+      "alpha": 0.25,
+      "step": 1800,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.2987105026245116,
+            "top1": 0.28425,
+            "top3": 0.54825
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2091842569477445,
+            "top1": 0.32880143112701254,
+            "top3": 0.5849731663685152
+          },
+          "mate": {
+            "rows": 1000,
+            "nll": 1.6665634155273437,
+            "top1": 0.505,
+            "top3": 0.734
+          },
+          "defense": {
+            "rows": 600,
+            "nll": 1.5457687822977701,
+            "top1": 0.49833333333333335,
+            "top3": 0.7266666666666667
+          }
+        },
+        "weighted_objective": 2.103192840277331
+      },
+      "qualifies": true
+    },
+    {
+      "name": "targeted",
+      "path": "v5_runs/interpolation/alpha_050.pt",
+      "alpha": 0.5,
+      "step": 1800,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.2995576241811118,
+            "top1": 0.28108333333333335,
+            "top3": 0.54875
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2016951886827063,
+            "top1": 0.3330948121645796,
+            "top3": 0.5835420393559928
+          },
+          "mate": {
+            "rows": 1000,
+            "nll": 1.1748796806335449,
+            "top1": 0.646,
+            "top3": 0.843
+          },
+          "defense": {
+            "rows": 600,
+            "nll": 1.3685318565368652,
+            "top1": 0.5183333333333333,
+            "top3": 0.7533333333333333
+          }
+        },
+        "weighted_objective": 2.018129051407534
+      },
+      "qualifies": true
+    },
+    {
+      "name": "targeted",
+      "path": "v5_runs/interpolation/alpha_075.pt",
+      "alpha": 0.75,
+      "step": 1800,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.3055804551442463,
+            "top1": 0.2801666666666667,
+            "top3": 0.54375
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2008806040973696,
+            "top1": 0.3377459749552773,
+            "top3": 0.5871198568872987
+          },
+          "mate": {
+            "rows": 1000,
+            "nll": 0.8321737403869629,
+            "top1": 0.745,
+            "top3": 0.902
+          },
+          "defense": {
+            "rows": 600,
+            "nll": 1.1912903912862143,
+            "top1": 0.575,
+            "top3": 0.7966666666666666
+          }
+        },
+        "weighted_objective": 1.9559433950556127
+      },
+      "qualifies": true
+    },
+    {
+      "name": "targeted",
+      "path": "v5_runs/targeted/final.pt",
+      "alpha": 1.0,
+      "step": 1800,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.3192140007019044,
+            "top1": 0.2775,
+            "top3": 0.5383333333333333
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2065496045489645,
+            "top1": 0.3413237924865832,
+            "top3": 0.5838998211091234
+          },
+          "mate": {
+            "rows": 1000,
+            "nll": 0.6599733238220215,
+            "top1": 0.795,
+            "top3": 0.933
+          },
+          "defense": {
+            "rows": 600,
+            "nll": 1.0525315284729004,
+            "top1": 0.605,
+            "top3": 0.85
+          }
+        },
+        "weighted_objective": 1.9253075080250586
+      },
+      "qualifies": true
+    }
+  ],
+  "test_metrics_used": false,
+  "arena_metrics_used": false,
+  "adaptation": "The initial dev curves violated retention; alpha grid 0,.25,.5,.75,1 was added using dev only before final tests. Retention tolerance was unchanged."
+}

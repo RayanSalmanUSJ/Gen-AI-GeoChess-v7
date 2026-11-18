@@ -1,0 +1,29 @@
+{
+  "models": {
+    "v3": {
+      "rows": 1000,
+      "nll": 2.4078064956665037,
+      "top1": 0.336,
+      "top3": 0.603,
+      "checkpoint_sha256": "03b53f7a6524473df3b6cee50ad050d98487ef5452042d7dd2b16f31a469b01c"
+    },
+    "control": {
+      "rows": 1000,
+      "nll": 2.21100235748291,
+      "top1": 0.393,
+      "top3": 0.718,
+      "checkpoint_sha256": "87761ddc305e86203511888a353440c624e64ad38ec14572f36ee96b9867c823"
+    },
+    "targeted": {
+      "rows": 1000,
+      "nll": 0.33027589893341064,
+      "top1": 0.884,
+      "top3": 0.975,
+      "checkpoint_sha256": "63fce2e23ca31d739392a6bcf8068bfc32393f930409e87cb1d13e3c02571ce6"
+    }
+  },
+  "excluded_train_dev_orbits": 3000,
+  "test_orbit_overlap": 0,
+  "data_sha256": "bf4873c12834d520bd823b5ea2932903dec6bf3cbda4fbee2bb01dce3b24eeef",
+  "limitation": "Synthetic pawnless mate-in-one test; not arbitrary tactics, conversion skill, or Elo."
+}

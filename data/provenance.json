@@ -1,0 +1,13 @@
+{
+  "source_sha256": "bef40277bf1996beb8a025258922761ad4c52a47a294b2b8869ed65b78189e09",
+  "source_url": "https://huggingface.co/datasets/official-stockfish/fishtest_pgns/resolve/main/25-01-01/677492ae1a2f267f20548afc/677492ae1a2f267f20548afc.pgn.gz",
+  "games": [
+    2500,
+    800
+  ],
+  "mainline_moves": [
+    348386,
+    110696
+  ],
+  "transformation": "PGN headers and mainline retained; annotations and variations removed"
+}

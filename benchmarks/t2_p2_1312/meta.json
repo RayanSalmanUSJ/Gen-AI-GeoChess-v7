@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "rows": 1312,
+  "labelled": true,
+  "depth": 12,
+  "source": "Prototype 2 benchmark: 24 held-out games, Stockfish 15.1 depth 12",
+  "note": "no recorded moves: target = Stockfish's best move"
+}

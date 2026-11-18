@@ -1,0 +1,95 @@
+{
+  "selected": "targeted",
+  "step": 1800,
+  "selected_sha256": "63fce2e23ca31d739392a6bcf8068bfc32393f930409e87cb1d13e3c02571ce6",
+  "original_nll_ceiling": 2.3321534818013507,
+  "alternatives": [
+    {
+      "name": "v3",
+      "path": "checkpoints/pilot.pt",
+      "step": 0,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.282153481801351,
+            "top1": 0.28641666666666665,
+            "top3": 0.5468333333333333
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2837820472785526,
+            "top1": 0.3177101967799642,
+            "top3": 0.5642218246869409
+          },
+          "mate": {
+            "rows": 500,
+            "nll": 2.326830291748047,
+            "top1": 0.32,
+            "top3": 0.638
+          }
+        },
+        "weighted_objective": 2.2883487950986385
+      }
+    },
+    {
+      "name": "control",
+      "path": "v4_runs/control/best.pt",
+      "step": 1200,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.2845142161051433,
+            "top1": 0.29025,
+            "top3": 0.5506666666666666
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2957503508156654,
+            "top1": 0.3105545617173524,
+            "top3": 0.5635062611806798
+          },
+          "mate": {
+            "rows": 500,
+            "nll": 2.130017333984375,
+            "top1": 0.41,
+            "top3": 0.734
+          }
+        },
+        "weighted_objective": 2.269415656356493
+      }
+    },
+    {
+      "name": "targeted",
+      "path": "v4_runs/targeted/best.pt",
+      "step": 1800,
+      "dev": {
+        "partitions": {
+          "original": {
+            "rows": 12000,
+            "nll": 2.302731989542643,
+            "top1": 0.2843333333333333,
+            "top3": 0.5478333333333333
+          },
+          "correction": {
+            "rows": 2795,
+            "nll": 2.2195645245328572,
+            "top1": 0.3270125223613596,
+            "top3": 0.5774597495527728
+          },
+          "mate": {
+            "rows": 500,
+            "nll": 0.27781449127197266,
+            "top1": 0.912,
+            "top3": 0.98
+          }
+        },
+        "weighted_objective": 2.0184295028801396
+      }
+    }
+  ],
+  "rule": "minimum weighted development NLL subject to retention constraint",
+  "test_metrics_used": false,
+  "arena_metrics_used": false
+}

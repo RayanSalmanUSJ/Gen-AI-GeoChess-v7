@@ -1,0 +1,41 @@
+{
+  "checkpoint_sha256": "03b53f7a6524473df3b6cee50ad050d98487ef5452042d7dd2b16f31a469b01c",
+  "checkpoint_metadata": {
+    "epoch": 3,
+    "dev": {
+      "positions": 12000,
+      "nll": 2.282153487523397,
+      "top1": 0.28641666666666665,
+      "top3": 0.5468333333333333,
+      "uniform_top1": 0.07333793223897617,
+      "expert_assignment_fractions": [
+        [
+          0.24242376708984376,
+          0.24233217366536458,
+          0.2550704142252604,
+          0.26017376708984374
+        ]
+      ]
+    },
+    "manifest_sha256": "4b54a0a9576a62639dc6e5af6905386f42f579e0dd7edd34991ed72ca285e3e2",
+    "selection": "minimum development NLL only"
+  },
+  "data_manifest_sha256": "8b7f31b20b75d93ebf98b44364d386a7adbd2769470a23487ba265026b883dfd",
+  "split": "test",
+  "positions": 103772,
+  "opening_groups": 400,
+  "nll": 2.314117582734787,
+  "top1": 0.2852889025941487,
+  "top3": 0.5415237250896195,
+  "uniform_top1": 0.06338865243321927,
+  "uniform_nll": 3.1453162621101756,
+  "multiclass_brier": 0.8231032036952219,
+  "teacher_token_ece": 0.007721314181554339,
+  "top1_opening_bootstrap_95": [
+    0.2815907377567573,
+    0.28882333163234963
+  ],
+  "median_forward_batch_ms": 38.328833000036866,
+  "seconds": 71.23808748300007,
+  "limitations": "Recorded-move agreement is not optimal-move accuracy. Positions are correlated; bootstrap clusters opening groups within one Fishtest run. No Elo is inferred."
+}
