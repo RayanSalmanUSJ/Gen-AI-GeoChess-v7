@@ -8,3 +8,23 @@ B_soft_s0                    cp lost   78.7 [75.5, 82.0]  best  31.1%  blunders 
 B_soft_s1                    cp lost   77.6 [74.1, 81.2]  best  31.7%  blunders  10.7%  agree 30.57%
 B_soft_s2                    cp lost   77.5 [74.2, 80.7]  best  31.3%  blunders  10.5%  agree 30.56%
 C_value_s0                   cp lost   82.9 [79.6, 86.3]  best  30.5%  blunders  11.7%  agree 29.40%
+C_value_s0:search            cp lost   84.1 [80.5, 87.7]  best  28.7%  blunders  12.2%  agree 27.94%
+C_value_s1                   cp lost   82.3 [78.7, 85.8]  best  30.4%  blunders  11.5%  agree 29.56%
+C_value_s2                   cp lost   82.1 [78.6, 85.6]  best  30.3%  blunders  11.4%  agree 29.35%
+att_plain_s0                 cp lost  102.2 [98.1, 106.4]  best  26.5%  blunders  15.2%  agree 25.77%
+att_hard_s0                  cp lost   72.5 [69.4, 75.7]  best  31.9%  blunders   9.8%  agree 31.55%
+att_hard_ray_s0              cp lost   71.6 [68.3, 74.8]  best  32.5%  blunders   9.9%  agree 31.59%
+att_hard_ray_s0:search       cp lost   78.2 [75.0, 81.4]  best  30.3%  blunders  11.4%  agree 29.45%
+att_hard_only_s0             cp lost   73.2 [70.2, 76.4]  best  31.8%  blunders   9.9%  agree 31.14%
+moe_off_s0                   cp lost   83.1 [79.6, 86.6]  best  30.4%  blunders  11.8%  agree 29.44%
+scale_S_70K                  cp lost   84.6 [81.4, 88.3]  best  29.3%  blunders  12.0%  agree 28.19%
+scale_S_140K                 cp lost   78.3 [75.0, 81.6]  best  31.1%  blunders  11.0%  agree 30.08%
+scale_S_279K                 cp lost   72.1 [69.1, 75.1]  best  33.0%  blunders   9.9%  agree 31.65%
+scale_M_70K                  cp lost   77.9 [74.5, 81.2]  best  31.0%  blunders  10.8%  agree 30.32%
+scale_M_140K                 cp lost   69.4 [66.2, 72.4]  best  33.0%  blunders   9.1%  agree 32.20%
+scale_M_279K                 cp lost   61.3 [58.5, 64.0]  best  34.9%  blunders   8.0%  agree 34.07%
+scale_L_70K                  cp lost   74.1 [71.0, 77.2]  best  31.8%  blunders  10.2%  agree 30.83%
+scale_L_140K                 cp lost   69.6 [66.5, 72.7]  best  32.8%  blunders   9.3%  agree 32.49%
+scale_L_279K                 cp lost   59.9 [57.1, 63.0]  best  34.7%  blunders   7.5%  agree 34.17%
+scale_L_279K:search          cp lost   70.1 [67.3, 73.0]  best  31.9%  blunders   9.7%  agree 30.84%
+wrote C:\Users\User\Documents\GeoChess\results\v6\SUMMARY.md
