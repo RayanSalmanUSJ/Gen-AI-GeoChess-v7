@@ -1,0 +1,13 @@
+=== stage attention
+[run] att_plain_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_plain_s0 --policy-target soft --tau 100 --value-weight 1.0 --attention plain --seed 0
+[run] att_hard_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_hard_s0 --policy-target soft --tau 100 --value-weight 1.0 --attention hard --seed 0
+[run] att_hard_ray_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_hard_ray_s0 --policy-target soft --tau 100 --value-weight 1.0 --attention hard_ray --seed 0
+[run] att_hard_only_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_hard_only_s0 --policy-target soft --tau 100 --value-weight 1.0 --attention hard_only --seed 0
+[run] att_plain_s1 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_plain_s1 --policy-target soft --tau 100 --value-weight 1.0 --attention plain --seed 1
+[run] att_hard_s1 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_hard_s1 --policy-target soft --tau 100 --value-weight 1.0 --attention hard --seed 1
+[run] att_hard_ray_s1 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_hard_ray_s1 --policy-target soft --tau 100 --value-weight 1.0 --attention hard_ray --seed 1
+[run] att_hard_only_s1 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_hard_only_s1 --policy-target soft --tau 100 --value-weight 1.0 --attention hard_only --seed 1
+[run] att_plain_s2 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_plain_s2 --policy-target soft --tau 100 --value-weight 1.0 --attention plain --seed 2
+[run] att_hard_s2 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_hard_s2 --policy-target soft --tau 100 --value-weight 1.0 --attention hard --seed 2
+[run] att_hard_ray_s2 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_hard_ray_s2 --policy-target soft --tau 100 --value-weight 1.0 --attention hard_ray --seed 2
+[run] att_hard_only_s2 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\att_hard_only_s2 --policy-target soft --tau 100 --value-weight 1.0 --attention hard_only --seed 2

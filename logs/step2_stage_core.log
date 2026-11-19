@@ -1,0 +1,10 @@
+=== stage core
+[skip] A_played_s0 (finished)
+[skip] A_played_s1 (finished)
+[skip] A_played_s2 (finished)
+[run] B_soft_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\B_soft_s0 --policy-target soft --tau 100 --seed 0
+[run] C_value_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\C_value_s0 --policy-target soft --tau 100 --value-weight 1.0 --seed 0
+[run] B_soft_s1 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\B_soft_s1 --policy-target soft --tau 100 --seed 1
+[run] C_value_s1 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\C_value_s1 --policy-target soft --tau 100 --value-weight 1.0 --seed 1
+[run] B_soft_s2 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\B_soft_s2 --policy-target soft --tau 100 --seed 2
+[run] C_value_s2 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\C_value_s2 --policy-target soft --tau 100 --value-weight 1.0 --seed 2

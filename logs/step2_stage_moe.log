@@ -1,0 +1,4 @@
+=== stage moe
+[run] moe_off_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\moe_off_s0 --policy-target soft --tau 100 --value-weight 1.0 --experts 1 --seed 0
+[run] moe_off_s1 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\moe_off_s1 --policy-target soft --tau 100 --value-weight 1.0 --experts 1 --seed 1
+[run] moe_off_s2 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\moe_off_s2 --policy-target soft --tau 100 --value-weight 1.0 --experts 1 --seed 2

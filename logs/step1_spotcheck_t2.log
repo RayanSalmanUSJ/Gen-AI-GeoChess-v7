@@ -1,0 +1,3 @@
+row 0: 19 moves, move order matches=True, exact=2/19, max diff=33 cp, median diff=13.0, same best move=True, missing=0
+row 500: 39 moves, move order matches=True, exact=1/39, max diff=68 cp, median diff=24.0, same best move=True, missing=0
+row 1000: 2 moves, move order matches=True, exact=2/2, max diff=0 cp, median diff=0.0, same best move=True, missing=0

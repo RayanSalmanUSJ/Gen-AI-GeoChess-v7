@@ -1,0 +1,4 @@
+=== stage tau
+[run] tau50_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\tau50_s0 --policy-target soft --tau 50 --seed 0
+[run] tau100_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\tau100_s0 --policy-target soft --tau 100 --seed 0
+[run] tau200_s0 --train data/v6/train_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\tau200_s0 --policy-target soft --tau 200 --seed 0

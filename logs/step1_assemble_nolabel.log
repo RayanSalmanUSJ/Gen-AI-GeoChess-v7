@@ -1,0 +1,21 @@
+{
+  "split": "train",
+  "rows": 279365,
+  "positions_file": "data/v6/positions_train.npz",
+  "labelled": false
+}
+
+real	2m20.338s
+user	0m0.000s
+sys	0m0.015s
+{
+  "split": "test",
+  "rows": 103772,
+  "positions_file": "data/v6/positions_holdout.npz",
+  "labelled": false
+}
+
+real	0m43.993s
+user	0m0.030s
+sys	0m0.000s
+ASSEMBLE_OK

@@ -1,0 +1,127 @@
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cu126
+Processing .\tools\dl\torch-2.14.1+cu126-cp312-cp312-win_amd64.whl
+Collecting filelock (from torch==2.14.1+cu126)
+  Downloading filelock-4.2.12-py3-none-any.whl.metadata (2.3 kB)
+Collecting typing-extensions>=4.10.0 (from torch==2.14.1+cu126)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting setuptools>=77.0.3 (from torch==2.14.1+cu126)
+  Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy>=1.13.3 (from torch==2.14.1+cu126)
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch==2.14.1+cu126)
+  Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting jinja2 (from torch==2.14.1+cu126)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec>=0.8.5 (from torch==2.14.1+cu126)
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.14.1+cu126)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.14.1+cu126)
+  Downloading markupsafe-3.0.4-cp312-cp312-win_amd64.whl.metadata (2.8 kB)
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+   ---------------------------------------- 2.1/2.1 MB 137.5 kB/s  0:00:14
+Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+   ---------------------------------------- 876.3/876.3 kB 132.3 kB/s  0:00:06
+Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+   ---------------------------------------- 6.3/6.3 MB 113.6 kB/s  0:00:53
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ---------------------------------------- 536.2/536.2 kB 143.7 kB/s  0:00:03
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading filelock-4.2.12-py3-none-any.whl (222 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading markupsafe-3.0.4-cp312-cp312-win_amd64.whl (14 kB)
+Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+
+Successfully installed MarkupSafe-3.0.4 filelock-4.2.12 fsspec-2026.9.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.7 setuptools-84.2.1 sympy-1.14.0 torch-2.14.1+cu126 typing-extensions-4.16.0
+Obtaining file:///C:/Users/User/Documents/GeoChess
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: torch<3,>=2.5 in .\.venv\Lib\site-packages (from chess-policy-system==0.5.0) (2.14.1+cu126)
+Collecting numpy<3,>=1.26 (from chess-policy-system==0.5.0)
+  Downloading numpy-2.5.5-cp312-cp312-win_amd64.whl.metadata (6.6 kB)
+Collecting python-chess==1.999 (from chess-policy-system==0.5.0)
+  Downloading python_chess-1.999-py3-none-any.whl.metadata (776 bytes)
+Collecting pytest>=8 (from chess-policy-system==0.5.0)
+  Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+Collecting ruff>=0.8 (from chess-policy-system==0.5.0)
+  Downloading ruff-0.17.5-py3-none-win_amd64.whl.metadata (21 kB)
+Collecting httpx>=0.27 (from chess-policy-system==0.5.0)
+  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting chess<2,>=1 (from python-chess==1.999->chess-policy-system==0.5.0)
+  Downloading chess-1.11.2.tar.gz (6.1 MB)
+     ---------------------------------------- 6.1/6.1 MB 258.3 kB/s  0:00:23
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: filelock in .\.venv\Lib\site-packages (from torch<3,>=2.5->chess-policy-system==0.5.0) (4.2.12)
+Requirement already satisfied: typing-extensions>=4.10.0 in .\.venv\Lib\site-packages (from torch<3,>=2.5->chess-policy-system==0.5.0) (4.16.0)
+Requirement already satisfied: setuptools>=77.0.3 in .\.venv\Lib\site-packages (from torch<3,>=2.5->chess-policy-system==0.5.0) (84.2.1)
+Requirement already satisfied: sympy>=1.13.3 in .\.venv\Lib\site-packages (from torch<3,>=2.5->chess-policy-system==0.5.0) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in .\.venv\Lib\site-packages (from torch<3,>=2.5->chess-policy-system==0.5.0) (3.7)
+Requirement already satisfied: jinja2 in .\.venv\Lib\site-packages (from torch<3,>=2.5->chess-policy-system==0.5.0) (3.1.6)
+Requirement already satisfied: fsspec>=0.8.5 in .\.venv\Lib\site-packages (from torch<3,>=2.5->chess-policy-system==0.5.0) (2026.9.0)
+Collecting anyio (from httpx>=0.27->chess-policy-system==0.5.0)
+  Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting certifi (from httpx>=0.27->chess-policy-system==0.5.0)
+  Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx>=0.27->chess-policy-system==0.5.0)
+  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx>=0.27->chess-policy-system==0.5.0)
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx>=0.27->chess-policy-system==0.5.0)
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting colorama>=0.4 (from pytest>=8->chess-policy-system==0.5.0)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting iniconfig>=2 (from pytest>=8->chess-policy-system==0.5.0)
+  Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting packaging>=24 (from pytest>=8->chess-policy-system==0.5.0)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.6 (from pytest>=8->chess-policy-system==0.5.0)
+  Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.15 (from pytest>=8->chess-policy-system==0.5.0)
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in .\.venv\Lib\site-packages (from sympy>=1.13.3->torch<3,>=2.5->chess-policy-system==0.5.0) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in .\.venv\Lib\site-packages (from jinja2->torch<3,>=2.5->chess-policy-system==0.5.0) (3.0.4)
+Downloading python_chess-1.999-py3-none-any.whl (1.4 kB)
+Downloading numpy-2.5.5-cp312-cp312-win_amd64.whl (12.6 MB)
+   ---------------------------------------- 12.6/12.6 MB 300.0 kB/s  0:00:41
+Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ---------------------------------------- 1.3/1.3 MB 257.1 kB/s  0:00:04
+Downloading ruff-0.17.5-py3-none-win_amd64.whl (10.3 MB)
+   ---------------------------------------- 10.3/10.3 MB 296.4 kB/s  0:00:34
+Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+Building wheels for collected packages: chess-policy-system, chess
+  Building editable for chess-policy-system (pyproject.toml): started
+  Building editable for chess-policy-system (pyproject.toml): finished with status 'done'
+  Created wheel for chess-policy-system: filename=chess_policy_system-0.5.0-0.editable-py3-none-any.whl size=1800 sha256=3bec49806e77ce4dadb01c014a4fa74431bc6d3ff18db07d6adf801bcecf2baa
+  Stored in directory: C:\Users\User\AppData\Local\Temp\pip-ephem-wheel-cache-l6ag0y9_\wheels\7c\00\df\049d60a5d28d706b54b8e4744b259b3d21a1725915b473c0f5
+  Building wheel for chess (pyproject.toml): started
+  Building wheel for chess (pyproject.toml): finished with status 'done'
+  Created wheel for chess: filename=chess-1.11.2-py3-none-any.whl size=147918 sha256=e88be38d27badb0bced6afaf41dc0533bd590d7d499b7a84ab25cbc167c94324
+  Stored in directory: C:\Users\User\AppData\Local\Temp\pip-ephem-wheel-cache-l6ag0y9_\wheels\83\1f\4e\8f4300f7dd554eb8de70ddfed96e94d3d030ace10c5b53d447
+Successfully built chess-policy-system chess
+Installing collected packages: ruff, pygments, pluggy, packaging, numpy, iniconfig, idna, h11, colorama, chess, certifi, python-chess, pytest, httpcore, anyio, httpx, chess-policy-system
+
+Successfully installed anyio-4.16.0 certifi-2026.10.23 chess-1.11.2 chess-policy-system-0.5.0 colorama-0.4.6 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 numpy-2.5.5 packaging-26.3 pluggy-1.7.0 pygments-2.21.0 pytest-9.2.0 python-chess-1.999 ruff-0.17.5
+2.14.1+cu126 True NVIDIA GeForce RTX 3060
+INSTALL_OK

@@ -1,0 +1,4 @@
+data/v6/labels_dev_d10: 22341 positions, 592344 move scores, depth 10, missing (scored singly) = 0 (0.000% of moves)
+  row 7: 40 moves, same best move=False, best score stored 108 vs direct 97, median diff 12 cp, exact 0/40
+  row 11170: 24 moves, same best move=False, best score stored 388 vs direct 380, median diff 17 cp, exact 0/24
+  row 22338: 13 moves, same best move=False, best score stored -495 vs direct -510, median diff 56 cp, exact 0/13

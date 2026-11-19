@@ -209,7 +209,8 @@ def write_summary():
             for g, vals in sorted(groups.items(), key=lambda kv: np.mean(kv[1])):
                 lines.append(f"| {g} | {len(vals)} | {np.mean(vals):.1f} | {np.std(vals):.1f} |")
             lines.append("")
-    (RESULTS / "SUMMARY.md").write_text("\n".join(lines) + "\n")
+    # utf-8: the table header has a "Δ", which Windows' default cp1252 cannot encode
+    (RESULTS / "SUMMARY.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("wrote", RESULTS / "SUMMARY.md", flush=True)
 
 

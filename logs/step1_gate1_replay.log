@@ -1,0 +1,8 @@
+0 35 exact match | top stored [np.int64(-131), np.int64(-108), np.int64(-103)] direct [-131, -108, -103]
+1 43 exact match | top stored [np.int64(82), np.int64(91), np.int64(118)] direct [82, 91, 118]
+2 35 exact match | top stored [np.int64(-126), np.int64(-118), np.int64(-118)] direct [-126, -118, -118]
+3 42 exact match | top stored [np.int64(59), np.int64(67), np.int64(118)] direct [59, 67, 118]
+4 37 exact match | top stored [np.int64(-360), np.int64(-238), np.int64(-109)] direct [-360, -238, -109]
+5 33 exact match | top stored [np.int64(-496), np.int64(-482), np.int64(114)] direct [-496, -482, 114]
+6 26 exact match | top stored [np.int64(-155), np.int64(-131), np.int64(-106)] direct [-155, -131, -106]
+7 40 exact match | top stored [np.int64(74), np.int64(103), np.int64(108)] direct [74, 103, 108]

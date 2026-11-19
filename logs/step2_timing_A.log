@@ -1,0 +1,12 @@
+{"event": "start", "device": "cuda", "parameters": 303064, "train_rows": 279365, "dev_rows": 20000, "steps": 1092, "model": {"width": 64, "layers": 2, "heads": 4, "experts": 4, "top_k": 2, "expansion": 3, "moe_every": 2, "dropout": 0.0, "attention": "soft", "value_head": false}}
+{"event": "train", "epoch": 0, "step": 200, "of": 1092, "lr": 0.0006667, "loss": 2.944, "policy": 2.9326, "value": 0.0, "minutes": 0.31}
+{"event": "train", "epoch": 0, "step": 400, "of": 1092, "lr": 0.0009619, "loss": 2.6813, "policy": 2.6703, "value": 0.0, "minutes": 0.59}
+{"event": "train", "epoch": 0, "step": 600, "of": 1092, "lr": 0.0006877, "loss": 2.5969, "policy": 2.5861, "value": 0.0, "minutes": 0.89}
+{"event": "train", "epoch": 0, "step": 800, "of": 1092, "lr": 0.0003014, "loss": 2.523, "policy": 2.5123, "value": 0.0, "minutes": 1.13}
+{"event": "train", "epoch": 0, "step": 1000, "of": 1092, "lr": 3.36e-05, "loss": 2.4719, "policy": 2.4613, "value": 0.0, "minutes": 1.44}
+{"event": "dev", "epoch": 0, "improved": true, "minutes": 1.58, "nll": 2.441347996520996, "top1": 0.256, "top3": 0.48715, "cp_loss": 107.27765, "best_rate": 0.26285, "blunder_rate": 0.16565, "rows": 20000}
+{"event": "done", "best_epoch": 0, "best_dev_score": 107.27765, "parameters": 303064, "minutes": 1.58}
+
+real	1m50.719s
+user	0m0.016s
+sys	0m0.031s

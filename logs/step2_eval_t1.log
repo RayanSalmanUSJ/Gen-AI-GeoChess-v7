@@ -1,0 +1,10 @@
+v3                           cp lost  100.6 [96.6, 104.8]  best  29.3%  blunders  15.0%  agree 28.50%
+v4                           cp lost  100.9 [96.8, 104.8]  best  29.3%  blunders  15.3%  agree 28.58%
+v5                           cp lost  101.7 [97.7, 105.5]  best  29.0%  blunders  15.3%  agree 28.14%
+A_played_s0                  cp lost   85.2 [81.5, 88.8]  best  31.1%  blunders  12.1%  agree 30.82%
+A_played_s1                  cp lost   85.1 [81.7, 88.7]  best  31.6%  blunders  12.1%  agree 31.08%
+A_played_s2                  cp lost   83.8 [80.2, 87.2]  best  32.0%  blunders  11.9%  agree 31.38%
+B_soft_s0                    cp lost   78.7 [75.5, 82.0]  best  31.1%  blunders  10.7%  agree 30.28%
+B_soft_s1                    cp lost   77.6 [74.1, 81.2]  best  31.7%  blunders  10.7%  agree 30.57%
+B_soft_s2                    cp lost   77.5 [74.2, 80.7]  best  31.3%  blunders  10.5%  agree 30.56%
+C_value_s0                   cp lost   82.9 [79.6, 86.3]  best  30.5%  blunders  11.7%  agree 29.40%

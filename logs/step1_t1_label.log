@@ -1,0 +1,51 @@
+{"chunks_total": 42, "chunks_todo": 42, "workers": 9, "depth": 14, "positions": 10378}
+{"chunk": 2, "positions_done": 250, "per_second": 0.2, "eta_minutes": 700.6}
+{"chunk": 6, "positions_done": 500, "per_second": 0.4, "eta_minutes": 382.5}
+{"chunk": 3, "positions_done": 750, "per_second": 0.6, "eta_minutes": 249.7}
+{"chunk": 1, "positions_done": 1000, "per_second": 0.8, "eta_minutes": 184.3}
+{"chunk": 4, "positions_done": 1250, "per_second": 1.1, "eta_minutes": 144.3}
+{"chunk": 8, "positions_done": 1500, "per_second": 1.2, "eta_minutes": 121.5}
+{"chunk": 5, "positions_done": 1750, "per_second": 1.4, "eta_minutes": 102.3}
+{"chunk": 0, "positions_done": 2000, "per_second": 1.6, "eta_minutes": 87.8}
+{"chunk": 7, "positions_done": 2250, "per_second": 1.8, "eta_minutes": 75.9}
+{"chunk": 9, "positions_done": 2500, "per_second": 1.1, "eta_minutes": 117.0}
+{"chunk": 15, "positions_done": 2750, "per_second": 1.2, "eta_minutes": 105.6}
+{"chunk": 16, "positions_done": 3000, "per_second": 1.3, "eta_minutes": 95.0}
+{"chunk": 12, "positions_done": 3250, "per_second": 1.4, "eta_minutes": 85.9}
+{"chunk": 13, "positions_done": 3500, "per_second": 1.5, "eta_minutes": 77.0}
+{"chunk": 10, "positions_done": 3750, "per_second": 1.6, "eta_minutes": 69.7}
+{"chunk": 14, "positions_done": 4000, "per_second": 1.7, "eta_minutes": 64.1}
+{"chunk": 17, "positions_done": 4250, "per_second": 1.7, "eta_minutes": 58.9}
+{"chunk": 11, "positions_done": 4500, "per_second": 1.8, "eta_minutes": 53.5}
+{"chunk": 23, "positions_done": 4750, "per_second": 1.4, "eta_minutes": 66.6}
+{"chunk": 19, "positions_done": 5000, "per_second": 1.5, "eta_minutes": 60.6}
+{"chunk": 18, "positions_done": 5250, "per_second": 1.5, "eta_minutes": 55.2}
+{"chunk": 20, "positions_done": 5500, "per_second": 1.6, "eta_minutes": 50.9}
+{"chunk": 22, "positions_done": 5750, "per_second": 1.7, "eta_minutes": 46.3}
+{"chunk": 21, "positions_done": 6000, "per_second": 1.7, "eta_minutes": 43.3}
+{"chunk": 24, "positions_done": 6250, "per_second": 1.7, "eta_minutes": 39.7}
+{"chunk": 26, "positions_done": 6500, "per_second": 1.8, "eta_minutes": 36.2}
+{"chunk": 25, "positions_done": 6750, "per_second": 1.8, "eta_minutes": 33.1}
+{"chunk": 27, "positions_done": 7000, "per_second": 1.5, "eta_minutes": 36.6}
+{"chunk": 30, "positions_done": 7250, "per_second": 1.6, "eta_minutes": 33.1}
+{"chunk": 29, "positions_done": 7500, "per_second": 1.6, "eta_minutes": 29.5}
+{"chunk": 31, "positions_done": 7750, "per_second": 1.7, "eta_minutes": 26.2}
+{"chunk": 28, "positions_done": 8000, "per_second": 1.7, "eta_minutes": 23.1}
+{"chunk": 33, "positions_done": 8250, "per_second": 1.7, "eta_minutes": 20.4}
+{"chunk": 34, "positions_done": 8500, "per_second": 1.8, "eta_minutes": 17.8}
+{"chunk": 32, "positions_done": 8750, "per_second": 1.8, "eta_minutes": 15.1}
+{"chunk": 35, "positions_done": 9000, "per_second": 1.8, "eta_minutes": 12.5}
+{"chunk": 41, "positions_done": 9128, "per_second": 1.8, "eta_minutes": 11.9}
+{"chunk": 38, "positions_done": 9378, "per_second": 1.7, "eta_minutes": 9.6}
+{"chunk": 37, "positions_done": 9628, "per_second": 1.8, "eta_minutes": 7.0}
+{"chunk": 36, "positions_done": 9878, "per_second": 1.8, "eta_minutes": 4.6}
+{"chunk": 40, "positions_done": 10128, "per_second": 1.9, "eta_minutes": 2.2}
+{"chunk": 39, "positions_done": 10378, "per_second": 1.9, "eta_minutes": 0.0}
+{
+  "split": "test",
+  "rows": 10378,
+  "positions_file": "data/v6/positions_holdout.npz",
+  "labelled": true,
+  "depth": 14,
+  "label_dir": "data/v6/labels_t1_d14"
+}

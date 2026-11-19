@@ -1,0 +1,22 @@
+A_played       cp lost   84.7 [81.3, 87.9]
+B_soft         cp lost   77.9 [74.8, 81.0]
+C_value        cp lost   82.4 [79.3, 85.6]
+att_hard       cp lost   73.4 [70.5, 76.3]
+att_hard_ray   cp lost   72.4 [69.5, 75.4]
+att_hard_only  cp lost   74.0 [71.1, 76.6]
+att_plain      cp lost  102.0 [98.2, 105.9]
+moe_off        cp lost   83.3 [80.2, 86.6]
+B_soft - A_played: -6.77 cp [-8.45, -5.01]  best-move -0.19 pts  blunders -1.42 pts
+C_value - A_played: -2.27 cp [-4.00, -0.45]  best-move -1.15 pts  blunders -0.51 pts
+att_hard - A_played: -11.30 cp [-13.23, -9.37]  best-move +0.25 pts  blunders -2.18 pts
+att_hard_ray - A_played: -12.32 cp [-14.31, -10.20]  best-move +0.84 pts  blunders -2.18 pts
+att_hard_only - A_played: -10.72 cp [-12.82, -8.78]  best-move -0.05 pts  blunders -2.02 pts
+att_plain - A_played: +17.31 cp [+14.67, +19.90]  best-move -4.86 pts  blunders +3.07 pts
+moe_off - A_played: -1.37 cp [-3.17, +0.47]  best-move -1.12 pts  blunders -0.41 pts
+A_played - C_value: +2.27 cp [+0.45, +4.00]  best-move +1.15 pts  blunders +0.51 pts
+B_soft - C_value: -4.50 cp [-5.94, -2.95]  best-move +0.95 pts  blunders -0.91 pts
+att_hard - C_value: -9.03 cp [-10.90, -7.21]  best-move +1.40 pts  blunders -1.66 pts
+att_hard_ray - C_value: -10.05 cp [-11.93, -8.17]  best-move +1.99 pts  blunders -1.67 pts
+att_hard_only - C_value: -8.45 cp [-10.42, -6.64]  best-move +1.10 pts  blunders -1.51 pts
+att_plain - C_value: +19.58 cp [+17.00, +22.19]  best-move -3.72 pts  blunders +3.58 pts
+moe_off - C_value: +0.90 cp [-0.44, +2.12]  best-move +0.03 pts  blunders +0.10 pts

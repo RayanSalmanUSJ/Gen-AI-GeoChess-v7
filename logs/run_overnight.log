@@ -1,0 +1,8 @@
+train labels ready Wed Nov 18 23:57:04 MEST 2026
+=== tau Wed Nov 18 23:57:04 MEST 2026
+=== core Thu Nov 19 00:23:37 MEST 2026
+=== attention Thu Nov 19 01:19:47 MEST 2026
+=== moe Thu Nov 19 02:57:25 MEST 2026
+=== scaling Thu Nov 19 03:18:30 MEST 2026
+GPU stages done Thu Nov 19 04:53:01 MEST 2026; waiting for T1
+T2_EVAL_DONE Thu Nov 19 14:45:38 MEST 2026

@@ -97,6 +97,23 @@ def test_positions_reproduce_v5_splits(tmp_path):
     assert len(np.unique(pos["key"])) == len(pos["key"])  # de-duplicated
 
 
+def test_write_summary_handles_non_ascii(tmp_path, monkeypatch):
+    # crashed on Windows (cp1252) at the "Δ" in the paired-difference table
+    from chess_policy import v6_experiments as ex
+
+    monkeypatch.setattr(ex, "RESULTS", tmp_path / "results")
+    monkeypatch.setattr(ex, "RUNS", tmp_path / "runs")
+    (tmp_path / "results").mkdir()
+    stat = {"mean": 50.0, "lo": 45.0, "hi": 55.0}
+    model = {"cp_loss": stat, "best_rate": {"mean": 0.4}, "blunder_rate": {"mean": 0.1}}
+    rep = {"rows": 10, "games": 2, "models": {"v5": model, "A_played_s0": model},
+           "paired_vs_v5": {"A_played_s0": {"cp_loss": stat}}}
+    (tmp_path / "results" / "t2.json").write_text(json.dumps(rep))
+    monkeypatch.setattr("locale.getpreferredencoding", lambda *a, **k: "cp1252")
+    ex.write_summary()
+    assert "Δ cp lost" in (tmp_path / "results" / "SUMMARY.md").read_text(encoding="utf-8")
+
+
 def test_label_bad_engine_fails_fast(tmp_path):
     # used to hang forever: the pool initializer failed and was respawned endlessly
     build_positions([ROOT / "data" / "fishtest_train.pgn.gz"], tmp_path / "p.npz", max_games=2)

@@ -1,0 +1,4 @@
+=== stage baseline
+[run] A_played_s0 --train data/v6/train_nolabel --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\A_played_s0 --policy-target played --seed 0
+[run] A_played_s1 --train data/v6/train_nolabel --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\A_played_s1 --policy-target played --seed 1
+[run] A_played_s2 --train data/v6/train_nolabel --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\A_played_s2 --policy-target played --seed 2
