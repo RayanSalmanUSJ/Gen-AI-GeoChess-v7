@@ -27,7 +27,7 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-from .v6_data import V6Dataset, cp_to_value
+from .v6_data import V6Dataset
 from .v6_model import V6Config, V6Policy, load_any, parameter_count, save_v6
 
 CLIP = 1000

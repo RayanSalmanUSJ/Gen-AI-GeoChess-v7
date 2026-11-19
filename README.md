@@ -1,3 +1,7 @@
+> **Current status (19 Nov 2026): v6 chunk 1 is done.** New contributors (and their AI assistants): read
+> [`CLAUDE.md`](CLAUDE.md) and [`HANDOFF.md`](HANDOFF.md) first. The rest of this README describes v5,
+> which is the base v6 builds on. Best v6 model: 49.2 cp lost/move on T1 vs 101.7 for v5; +1032 vs +680 Elo.
+
 # Geometric Chess Policy System — v0.5
 
 A current chess position becomes probabilities over its legal UCI move tokens.

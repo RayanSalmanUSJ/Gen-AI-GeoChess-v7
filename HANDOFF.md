@@ -2,7 +2,9 @@
 
 Written 19 Nov 2026 at the end of chunk 1, for the two teammates who continue with chunk 2
 (teammate 1) and chunk 3 (teammate 2). Everything below was run on the team lead's Windows PC.
-`CLAUDE.md` is the original plan; this file says what actually happened.
+`docs/CLAUDE_chunk1.md` is chunk 1's original plan (it was `CLAUDE.md` until the end of chunk 1);
+this file says what actually happened. The new `CLAUDE.md` is the briefing for chunks 2 and 3,
+including how to set up a new machine from the Drive zips and check the setup.
 
 **Headline.** Value-optimal training beats behavioural cloning on the large test set, and the
 geometry-masked attention heads are the biggest single win:
@@ -47,7 +49,7 @@ geometry-masked attention heads are the biggest single win:
 * Tests: v5 30 passed + 1 skipped; v6 now 15 (11 original + 4 added for the Windows fixes below).
   Full suite: **45 passed, 1 skipped** with `STOCKFISH` set.
 * **Gate 0 passed exactly** on `--device cpu`: v3 62.3, v4 60.5, v5 63.2 cp lost on T2. On CUDA
-  (bf16) they come out 62.1 / 60.6 / 63.0, the "fraction" CLAUDE.md expected.
+  (bf16) they come out 62.1 / 60.6 / 63.0, the "fraction" the chunk-1 plan expected.
 
 ### Step 1 — data and labels (18–19 Nov)
 
@@ -66,11 +68,11 @@ geometry-masked attention heads are the biggest single win:
   (made by Prototype 2 with Hash 32): same best move in the 3 spot-checked positions, scores
   within ~10–25 cp.
 * **Decision: T1 at depth 14, not 16.** Measured on 20 T1 positions under load: depth 16 =
-  13.3 s/position (→ ~4.2 h with 9 workers, over CLAUDE.md's ~4 h limit), depth 14 = 5.6 s
+  13.3 s/position (→ ~4.2 h with 9 workers, over the chunk-1 plan's ~4 h limit), depth 14 = 5.6 s
   (→ ~1.8 h). T1 = every 10th holdout position, **10,378 positions from 800 games, depth 14**.
   T1 was labelled with `--chunk 250` so the 9 workers stay busy (11 chunks of 1,000 would leave
   7 of them idle for half the time).
-* **Fix 1 (v6_data.label):** on Windows, a relative engine path written with `/` (CLAUDE.md's
+* **Fix 1 (v6_data.label):** on Windows, a relative engine path written with `/` (the chunk-1 plan's
   `tools/stockfish/stockfish.exe`) cannot be started by CreateProcess, and a pool initializer that
   fails is respawned forever, so labelling hung silently. `label()` now makes the path absolute
   and starts one engine up front to fail fast. Tests:
@@ -261,7 +263,7 @@ and the T1 table there. Training time per run: S ~9 min, M ~20 min, L ~23 min on
 | `data/v6/extra_d10`, `big_d10` | D2 tensors (707,896 rows), train+D2 (987,261 rows) | 862 MB / 1.2 GB |
 | `benchmarks/t2_p2_1312` | T2 (Prototype 2, Stockfish 15.1 depth 12) | in git |
 | `runs/v6/<run>/` (39 runs) | `best.pt`, `last.pt`, `config.json`, `metrics.json`, `log.jsonl` | 517 MB total |
-| `runs/v6_checkpoints_chunk1.zip` | every run's `best.pt` (+ sha256), `metrics.json`, `config.json` | 240 MB |
+| `share_drive/` (git-ignored) | the three zips for the team Drive (section 6) | 345 MB |
 | `runs/v6/<run>.stdout.txt` | training stdout | small |
 | `results/v6/` | SUMMARY.md, t2.json, t1.json, gate2_*.json | 1.6 MB, in git |
 | `logs/` | every log and driver script of chunk 1 | 0.2 MB, in git |
@@ -304,7 +306,7 @@ $env:STOCKFISH = "tools\stockfish\stockfish.exe"   # backslashes, or any path af
 
 ### Commands actually used (from the repo root, `PYTHONPATH=src`)
 
-The CLAUDE.md commands work unchanged except for:
+The chunk-1 plan's commands (`docs/CLAUDE_chunk1.md`) work unchanged except for:
 * `--engine` given as `C:\Users\User\Documents\GeoChess\tools\stockfish\stockfish.exe`
   (any form works after Fix 1), `--workers 10` for dev/train, `--workers 9` while training ran;
 * T1: `... label data/v6/positions_holdout.npz --splits test --stride 10 --depth 14 --chunk 250
@@ -388,9 +390,17 @@ speed. Suggested first steps, in order:
 * Windows notes: give Stockfish an absolute or backslash path to other tools; long jobs started
   from the Claude app die when the app restarts — start them with `Start-Process` (see `logs/`).
 
-**Sharing checkpoints** (`runs/` is git-ignored): **`runs/v6_checkpoints_chunk1.zip`** (240 MB)
-holds `best.pt` + `best.pt.sha256` + `metrics.json` + `config.json` for all 39 runs. Unzip it at
-the repo root (paths inside start with `runs/v6/`); `load_v6` checks each sha256. Share it by
-Drive or similar (too big for git). The data (`data/v6`, ~3 GB) is rebuilt with the commands in
-section 4; the Stockfish labels alone (`data/v6/labels_*`, ~66 MB) are worth sharing too, since
-they took ~16 CPU-hours to make.
+**Sharing what is not in git** (`data/v6/`, `runs/`, `tools/` are git-ignored). The team lead
+uploads these three files from `share_drive/` to the team's Google Drive folder; teammates unzip
+each at the repo root (paths inside already start with `runs/`, `data/` or `tools/`):
+
+| Zip | Contents | Size |
+| --- | --- | --- |
+| `GeoChess_v6_checkpoints.zip` | `runs/v6/<run>/best.pt` (+ `.sha256`), `config.json`, `metrics.json` for all 39 runs | 240 MB |
+| `GeoChess_v6_data.zip` | `data/v6/positions_*.npz` (+ `.json`) and every Stockfish label folder `data/v6/labels_*` | 79 MB |
+| `GeoChess_stockfish_15.1_windows_avx2.zip` | `tools/stockfish/stockfish.exe` (Stockfish 15.1, GPLv3, built from the official `sf_15.1` source; bench 3467381) | 26 MB |
+
+The training tensors (`dev_d10`, `train_d10`, `t1_d14`, `big_d10`, …, ~3 GB) are not shared:
+they are rebuilt from positions + labels in a few minutes with the `assemble`/`concat`
+commands in `CLAUDE.md` ("Setting up"), which also lists the numbers that prove the setup is
+right. This whole path was tested from a fresh clone of the GitHub repo plus these three zips.

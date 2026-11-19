@@ -299,10 +299,10 @@ def assemble(positions_file, out_dir, split, label_dir=None, workers=0, max_rows
     with ctx.Pool(workers) as pool:
         i = 0
         for part in pool.imap(_encode_rows, batches):
-            for p, g, a, l in part:
+            for p, g, a, legal_row in part:
                 pieces[i], geometry[i], attacks[i] = p, g, a
-                legal_parts.append(l)
-                lengths[i] = len(l)
+                legal_parts.append(legal_row)
+                lengths[i] = len(legal_row)
                 i += 1
     legal_flat = np.concatenate(legal_parts).astype(np.int16)
     offsets = np.concatenate([[0], np.cumsum(lengths.astype(np.int64))])
@@ -439,18 +439,18 @@ def main(argv=None):
     p.add_argument("--exclude", action="append", help="positions file to exclude (repeatable)")
     p.add_argument("--max-games", type=int, default=0)
     p.add_argument("--skip-games", type=int, default=0)
-    l = sub.add_parser("label")
-    l.add_argument("positions")
-    l.add_argument("--out", required=True)
-    l.add_argument("--engine", required=True)
-    l.add_argument("--depth", type=int, default=10)
-    l.add_argument("--workers", type=int, default=0)
-    l.add_argument("--chunk", type=int, default=1000)
-    l.add_argument("--shard", type=int, default=0)
-    l.add_argument("--of", type=int, default=1)
-    l.add_argument("--splits", default="train,dev,test")
-    l.add_argument("--limit", type=int, default=0)
-    l.add_argument("--stride", type=int, default=1, help="label every Nth position only")
+    lab = sub.add_parser("label")
+    lab.add_argument("positions")
+    lab.add_argument("--out", required=True)
+    lab.add_argument("--engine", required=True)
+    lab.add_argument("--depth", type=int, default=10)
+    lab.add_argument("--workers", type=int, default=0)
+    lab.add_argument("--chunk", type=int, default=1000)
+    lab.add_argument("--shard", type=int, default=0)
+    lab.add_argument("--of", type=int, default=1)
+    lab.add_argument("--splits", default="train,dev,test")
+    lab.add_argument("--limit", type=int, default=0)
+    lab.add_argument("--stride", type=int, default=1, help="label every Nth position only")
     a = sub.add_parser("assemble")
     a.add_argument("positions")
     a.add_argument("--out", required=True)

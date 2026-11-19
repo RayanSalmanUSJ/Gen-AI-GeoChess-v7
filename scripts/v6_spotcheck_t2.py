@@ -2,6 +2,7 @@
 
   HASH=16 python scripts/v6_spotcheck_t2.py benchmarks/t2_p2_1312 <stockfish.exe> 0 500 1000
 """
+import os
 import sys
 import numpy as np
 import chess
@@ -14,7 +15,7 @@ rows = [int(x) for x in sys.argv[3:]] or [0, 500, 1000]
 fens = open(f"{root}/fen.txt").read().split("\n")
 cp, off, legal = (np.load(f"{root}/{n}.npy") for n in ("cp", "offsets", "legal"))
 eng = chess.engine.SimpleEngine.popen_uci(engine_path)
-import os; eng.configure({"Threads": 1, "Hash": int(os.environ.get("HASH", 16))})
+eng.configure({"Threads": 1, "Hash": int(os.environ.get("HASH", 16))})
 for r in rows:
     board = chess.Board(fens[r])
     ours, missing = score_all_moves(eng, board, chess.engine.Limit(depth=12))

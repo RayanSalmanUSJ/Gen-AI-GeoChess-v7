@@ -12,3 +12,5 @@ data/v6/
 tools/
 data/fishtest_extra.pgn.gz
 *.stdout.txt
+share_drive/
+GeoChess_chunk1.zip

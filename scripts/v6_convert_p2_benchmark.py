@@ -30,8 +30,12 @@ def main(test_npz, p2_dir, out):
         moves = sorted(board.legal_moves, key=move_id)
         slot = {int(a): j for j, a in enumerate(d["idx"][i]) if a >= 0}
         row = [int(d["cp"][i, slot[p2enc.action_index(board, m)]]) for m in moves]
-        pieces.append(e["pieces"]); geometry.append(e["geometry"]); attacks.append(e["attacks"])
-        legal.append(e["legal"]); cps.append(row); lengths.append(len(moves))
+        pieces.append(e["pieces"])
+        geometry.append(e["geometry"])
+        attacks.append(e["attacks"])
+        legal.append(e["legal"])
+        cps.append(row)
+        lengths.append(len(moves))
         # the benchmark has no recorded move; mark Stockfish's best as "target"
         targets.append(int(np.argmax(row)))
     offsets = np.concatenate([[0], np.cumsum(lengths)]).astype(np.int64)
