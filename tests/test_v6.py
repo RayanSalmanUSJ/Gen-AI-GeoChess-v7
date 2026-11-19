@@ -134,6 +134,22 @@ def test_label_forward_slash_relative_engine_path(tmp_path, monkeypatch):
 
 
 @pytest.mark.skipif(not STOCKFISH, reason="set STOCKFISH=<path> to run")
+def test_label_resume_relabels_corrupt_chunk(tmp_path):
+    # a reboot during labelling left a chunk that was not a valid .npz; assemble then crashed
+    from chess_policy.v6_data import load_labels
+
+    build_positions([ROOT / "data" / "fishtest_train.pgn.gz"], tmp_path / "p.npz", max_games=2)
+    args = dict(depth=2, workers=1, chunk=5, splits=("train",), limit=10)
+    label(tmp_path / "p.npz", tmp_path / "lab", STOCKFISH, **args)
+    good = np.load(tmp_path / "lab" / "chunk_00001.npz")["cp"].copy()
+    (tmp_path / "lab" / "chunk_00001.npz").write_bytes(b"\0" * 300)
+    label(tmp_path / "p.npz", tmp_path / "lab", STOCKFISH, **args)
+    rows, cp, lengths, missing, meta = load_labels(tmp_path / "lab")
+    assert len(rows) == 10 and len(cp) == lengths.sum()
+    assert np.load(tmp_path / "lab" / "chunk_00001.npz")["cp"].shape == good.shape
+
+
+@pytest.mark.skipif(not STOCKFISH, reason="set STOCKFISH=<path> to run")
 def test_label_assemble_train_eval(tmp_path):
     build_positions([ROOT / "data" / "fishtest_train.pgn.gz"], tmp_path / "p.npz", max_games=12)
     label(tmp_path / "p.npz", tmp_path / "lab", STOCKFISH, depth=4, workers=2, chunk=50,

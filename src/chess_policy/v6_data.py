@@ -171,10 +171,21 @@ def _label_chunk(job):
         lengths.append(len(scores))
         missing += miss
     tmp = Path(str(out_path) + ".tmp.npz")
-    np.savez(tmp, cp=np.clip(np.array(flat, dtype=np.int32), -MATE, MATE).astype(np.int16),
-             lengths=np.array(lengths, dtype=np.int16), missing=np.int32(missing))
+    with open(tmp, "wb") as f:  # fsync before the rename: a reboot once left a corrupt chunk
+        np.savez(f, cp=np.clip(np.array(flat, dtype=np.int32), -MATE, MATE).astype(np.int16),
+                 lengths=np.array(lengths, dtype=np.int16), missing=np.int32(missing))
+        f.flush()
+        os.fsync(f.fileno())
     os.replace(tmp, out_path)
     return chunk_id, len(fens), time.monotonic() - t0
+
+
+def _chunk_ok(path):
+    try:
+        with np.load(path) as z:
+            return len(z["cp"]) == int(z["lengths"].astype(np.int64).sum())
+    except Exception:
+        return False
 
 
 def label(positions_file, out_dir, engine_path, depth=10, workers=0, chunk=1000, shard=0,
@@ -210,7 +221,10 @@ def label(positions_file, out_dir, engine_path, depth=10, workers=0, chunk=1000,
             continue
         path = out_dir / f"chunk_{c:05d}.npz"
         if path.exists():
-            continue
+            if _chunk_ok(path):
+                continue
+            print(json.dumps({"relabel_corrupt_chunk": c}), flush=True)
+            path.unlink()
         jobs.append((c, pos["fen"][index[c * chunk:(c + 1) * chunk]], path))
     workers = workers or max(1, (os.cpu_count() or 2) - 1)
     print(json.dumps({"chunks_total": n_chunks, "chunks_todo": len(jobs), "workers": workers,
