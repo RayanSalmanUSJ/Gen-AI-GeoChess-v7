@@ -1,0 +1,13 @@
+=== stage scaling
+[skip] scale_S_70K (finished)
+[skip] scale_S_140K (finished)
+[skip] scale_S_279K (finished)
+[run] scale_S_1M --train data/v6/big_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\scale_S_1M --policy-target soft --tau 100 --value-weight 1.0 --attention hard_ray --width 64 --layers 2 --heads 4 --learning-rate 0.001 --epochs 4 --max-train-rows 0 --seed 0
+[skip] scale_M_70K (finished)
+[skip] scale_M_140K (finished)
+[skip] scale_M_279K (finished)
+[run] scale_M_1M --train data/v6/big_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\scale_M_1M --policy-target soft --tau 100 --value-weight 1.0 --attention hard_ray --width 128 --layers 6 --heads 8 --learning-rate 0.0006 --epochs 4 --max-train-rows 0 --seed 0
+[skip] scale_L_70K (finished)
+[skip] scale_L_140K (finished)
+[skip] scale_L_279K (finished)
+[run] scale_L_1M --train data/v6/big_d10 --dev data/v6/dev_d10 --out C:\Users\User\Documents\GeoChess\runs\v6\scale_L_1M --policy-target soft --tau 100 --value-weight 1.0 --attention hard_ray --width 256 --layers 6 --heads 8 --learning-rate 0.0004 --epochs 4 --max-train-rows 0 --seed 0

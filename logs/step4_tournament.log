@@ -1,0 +1,20 @@
+8 players, 8 openings, 448 games
+50/448 games, 7s
+100/448 games, 188s
+150/448 games, 213s
+200/448 games, 591s
+250/448 games, 1130s
+300/448 games, 1201s
+350/448 games, 1601s
+400/448 games, 2294s
+448/448 games, 3193s
+
+player                              score       Elo (Random = 0)
+Stockfish, depth 1                  88.4%   +1196 [+1053, +1484]
+v6 best (policy)                    75.0%   +1032 [ +892, +1288]
+Stockfish, Elo 1350                 73.2%   +1012 [ +865, +1259]
+v6 best (2-ply search)              66.5%    +939 [ +811, +1198]
+Team v5                             44.2%    +680 [ +563,  +895]
+Team v3 pilot                       33.5%    +534 [ +417,  +787]
+Geometry masks, ray (P2)            15.2%    +232 [ +131,  +387]
+Random moves                         4.0%      +0 [   +0,    +0]

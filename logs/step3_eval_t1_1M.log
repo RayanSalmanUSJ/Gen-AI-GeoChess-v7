@@ -1,0 +1,5 @@
+v5                           cp lost  101.7 [97.7, 105.5]  best  29.0%  blunders  15.3%  agree 28.14%
+scale_S_1M                   cp lost   65.5 [62.5, 68.5]  best  33.8%  blunders   8.6%  agree 33.22%
+scale_M_1M                   cp lost   50.7 [48.5, 53.0]  best  37.2%  blunders   6.0%  agree 36.90%
+scale_L_1M                   cp lost   49.2 [46.8, 51.4]  best  37.9%  blunders   5.8%  agree 37.80%
+scale_L_1M:search            cp lost   57.7 [55.1, 60.3]  best  35.1%  blunders   7.5%  agree 34.05%

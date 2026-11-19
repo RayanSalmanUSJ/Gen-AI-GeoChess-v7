@@ -1,0 +1,36 @@
+=== stage eval
+[eval] t2 42 models, 30 with search
+v3                           cp lost   62.1 [54.0, 70.6]  best  42.9%  blunders   8.8%  agree 29.65%
+v4                           cp lost   60.6 [51.8, 69.0]  best  43.8%  blunders   8.6%  agree 30.95%
+v5                           cp lost   63.0 [53.3, 74.5]  best  44.9%  blunders   8.6%  agree 31.40%
+A_played_s0                  cp lost   53.9 [44.7, 62.9]  best  46.5%  blunders   7.4%  agree 33.84%
+A_played_s1                  cp lost   54.6 [46.1, 63.2]  best  45.8%  blunders   7.2%  agree 32.70%
+A_played_s2                  cp lost   56.0 [47.6, 64.6]  best  45.8%  blunders   8.2%  agree 32.93%
+B_soft_s0                    cp lost   54.1 [46.1, 62.6]  best  45.9%  blunders   6.9%  agree 32.09%
+B_soft_s1                    cp lost   54.7 [47.5, 63.2]  best  45.0%  blunders   7.0%  agree 31.63%
+B_soft_s2                    cp lost   53.3 [45.9, 61.4]  best  46.1%  blunders   6.9%  agree 32.47%
+C_value_s0                   cp lost   55.0 [48.3, 62.6]  best  44.5%  blunders   7.2%  agree 30.72%
+C_value_s0:search            cp lost   65.9 [56.2, 76.5]  best  42.6%  blunders   9.8%  agree 28.35%
+C_value_s1                   cp lost   54.5 [46.6, 63.1]  best  45.3%  blunders   6.8%  agree 31.78%
+C_value_s1:search            cp lost   62.5 [55.3, 70.0]  best  42.1%  blunders   9.4%  agree 27.13%
+C_value_s2                   cp lost   60.3 [51.4, 70.6]  best  42.5%  blunders   8.5%  agree 28.96%
+C_value_s2:search            cp lost   63.2 [56.1, 69.9]  best  41.1%  blunders   9.2%  agree 26.30%
+att_hard_only_s0             cp lost   55.1 [47.1, 64.3]  best  45.7%  blunders   7.7%  agree 31.55%
+att_hard_only_s0:search      cp lost   60.0 [51.9, 68.4]  best  42.4%  blunders   8.4%  agree 28.96%
+att_hard_only_s1             cp lost   53.1 [45.8, 61.2]  best  46.2%  blunders   6.9%  agree 32.62%
+att_hard_only_s1:search      cp lost   60.4 [51.2, 70.6]  best  43.1%  blunders   9.1%  agree 28.89%
+att_hard_only_s2             cp lost   50.4 [42.8, 59.3]  best  47.8%  blunders   6.6%  agree 33.69%
+att_hard_only_s2:search      cp lost   60.4 [50.9, 71.5]  best  43.2%  blunders   8.8%  agree 28.35%
+att_hard_ray_s0              cp lost   52.4 [44.9, 61.2]  best  45.4%  blunders   6.5%  agree 31.71%
+att_hard_ray_s0:search       cp lost   60.7 [51.9, 70.5]  best  43.4%  blunders   9.3%  agree 28.89%
+att_hard_ray_s1              cp lost   52.7 [45.9, 59.3]  best  46.1%  blunders   7.0%  agree 32.85%
+att_hard_ray_s1:search       cp lost   59.1 [51.1, 67.9]  best  43.1%  blunders   8.6%  agree 28.89%
+att_hard_ray_s2              cp lost   51.5 [43.7, 59.2]  best  47.3%  blunders   6.6%  agree 33.54%
+att_hard_ray_s2:search       cp lost   60.6 [51.5, 70.5]  best  41.8%  blunders   8.7%  agree 28.51%
+att_hard_s0                  cp lost   48.6 [41.6, 57.1]  best  47.0%  blunders   5.6%  agree 33.08%
+att_hard_s0:search           cp lost   60.4 [52.1, 69.1]  best  43.1%  blunders   8.5%  agree 28.12%
+att_hard_s1                  cp lost   51.3 [43.9, 59.6]  best  46.0%  blunders   6.7%  agree 32.62%
+att_hard_s1:search           cp lost   56.5 [48.1, 65.6]  best  43.9%  blunders   7.8%  agree 30.11%
+att_hard_s2                  cp lost   51.5 [44.5, 59.6]  best  46.0%  blunders   6.2%  agree 32.01%
+att_hard_s2:search           cp lost   57.5 [49.3, 66.8]  best  43.1%  blunders   8.4%  agree 28.51%
+att_plain_s0                 cp lost   64.9 [55.3, 75.5]  best  42.7%  blunders   9.0%  agree 29.12%

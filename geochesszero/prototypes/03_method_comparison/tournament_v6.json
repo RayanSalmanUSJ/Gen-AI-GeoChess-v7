@@ -1,0 +1,10 @@
+[
+ {"name": "Random moves", "spec": "random"},
+ {"name": "Team v3 pilot", "spec": "v5:../../..:pilot.pt"},
+ {"name": "Team v5", "spec": "v5:../../..:policy_v5.pt"},
+ {"name": "Geometry masks, ray (P2)", "spec": "board:../02_value_distillation/runs/ray_s0/best.pt:policy"},
+ {"name": "v6 best (policy)", "spec": "v6:../../../runs/v6/scale_L_1M/best.pt:policy"},
+ {"name": "v6 best (2-ply search)", "spec": "v6:../../../runs/v6/scale_L_1M/best.pt:search"},
+ {"name": "Stockfish, depth 1", "spec": "uci:../../../tools/stockfish/stockfish.exe:depth=1"},
+ {"name": "Stockfish, Elo 1350", "spec": "uci:../../../tools/stockfish/stockfish.exe:elo=1350"}
+]

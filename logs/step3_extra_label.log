@@ -687,3 +687,75 @@
 {"chunk": 689, "positions_done": 388000, "per_second": 20.8, "eta_minutes": 18.3}
 {"chunk": 685, "positions_done": 389000, "per_second": 20.9, "eta_minutes": 17.5}
 {"chunk": 684, "positions_done": 390000, "per_second": 20.9, "eta_minutes": 16.6}
+{"chunk": 686, "positions_done": 391000, "per_second": 21.0, "eta_minutes": 15.8}
+{"chunk": 688, "positions_done": 392000, "per_second": 20.9, "eta_minutes": 15.0}
+{"chunk": 687, "positions_done": 393000, "per_second": 21.0, "eta_minutes": 14.2}
+{"chunk": 690, "positions_done": 394000, "per_second": 20.9, "eta_minutes": 13.5}
+{"chunk": 691, "positions_done": 395000, "per_second": 20.9, "eta_minutes": 12.7}
+{"chunk": 692, "positions_done": 396000, "per_second": 20.9, "eta_minutes": 11.9}
+{"chunk": 693, "positions_done": 397000, "per_second": 20.9, "eta_minutes": 11.1}
+{"chunk": 695, "positions_done": 398000, "per_second": 20.9, "eta_minutes": 10.3}
+{"chunk": 696, "positions_done": 399000, "per_second": 20.9, "eta_minutes": 9.5}
+{"chunk": 694, "positions_done": 400000, "per_second": 21.0, "eta_minutes": 8.7}
+{"chunk": 697, "positions_done": 401000, "per_second": 21.0, "eta_minutes": 7.9}
+{"chunk": 698, "positions_done": 402000, "per_second": 21.0, "eta_minutes": 7.1}
+{"chunk": 699, "positions_done": 403000, "per_second": 21.0, "eta_minutes": 6.3}
+{"chunk": 700, "positions_done": 404000, "per_second": 21.0, "eta_minutes": 5.5}
+{"chunk": 701, "positions_done": 405000, "per_second": 21.0, "eta_minutes": 4.7}
+{"chunk": 702, "positions_done": 406000, "per_second": 21.0, "eta_minutes": 3.9}
+{"chunk": 707, "positions_done": 406896, "per_second": 21.0, "eta_minutes": 3.2}
+{"chunk": 704, "positions_done": 407896, "per_second": 21.1, "eta_minutes": 2.4}
+{"chunk": 703, "positions_done": 408896, "per_second": 21.1, "eta_minutes": 1.6}
+{"chunk": 705, "positions_done": 409896, "per_second": 21.1, "eta_minutes": 0.8}
+{"chunk": 706, "positions_done": 410896, "per_second": 21.2, "eta_minutes": 0.0}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\User\Documents\GeoChess\src\chess_policy\v6_data.py", line 466, in <module>
+    main()
+  File "C:\Users\User\Documents\GeoChess\src\chess_policy\v6_data.py", line 461, in main
+    print(json.dumps(assemble(args.positions, args.out, args.split, args.labels,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GeoChess\src\chess_policy\v6_data.py", line 269, in assemble
+    lrows, cp_flat, lengths, missing, meta = load_labels(label_dir)
+                                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GeoChess\src\chess_policy\v6_data.py", line 244, in load_labels
+    z = np.load(path)
+        ^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GeoChess\tools\venv-cpu\Lib\site-packages\numpy\lib\_npyio_impl.py", line 471, in load
+    ret = NpzFile(fid, own_fid=own_fid, allow_pickle=allow_pickle,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GeoChess\tools\venv-cpu\Lib\site-packages\numpy\lib\_npyio_impl.py", line 197, in __init__
+    _zip = zipfile_factory(fid)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GeoChess\tools\venv-cpu\Lib\site-packages\numpy\lib\_npyio_impl.py", line 112, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1349, in __init__
+    self._RealGetContents()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1416, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+{"relabel_corrupt_chunk": 297}
+{"chunks_total": 708, "chunks_todo": 1, "workers": 10, "depth": 10, "positions": 707896}
+{"chunk": 297, "positions_done": 1000, "per_second": 5.7, "eta_minutes": 0.0}
+{
+  "split": "train",
+  "rows": 707896,
+  "positions_file": "data/v6/positions_extra.npz",
+  "labelled": true,
+  "depth": 10,
+  "label_dir": "data/v6/labels_extra_d10"
+}
+{
+  "split": "train",
+  "rows": 987261,
+  "labelled": true,
+  "sources": [
+    "data/v6/train_d10",
+    "data/v6/extra_d10"
+  ],
+  "depth": [
+    10
+  ]
+}
