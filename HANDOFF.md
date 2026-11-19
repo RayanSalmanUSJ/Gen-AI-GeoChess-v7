@@ -6,6 +6,9 @@ Written 19 Nov 2026 at the end of chunk 1, for the two teammates who continue wi
 this file says what actually happened. The new `CLAUDE.md` is the briefing for chunks 2 and 3,
 including how to set up a new machine from the Drive zips and check the setup.
 
+**Also read `docs/FULL_CONTEXT_FOR_AI.md`**: everything the chunk-1 assistant knew — exact
+definitions, data provenance, every decision and why, and the traps to avoid.
+
 **Headline.** Value-optimal training beats behavioural cloning on the large test set, and the
 geometry-masked attention heads are the biggest single win:
 
@@ -364,8 +367,11 @@ speed. Suggested first steps, in order:
 5. **LLM baseline via Ollama** (`geochesszero/prototypes/03_method_comparison/llm_player.py`).
 6. Figures: attention maps from `V6Policy.attention_maps()` for hard_ray (the masks make a
    good slide).
-7. **Demo:** v5's UCI and HTTP adapters (`chess_policy.uci`, `chess_policy.api`) load v6
-   checkpoints through `load_any`.
+7. **Demo:** v5's UCI and HTTP adapters (`chess_policy.uci`, `chess_policy.api`) do **not**
+   load v6 checkpoints yet: they go through `inference.Policy` → v5's `load_checkpoint`, which
+   raises "checkpoint format mismatch" on a v6 file (checked on 19 Nov; the chunk-1 plan's
+   claim that they work "via `load_any`" was wrong). Add a small v6 wrapper that uses
+   `v6_model.load_any` (keep v5's `inference.py` untouched) and a test.
 
 ---
 

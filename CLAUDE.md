@@ -1,6 +1,9 @@
 # GeoChess — instructions for Claude Code (chunks 2 and 3)
 
-Read this whole file, then `HANDOFF.md` in full, before doing anything. Together they replace
+Read this whole file, then `HANDOFF.md` and `docs/FULL_CONTEXT_FOR_AI.md` in full, before doing
+anything. `docs/FULL_CONTEXT_FOR_AI.md` is the chunk-1 assistant's full memory: exact
+definitions, data provenance, every decision and why, and a list of traps (section 10) that
+will otherwise bite you. Together they replace
 the memory of the earlier sessions. You start without that memory, so do not guess: if
 something here or in HANDOFF.md is unclear, ask the person you work for.
 
@@ -33,7 +36,7 @@ A 3-person team, Generative AI university course project. The person you work fo
 
 * **Chunk 2:** fix/calibrate the value head, MCTS with PUCT, oracle-labelled self-play,
   AlphaZero-style targets, big-to-small distillation. Plan and first steps: HANDOFF.md §5.
-* **Chunk 3:** full Phase 5 evaluation (Elo pool with Stockfish UCI_Elo levels, full T1 pass,
+* **Chunk 3:** a v6 demo adapter (the v5 UCI/HTTP adapters cannot load v6 checkpoints yet), full Phase 5 evaluation (Elo pool with Stockfish UCI_Elo levels, full T1 pass,
   value calibration, search-scaling curve, LLM baseline via Ollama), report, slides, demo.
   Plan: HANDOFF.md §5.
 
@@ -105,6 +108,7 @@ move-sequence model, the hand-crafted evaluator.
 
 | Path | What |
 | --- | --- |
+| `docs/FULL_CONTEXT_FOR_AI.md` | **Read second.** Definitions, provenance, decisions, traps |
 | `HANDOFF.md` | **Read first.** Everything chunk 1 did, decided and found; how to rerun; next steps |
 | `results/v6/SUMMARY.md` | every run's T2/T1 scores (auto-generated); `t1.json`, `t2.json`, `t1_1M.json`, `gate2_*.json` |
 | `src/chess_policy/v6_*.py` | the v6 model, data pipeline, trainer, evaluation, experiment runner |
