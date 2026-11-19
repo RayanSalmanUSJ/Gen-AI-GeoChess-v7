@@ -15,10 +15,14 @@ geometry-masked attention heads are the biggest single win:
   [−11.9, −8.2]**; plain (unmasked) attention is +19.6 cp worse than C.
 * On the small T2 (1,312 positions, 24 games) A, B and C are within noise of each other; the
   mask results hold there too.
-* Scaling: the L model on 279K positions loses **59.9 cp/move on T1 vs 101.7 for v5**
-  (paired −41.7 [−45.1, −38.2]). 1M-position runs: see section 2.4.
-* **2-ply search with the value head makes every model worse** (by 1–10 cp on T1): the value
-  head is not yet good enough to steer moves. That matters for chunk 2 (MCTS).
+* Scaling: more data and bigger models both help a lot. **The best model, `scale_L_1M`
+  (L size, hard_ray, ~1M positions), loses 49.2 cp/move on T1 against v5's 101.7 — half —
+  with 5.8 % blunders against 15.3 %.**
+* Round robin: **v6 best +1032 Elo vs v5 +680 (Random = 0); head-to-head vs v5 +13 =3 −0**;
+  level with Stockfish 15.1 at UCI_Elo 1350.
+* **2-ply search with the value head makes every model worse** (by 1–10 cp on T1, and ~90 Elo
+  in the round robin): the value head is not yet good enough to steer moves. That is the first
+  thing chunk 2 (MCTS) has to fix.
 
 ---
 
@@ -40,8 +44,8 @@ geometry-masked attention heads are the biggest single win:
   `make all ARCH=x86-64-avx2 COMP=mingw` from Git Bash. It answers `id name Stockfish 15.1` and
   its `bench` node count is **3,467,381**, the official 15.1 signature, so the search is
   identical to the official build.
-* Tests: v5 30 passed + 1 skipped; v6 now 14 (11 original + 3 added for the Windows fixes below).
-  Full suite: **44 passed, 1 skipped** with `STOCKFISH` set.
+* Tests: v5 30 passed + 1 skipped; v6 now 15 (11 original + 4 added for the Windows fixes below).
+  Full suite: **45 passed, 1 skipped** with `STOCKFISH` set.
 * **Gate 0 passed exactly** on `--device cpu`: v3 62.3, v4 60.5, v5 63.2 cp lost on T2. On CUDA
   (bf16) they come out 62.1 / 60.6 / 63.0, the "fraction" CLAUDE.md expected.
 
@@ -103,12 +107,19 @@ geometry-masked attention heads are the biggest single win:
   **834,362 positions, of which 707,896 in the train split** (the dev/test-split positions of
   D2 are not used). Labelled at depth 10. `big_d10` = train_d10 + extra_d10 ≈ **987K positions**
   (the "1M" runs).
-* 1M runs (S/M/L, 4 epochs): FILLED IN BELOW (section 2.4).
+* **Fix 3 (v6_data.label):** at the 05:42 reboot one D2 chunk (`chunk_00297.npz`) was left as a
+  file that was not a valid .npz (renamed into place before its data reached the disk), and
+  `assemble` crashed at 17:00. Chunks are now fsynced before the rename, and a resumed `label`
+  re-labels any unreadable chunk. Test: `test_label_resume_relabels_corrupt_chunk`. All other
+  label folders were checked: no other bad chunk.
+* 1M runs (S/M/L, 4 epochs) on `big_d10`, hard_ray, tau 100, value weight 1: section 2.4.
+  `scale_L_1M` has the best dev score of every run (44.5).
 
 ### Step 4 — search and a first round robin
 
 * `--stage eval` scored 2-ply search for every value-head model (section 2.3).
-* Round robin: FILLED IN BELOW (section 2.5). The team C++ engine was **skipped**: its source
+* Round robin with `scale_L_1M` as "v6 best" (section 2.5), 8 openings, 8 workers (not 10:
+  the T2 re-score was running at the same time). The team C++ engine was **skipped**: its source
   (`module1..module12 .cpp`, needed by `engines/november_adapter/build.sh`) is not in this repo.
   A compiler is now available in `tools/gcc` if someone adds the source.
 
@@ -170,6 +181,9 @@ is the largest effect in the whole study. Mixture of experts makes no clear diff
 | C (3 seeds) | 56.6 → 63.9 | 82.9 → 84.1 (s0) |
 | hard_ray (3 seeds) | 52.2 → 60.1 | 71.6 → 78.2 (s0) |
 | scale_L_279K | 49.1 → 53.8 | 59.9 → 70.1 |
+| scale_L_1M | 40.0 → 49.1 | 49.2 → 57.7 |
+| scale_M_1M / scale_S_1M | 38.6 → 51.5 / 47.3 → 63.2 | — |
+| Round robin (scale_L_1M) | +1032 Elo → +939 | |
 
 Search hurts every model. The value head (trained with MSE to 0.75 × expected score of the best
 cp + 0.25 × game result) is too inaccurate at the leaves to beat the policy's own choice. This is
@@ -185,6 +199,11 @@ the first thing chunk 2 must fix before MCTS can help (section 5).
 | M, T1 | 77.9 | 69.4 | 61.3 | 50.7 |
 | L (256/6/8), dev | 66.8 | 60.4 | 54.2 | **44.5** |
 | L, T1 | 74.1 | 69.6 | 59.9 | **49.2 [46.8, 51.4]** |
+| S / M / L, T2 | 60.7 / 55.1 / 54.0 | 52.3 / 50.2 / 50.5 | 50.3 / 50.2 / 49.1 | 47.3 / **38.6** / 40.0 |
+
+On T2 the 1M models beat the team C++ engine at depth 4 (46.7 cp in the 18 Nov cross-eval)
+without any search. M and L on 1M are within noise of each other on T2 (38.6 vs 40.0); L is
+better on dev (44.5 vs 45.8) and T1 (49.2 vs 50.7).
 
 (70K–279K: 6 epochs; 1M: 4 epochs, as in `stage_scaling`.) Data helps at every size and model
 size helps once there is enough data: going from 279K to ~1M positions cuts the L model's T1
@@ -236,19 +255,21 @@ and the T1 table there. Training time per run: S ~9 min, M ~20 min, L ~23 min on
 | `data/v6/positions_extra.npz` | D2 positions (games 4101–10600) | 130 MB |
 | `data/v6/labels_dev_d10`, `labels_train_d10` | Stockfish 15.1 depth-10 labels (chunks) | 1.5 / 18 MB |
 | `data/v6/labels_t1_d14` | T1 labels, depth 14, stride 10 | 0.8 MB |
-| `data/v6/labels_extra_d10` | D2 labels, depth 10 | ~45 MB |
+| `data/v6/labels_extra_d10` | D2 labels, depth 10 | 46 MB |
 | `data/v6/dev_d10`, `train_d10`, `train_nolabel` | assembled tensors | 28 / 340 / 326 MB |
 | `data/v6/t1_d14`, `t3_holdout` | T1 (labelled), T3 (unlabelled) | 13 / 121 MB |
-| `data/v6/extra_d10`, `big_d10` | D2 tensors and train+D2 | TBD |
+| `data/v6/extra_d10`, `big_d10` | D2 tensors (707,896 rows), train+D2 (987,261 rows) | 862 MB / 1.2 GB |
 | `benchmarks/t2_p2_1312` | T2 (Prototype 2, Stockfish 15.1 depth 12) | in git |
-| `runs/v6/<run>/` | `best.pt`, `last.pt`, `config.json`, `metrics.json`, `log.jsonl` | 403 MB total |
+| `runs/v6/<run>/` (39 runs) | `best.pt`, `last.pt`, `config.json`, `metrics.json`, `log.jsonl` | 517 MB total |
+| `runs/v6_checkpoints_chunk1.zip` | every run's `best.pt` (+ sha256), `metrics.json`, `config.json` | 240 MB |
 | `runs/v6/<run>.stdout.txt` | training stdout | small |
 | `results/v6/` | SUMMARY.md, t2.json, t1.json, gate2_*.json | 1.6 MB, in git |
 | `logs/` | every log and driver script of chunk 1 | 0.2 MB, in git |
 | `tools/stockfish/stockfish.exe` | the Stockfish 15.1 build | 50 MB |
 | `tools/src/Stockfish-sf_15.1` | its source + net | 50 MB |
-| `tools/gcc` | portable GCC 12.4 (WinLibs) | ~1 GB |
-| `tools/venv-cpu`, `.venv` | CPU-only and CUDA Python environments | ~1 / ~5 GB |
+| `tools/gcc` | portable GCC 12.4 (WinLibs) | 844 MB |
+| `tools/venv-cpu`, `.venv` | CPU-only and CUDA Python environments | 788 MB / 4.3 GB |
+| `geochesszero/prototypes/03_method_comparison/results/tournament_v6.json` | round robin, every game | in git |
 
 `data/v6/`, `runs/`, `tools/` and `.venv/` are git-ignored.
 
@@ -278,7 +299,7 @@ py -3.12 -m venv .venv
 # Stockfish 15.1 (from Git Bash, with tools/gcc/mingw64/bin on PATH, net already in src/):
 #   cd tools/src/Stockfish-sf_15.1/src && mingw32-make -j12 all ARCH=x86-64-avx2 COMP=mingw
 $env:STOCKFISH = "tools\stockfish\stockfish.exe"   # backslashes, or any path after Fix 1
-.venv\Scripts\python -m pytest tests -q              # 44 passed, 1 skipped
+.venv\Scripts\python -m pytest tests -q              # 45 passed, 1 skipped
 ```
 
 ### Commands actually used (from the repo root, `PYTHONPATH=src`)
@@ -307,8 +328,9 @@ Every stage skips finished runs, so rerunning a stage only does what is missing.
 
 ### Chunk 2 (teammate 1): MCTS with PUCT, oracle self-play, AlphaZero targets, distillation
 
-Start from `runs/v6/scale_L_279K/best.pt` (or the best 1M run, section 2.4): hard_ray attention,
-soft targets + value head. Suggested first steps, in order:
+Start from `runs/v6/scale_L_1M/best.pt` (best run: hard_ray attention, soft targets + value
+head, L size, ~1M positions; T1 49.2 cp, +1032 Elo). Use `scale_S_1M` (65.5 cp) when you need
+speed. Suggested first steps, in order:
 
 1. **Fix the value head first.** 2-ply search currently *loses* 5–10 cp (section 2.3). Measure
    value calibration on dev (predicted expected score vs `cp_to_value(best cp)` and vs game
@@ -324,8 +346,9 @@ soft targets + value head. Suggested first steps, in order:
 4. **AlphaZero-style targets:** MCTS visit counts as policy targets, game result / search value
    as value targets; compare against soft Stockfish targets on T1 with
    `scripts/v6_paired_groups.py`.
-5. **Distillation big → small:** L (279K or 1M) as teacher, S as student, soft targets from the
-   teacher's policy. Reference numbers to beat: S on 279K = 72.1 cp on T1; L = 59.9.
+5. **Distillation big → small:** `scale_L_1M` as teacher, S as student, soft targets from the
+   teacher's policy. Reference numbers on T1: S trained on Stockfish labels = 65.5 cp (1M) /
+   72.1 (279K); teacher L = 49.2. A distilled S that lands between them is a success.
 
 ### Chunk 3 (teammate 2): full Phase 5 evaluation, report, slides, demo
 
@@ -353,11 +376,21 @@ soft targets + value head. Suggested first steps, in order:
 * tau 50 / 100 / 200 were a near tie on dev (one seed each).
 * All models were still improving at their last epoch.
 * T1 eval covers a subset of runs (section 1, Step 2); the full pass is chunk 3's.
+* **`v6_eval` is single-threaded** (CPU ~13 %, GPU ~8 % on this PC): the 2-ply search builds and
+  encodes every reply position in pure Python, one at a time. For big passes, run several
+  `v6_eval` processes in parallel, each with a few `--model`s (include `--model v5=...` and
+  `--reference v5` in each so the paired numbers come out), then merge the `models` and
+  `paired_vs_v5` dicts of the JSON files into `results/v6/t1.json` and call
+  `v6_experiments.write_summary()`. With 6–8 processes this should be ~6× faster.
 * The team C++ engine was not built (source missing).
 * Drive C: is nearly full (~15–18 GB free). `tools/gcc` (~1 GB) can be deleted once nobody
   needs to rebuild Stockfish.
 * Windows notes: give Stockfish an absolute or backslash path to other tools; long jobs started
   from the Claude app die when the app restarts — start them with `Start-Process` (see `logs/`).
 
-**Sharing checkpoints** (`runs/` is git-ignored): zip `runs/v6/*/best.pt` + `metrics.json` +
-`config.json`. TBD: the zip made at the end of chunk 1 (path and size).
+**Sharing checkpoints** (`runs/` is git-ignored): **`runs/v6_checkpoints_chunk1.zip`** (240 MB)
+holds `best.pt` + `best.pt.sha256` + `metrics.json` + `config.json` for all 39 runs. Unzip it at
+the repo root (paths inside start with `runs/v6/`); `load_v6` checks each sha256. Share it by
+Drive or similar (too big for git). The data (`data/v6`, ~3 GB) is rebuilt with the commands in
+section 4; the Stockfish labels alone (`data/v6/labels_*`, ~66 MB) are worth sharing too, since
+they took ~16 CPU-hours to make.
