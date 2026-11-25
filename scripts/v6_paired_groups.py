@@ -26,12 +26,15 @@ KEYS = ("cp_loss", "best_rate", "blunder_rate")
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", required=True)
-    ap.add_argument("--group", action="append", required=True, help="run prefix, e.g. B_soft")
+    ap.add_argument("--group", action="append", default=[], help="run prefix, e.g. B_soft")
+    ap.add_argument("--model", action="append", default=[], help="explicit name=checkpoint")
     ap.add_argument("--reference", action="append", required=True, help="repeatable")
     ap.add_argument("--seeds", type=int, default=3)
     ap.add_argument("--runs", default="runs/v6")
     ap.add_argument("--out")
     a = ap.parse_args()
+    if not a.group and not a.model:
+        ap.error("pass at least one --group or --model")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     ds = V6Dataset(a.data)
     per = {}
@@ -39,6 +42,10 @@ def main():
         seeds = [evaluate_model(load_any(f"{a.runs}/{g}_s{s}/best.pt", device), ds, device)
                  for s in range(a.seeds)]
         per[g] = {k: np.mean([np.asarray(p[k], float) for p in seeds], axis=0) for k in KEYS}
+    for spec in a.model:
+        name, path = spec.split("=", 1)
+        p = evaluate_model(load_any(path, device), ds, device)
+        per[name] = {k: np.asarray(p[k], float) for k in KEYS}
     out = {"data": a.data, "rows": len(ds), "games": int(len(np.unique(ds.game))),
            "seeds": a.seeds, "groups": {g: bootstrap(v, ds.game) for g, v in per.items()}}
     for g, s in out["groups"].items():

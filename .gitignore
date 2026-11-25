@@ -9,6 +9,7 @@ runs/
 data/source.pgn.gz
 *.egg-info/
 data/v6/
+data/v7/
 tools/
 data/fishtest_extra.pgn.gz
 *.stdout.txt

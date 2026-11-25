@@ -1,0 +1,312 @@
+{
+  "scale_L_1M": {
+    "mse_sf": 0.0223,
+    "mse_game": 0.2808,
+    "mse_blend": 0.0336,
+    "mae_sf": 0.1116,
+    "mae_game": 0.4451,
+    "pearson_r_sf": 0.9161,
+    "spearman_rho_sf": 0.8977,
+    "sign_acc_decisive": 96.07,
+    "ece_sf": 0.0342,
+    "ece_game": 0.1214,
+    "mce_sf": 0.0651,
+    "bins": [
+      {
+        "bin": 0,
+        "range": [
+          0.0,
+          0.1
+        ],
+        "count": 371,
+        "pct": 1.66,
+        "mean_pred_prob": 0.0793,
+        "mean_sf_prob": 0.1135,
+        "mean_game_prob": 0.0027,
+        "gap_sf": 0.0343,
+        "gap_game": 0.0766
+      },
+      {
+        "bin": 1,
+        "range": [
+          0.1,
+          0.2
+        ],
+        "count": 979,
+        "pct": 4.38,
+        "mean_pred_prob": 0.1509,
+        "mean_sf_prob": 0.21,
+        "mean_game_prob": 0.026,
+        "gap_sf": 0.0591,
+        "gap_game": 0.1249
+      },
+      {
+        "bin": 2,
+        "range": [
+          0.2,
+          0.3
+        ],
+        "count": 1238,
+        "pct": 5.54,
+        "mean_pred_prob": 0.2538,
+        "mean_sf_prob": 0.3189,
+        "mean_game_prob": 0.0864,
+        "gap_sf": 0.0651,
+        "gap_game": 0.1673
+      },
+      {
+        "bin": 3,
+        "range": [
+          0.3,
+          0.4
+        ],
+        "count": 5179,
+        "pct": 23.18,
+        "mean_pred_prob": 0.3658,
+        "mean_sf_prob": 0.4103,
+        "mean_game_prob": 0.2058,
+        "gap_sf": 0.0444,
+        "gap_game": 0.16
+      },
+      {
+        "bin": 4,
+        "range": [
+          0.4,
+          0.5
+        ],
+        "count": 3384,
+        "pct": 15.15,
+        "mean_pred_prob": 0.4504,
+        "mean_sf_prob": 0.4588,
+        "mean_game_prob": 0.3805,
+        "gap_sf": 0.0083,
+        "gap_game": 0.07
+      },
+      {
+        "bin": 5,
+        "range": [
+          0.5,
+          0.6
+        ],
+        "count": 3077,
+        "pct": 13.77,
+        "mean_pred_prob": 0.5477,
+        "mean_sf_prob": 0.5482,
+        "mean_game_prob": 0.5951,
+        "gap_sf": 0.0005,
+        "gap_game": 0.0473
+      },
+      {
+        "bin": 6,
+        "range": [
+          0.6,
+          0.7
+        ],
+        "count": 5412,
+        "pct": 24.22,
+        "mean_pred_prob": 0.6407,
+        "mean_sf_prob": 0.6024,
+        "mean_game_prob": 0.7827,
+        "gap_sf": 0.0383,
+        "gap_game": 0.1421
+      },
+      {
+        "bin": 7,
+        "range": [
+          0.7,
+          0.8
+        ],
+        "count": 1274,
+        "pct": 5.7,
+        "mean_pred_prob": 0.7455,
+        "mean_sf_prob": 0.6827,
+        "mean_game_prob": 0.9042,
+        "gap_sf": 0.0628,
+        "gap_game": 0.1587
+      },
+      {
+        "bin": 8,
+        "range": [
+          0.8,
+          0.9
+        ],
+        "count": 1009,
+        "pct": 4.52,
+        "mean_pred_prob": 0.8479,
+        "mean_sf_prob": 0.7956,
+        "mean_game_prob": 0.9866,
+        "gap_sf": 0.0522,
+        "gap_game": 0.1388
+      },
+      {
+        "bin": 9,
+        "range": [
+          0.9,
+          1.0
+        ],
+        "count": 418,
+        "pct": 1.87,
+        "mean_pred_prob": 0.9234,
+        "mean_sf_prob": 0.8914,
+        "mean_game_prob": 1.0,
+        "gap_sf": 0.032,
+        "gap_game": 0.0766
+      }
+    ]
+  },
+  "v7_L_az": {
+    "mse_sf": 0.0194,
+    "mse_game": 0.3107,
+    "mse_blend": 0.0389,
+    "mae_sf": 0.0995,
+    "mae_game": 0.4597,
+    "pearson_r_sf": 0.9084,
+    "spearman_rho_sf": 0.8868,
+    "sign_acc_decisive": 95.66,
+    "ece_sf": 0.0186,
+    "ece_game": 0.1406,
+    "mce_sf": 0.0347,
+    "bins": [
+      {
+        "bin": 0,
+        "range": [
+          0.0,
+          0.1
+        ],
+        "count": 180,
+        "pct": 0.81,
+        "mean_pred_prob": 0.0791,
+        "mean_sf_prob": 0.0939,
+        "mean_game_prob": 0.0028,
+        "gap_sf": 0.0147,
+        "gap_game": 0.0763
+      },
+      {
+        "bin": 1,
+        "range": [
+          0.1,
+          0.2
+        ],
+        "count": 847,
+        "pct": 3.79,
+        "mean_pred_prob": 0.1504,
+        "mean_sf_prob": 0.174,
+        "mean_game_prob": 0.013,
+        "gap_sf": 0.0236,
+        "gap_game": 0.1374
+      },
+      {
+        "bin": 2,
+        "range": [
+          0.2,
+          0.3
+        ],
+        "count": 1052,
+        "pct": 4.71,
+        "mean_pred_prob": 0.2532,
+        "mean_sf_prob": 0.2878,
+        "mean_game_prob": 0.057,
+        "gap_sf": 0.0347,
+        "gap_game": 0.1961
+      },
+      {
+        "bin": 3,
+        "range": [
+          0.3,
+          0.4
+        ],
+        "count": 3406,
+        "pct": 15.25,
+        "mean_pred_prob": 0.3653,
+        "mean_sf_prob": 0.3948,
+        "mean_game_prob": 0.1779,
+        "gap_sf": 0.0296,
+        "gap_game": 0.1874
+      },
+      {
+        "bin": 4,
+        "range": [
+          0.4,
+          0.5
+        ],
+        "count": 5233,
+        "pct": 23.42,
+        "mean_pred_prob": 0.4463,
+        "mean_sf_prob": 0.4395,
+        "mean_game_prob": 0.3105,
+        "gap_sf": 0.0068,
+        "gap_game": 0.1358
+      },
+      {
+        "bin": 5,
+        "range": [
+          0.5,
+          0.6
+        ],
+        "count": 4603,
+        "pct": 20.6,
+        "mean_pred_prob": 0.5486,
+        "mean_sf_prob": 0.5549,
+        "mean_game_prob": 0.6196,
+        "gap_sf": 0.0063,
+        "gap_game": 0.071
+      },
+      {
+        "bin": 6,
+        "range": [
+          0.6,
+          0.7
+        ],
+        "count": 4800,
+        "pct": 21.49,
+        "mean_pred_prob": 0.6385,
+        "mean_sf_prob": 0.6098,
+        "mean_game_prob": 0.7971,
+        "gap_sf": 0.0286,
+        "gap_game": 0.1586
+      },
+      {
+        "bin": 7,
+        "range": [
+          0.7,
+          0.8
+        ],
+        "count": 1207,
+        "pct": 5.4,
+        "mean_pred_prob": 0.745,
+        "mean_sf_prob": 0.7128,
+        "mean_game_prob": 0.9383,
+        "gap_sf": 0.0321,
+        "gap_game": 0.1933
+      },
+      {
+        "bin": 8,
+        "range": [
+          0.8,
+          0.9
+        ],
+        "count": 822,
+        "pct": 3.68,
+        "mean_pred_prob": 0.8477,
+        "mean_sf_prob": 0.8319,
+        "mean_game_prob": 0.9921,
+        "gap_sf": 0.0158,
+        "gap_game": 0.1444
+      },
+      {
+        "bin": 9,
+        "range": [
+          0.9,
+          1.0
+        ],
+        "count": 191,
+        "pct": 0.85,
+        "mean_pred_prob": 0.9181,
+        "mean_sf_prob": 0.9124,
+        "mean_game_prob": 1.0,
+        "gap_sf": 0.0057,
+        "gap_game": 0.0819
+      }
+    ]
+  }
+}
